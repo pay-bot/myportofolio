@@ -49,16 +49,16 @@ export default function Home(props) {
 
     <>
       < Wrapper >
-        <div className="w-full">
-          <div className="flex lg:flex-row sm:flex-col justify-around">
-            <div className="flex flex-col lg:items-start mb-5 lg:text-left sm:items-center sm:text-center justify-center gap-10">
+        <div className="w-full ">
+          <div className="flex lg:flex-row sm:flex-col justify-around ">
+            <div className="flex flex-col md:items-center md:mx-auto ml-auto lg:items-start mb-5 lg:text-left sm:items-center sm:text-center justify-center gap-10">
               <Greeting />
             </div>
-            <div className="shadow-xl mx-7 flex flex-row max-w-lg justify-center bg-gradient-to-r from-indigo-200 via-indigo-300 to-indigo-400 shadow-xl rounded-xl p-5">
+            <div className="sm:mt-5 md:items-center md:mx-auto sm:mx-auto shadow-xl flex flex-row max-w-lg justify-center bg-gradient-to-r from-indigo-200 via-indigo-300 to-indigo-400 shadow-xl rounded-xl p-5">
               <div className="flex flex-col block">
-                <div className="lg:p-2 sm:p-1 bg-gradient-to-tr from-fuchsia-600 rounded-full">
+                <div className="sm:mt-5 lg:p-2 sm:p-1 bg-gradient-to-tr from-fuchsia-600 rounded-full">
                   <div className="flex flex-col block bg-white p-1 rounded-full transform transition hover:rotate-6">
-                    <img className="w-40 mx-auto shadow-2xl rounded-full" src='/portofolio.png' alt="Profile face" />
+                    <img className="lg:w-40 sm:w-24 mx-auto shadow-2xl rounded-full" src='/portofolio.png' alt="Profile face" />
                   </div>
                 </div>
               </div>

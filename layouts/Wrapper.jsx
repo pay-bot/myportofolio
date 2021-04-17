@@ -32,7 +32,7 @@ function Wrapper({ router, children }) {
       <nav className='inset-x-0 flex sm:h-full bg-grey-300 dark:bg-gray-700 lg:justify-around shadow-lg p-3'>
 
         <div className="lg:block">
-          <Link href="/"><a className="lg:w-full items-center  lg:block lg:mr-auto text-2xl text-indigo-600 font-bold uppercase tracking-wide ml-10 mt-3 ">Fa</a></Link>
+          <Link href="/"><a className="lg:w-full sm:mr-auto items-center  lg:block lg:mr-auto text-2xl text-indigo-600 font-bold uppercase tracking-wide ml-10 mt-3 ">Fa</a></Link>
         </div>
         <div className="sm:mx-auto">
           <div className='sm:items-start sm:ml-3.5 lg:w-auto sm:h-full w-full lg:items-right text-center flex  lg:h-auto'>
@@ -44,7 +44,7 @@ function Wrapper({ router, children }) {
           </div>
         </div>
         <div className="flex">
-          <div className=" -mr-100">
+          <div className="">
             <button
               className=" mt-2.5 px-3 py-3 sm:py-2 bg-gray-400 focus-ring dark:bg-gray-100 hover:bg-gray-700 dark:hover:bg-white duration-300 rounded-sm shadow-lg ring lg:relative lg:flex justify-end "
               type="button"
