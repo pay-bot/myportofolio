@@ -49,128 +49,98 @@ export default function Home(props) {
 
     <>
       < Wrapper >
-        <div className="w-full ">
-          <div className="flex lg:flex-row sm:flex-col justify-around ">
-            <div className="flex flex-col md:items-center md:mx-auto ml-auto lg:items-start mb-5 lg:text-left sm:items-center sm:text-center justify-center gap-10">
+        <div className="w-11/12 mx-auto  ">
+          <div className="flex md:flex-row flex-col">
+            <div className="md:w-6/12 w-full">
               <Greeting />
             </div>
-            <div className="sm:mt-5 md:items-center md:mx-auto sm:mx-auto shadow-xl flex flex-row max-w-lg justify-center bg-gradient-to-r from-indigo-200 via-indigo-300 to-indigo-400 shadow-xl rounded-xl p-5">
-              <div className="flex flex-col block">
-                <div className="sm:mt-5 lg:p-2 sm:p-1 bg-gradient-to-tr from-fuchsia-600 rounded-full">
-                  <div className="flex flex-col block bg-white p-1 rounded-full transform transition hover:rotate-6">
-                    <img className="lg:w-40 sm:w-24 mx-auto shadow-2xl rounded-full" src='/portofolio.png' alt="Profile face" />
-                  </div>
+            <div className="md:w-6/12 w-full flex md:flex-row flex-col border shadow-xl rounded-xl my-5 items-center">
+              <div className="w-4/12 mx-auto">
+                <div className="border-1 m-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
+
+                  <img src="portofolio.png" className="rounded-full p-1" />
+
                 </div>
               </div>
-              <div className="text-center mt-5">
-
-                <p className="text-2xl sm:text-2xl font-semibold text-gray-800">
-                  Fahri Alpiansyah
-            </p>
-                <p className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-10 w-full inline-block border-b-2 border-fuchsia-600">
-                  Front-End Developer/Designer
-            </p>
-
-                <div className="flex align-center justify-center mt-4">
-                  <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300" href="https://github.com/pay-bot">
-                    <FaGithub />
-                    <span className="sr-only">Github</span>
-                  </a>
-                  <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-pink-600 hover:bg-pink-600 rounded-full hover:text-white transition-colors duration-300" href="https://github.com/pay-bot">
-                    <FaDribbble />
-                    <span className="sr-only">Dribble</span>
-                  </a>
-                  <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300" href="https://github.com/pay-bot">
-                    <FaTwitter />
-                    <span className="sr-only">Twitter</span>
-                  </a>
-                  <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-teal-500 rounded-full hover:text-white transition-colors duration-300" href="https://github.com/pay-bot">
-                    <FaRegEnvelope />
-                    <span className="sr-only">Email</span>
-                  </a>
+              <div className="md:w-8/12 w-full">
+                <p className="text-center text-lg font-semibold">Fahri Alpiansyah</p>
+                <p className="text-center text-sm">Front-End</p>
+                <p className="text-center text-sm">Developer/Designer</p>
+                <div className="border border-2 border-gray-400 h-1 m-3"></div>
+                <div className="flex justify-center mb-3">
+                  <img src="facebook.svg" alt="" className="w-5 mx-1" />
+                  <img src="github.svg" alt="" className="w-5 mx-1" />
+                  <img src="twitter.svg" alt="" className="w-5 mx-1" />
+                  <img src="youtube.svg" alt="" className="w-5 mx-1" />
+                  <img src="mail.svg" alt="" className="w-5 mx-1" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex font-bold text-4xl uppercase text-center flex-col mb-15 ">
+          <div className="flex font-bold text-4xl uppercase text-center flex-col ">
             <h1 className='mt-20'>skills</h1>
+
+            <Carousel
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={props.deviceType !== "mobile" ? true : false}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all 2"
+              transitionDuration={500}
+              containerClassName="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+              deviceType={props.deviceType}
+              dotListClassName="custom-dot-list-style"
+              itemClassName="carousel-item-padding-40-px"
+            >
+
+
+
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24' src="/images/js.png" alt="JavaScript" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl'>JavaScript</span>
+                </div>
+              </div>
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24' src="/images/css.png" alt="Css" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl  -mb-.3'>CSS</span>
+                </div>
+              </div>
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24' src="/images/react.png" alt="React" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl -pb-1'>ReactJS</span>
+                </div>
+              </div>
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24 pb-10' src="/images/next.svg" alt="Next" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl '>NextJS</span>
+                </div>
+              </div>
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24 pb-10' src="/images/nodejs.svg" alt="JavaScript" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl '>NodeJS</span>
+                </div>
+              </div>
+              <div className='bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+                <img className='w-24 pb-10' src="/images/tailwind.svg" alt="SASS" />
+                <div className='flex flex-col items-center'>
+                  <span className='block text-xl '>Tailwind</span>
+                </div>
+              </div>
+            </Carousel>
           </div>
-          <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={props.deviceType !== "mobile" ? true : false}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all 2"
-            transitionDuration={500}
-            containerClassName="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-            deviceType={props.deviceType}
-            dotListClassName="custom-dot-list-style"
-            itemClassName="carousel-item-padding-40-px"
-          >
-
-
-
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24' src="/images/js.png" alt="JavaScript" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl'>JavaScript</span>
-              </div>
-            </div>
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24' src="/images/css.png" alt="Css" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl  -mb-.3'>CSS</span>
-              </div>
-            </div>
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24' src="/images/react.png" alt="React" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl -pb-1'>ReactJS</span>
-              </div>
-            </div>
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24 pb-10' src="/images/next.svg" alt="Next" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl '>NextJS</span>
-              </div>
-            </div>
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24 pb-10' src="/images/nodejs.svg" alt="JavaScript" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl '>NodeJS</span>
-              </div>
-            </div>
-            <div className='mb-3 bg-white shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-              <img className='w-24 pb-10' src="/images/tailwind.svg" alt="SASS" />
-              <div className='flex flex-col items-center'>
-                <span className='block text-xl '>Tailwind</span>
-              </div>
-            </div>
-
-
-          </Carousel>
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
       </ Wrapper>
-
     </>
 
 

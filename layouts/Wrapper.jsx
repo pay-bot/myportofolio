@@ -89,28 +89,17 @@ function Wrapper({ router, children }) {
               <FontAwesomeIcon icon={click ? faBars : faTimes}></FontAwesomeIcon>
             </div>
           </div>
-
-
-
-
-
         </div>
-
-
-
       </nav >
-
 
       <main className="flex-grow p-8 dark:bg-gray-700">{children}
 
       </main>
-      <div className="w-full dark:bg-gray-700 mx-auto px-6">
-        <div className=" border-t-2 border-gray-300 flex flex-col items-center">
-          <div className=" text-center py-6">
-            <p className="text-sm text-blue-700 font-bold mb-2">
-              © 2021 Build with Nextjs & Tailwind
+      <div className="w-full dark:bg-gray-700 mx-auto">
+        <div className=" border-t-2 border-gray-300">
+          <p className="text-center text-sm text-blue-700 font-bold p-10">
+            © 2021 Build with Nextjs & Tailwind
                 </p>
-          </div>
         </div>
       </div>
 

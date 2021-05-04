@@ -4,7 +4,7 @@ import Wrapper from '../layouts/Wrapper'
 const contact = () => {
   return (
     <Wrapper>
-      <div className="uppercase text-7xl text-center justify-center items-center">
+      <div className="text-black text-xl uppercase dark:text-white font-bold text-center">
         <p>belom jadi</p>
       </div>
     </Wrapper>
