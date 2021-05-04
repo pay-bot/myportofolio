@@ -4,13 +4,13 @@ import Wrapper from '../layouts/Wrapper'
 const about = () => {
   return (
     <Wrapper>
-      <div className="w-11/12 mx-auto">
+      <div className="w-11/12 mx-auto mt-10">
         <p className="text-center text-lg font-semibold">Tentang Saya</p>
         <div className="flex lg:flex-row flex-col">
-          <div className="lg:w-6/12 w-full mx-auto">
+          <div className="lg:w-6/12 w-full mx-auto p-5">
             <img src="mario.png" alt="" />
           </div>
-          <div className="lg:w-6/12 w-full mx-auto">
+          <div className="lg:w-6/12 w-full mx-auto p-5">
             <p className="">
               What is Lorem Ipsum?
 
