@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
         <div className="lg:w-3/12 w-full flex z-30">
           <button
-            className="lg:mx-auto h-8 px-2 border border-blue-600 my-auto ml-auto"
+            className="lg:mx-auto h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto"
             type="button"
             onClick={toggleDarkMode}
           >

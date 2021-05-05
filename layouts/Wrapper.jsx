@@ -14,7 +14,7 @@ function Wrapper({ children }) {
 
     <>
       <Navbar />
-      <main className="py-8 dark:bg-gray-700">{children}
+      <main className="flex-grow py-8 dark:bg-gray-700">{children}
 
       </main>
       <Footer>© 2021 Build with Nextjs & Tailwind</Footer>
