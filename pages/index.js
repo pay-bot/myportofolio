@@ -66,7 +66,7 @@ export default function Home(props) {
                 <p className="text-center text-lg font-semibold">Fahri Alpiansyah</p>
                 <p className="text-center text-sm">Front-End</p>
                 <p className="text-center text-sm">Developer/Designer</p>
-                <div className="border border-2 border-gray-400 h-1 m-3"></div>
+                <div className="border border-2 border-gray-400 bg-gray-400 h-1 my-3 mr-3"></div>
                 <div className="flex justify-center mb-3">
                   <img src="facebook.svg" alt="" className="w-5 mx-1" />
                   <img src="github.svg" alt="" className="w-5 mx-1" />
