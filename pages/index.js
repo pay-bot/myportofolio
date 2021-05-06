@@ -1,11 +1,5 @@
 import Wrapper from "../layouts/Wrapper";
-import Link from 'next/link'
 
-import { motion } from "framer-motion";
-import { FaGithub } from 'react-icons/fa';
-import { FaDribbble } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaRegEnvelope } from 'react-icons/fa';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -49,7 +43,7 @@ export default function Home(props) {
 
     <>
       < Wrapper >
-        <div className="w-11/12 mx-auto  ">
+        <div className="lg:w-11/12 w-full mx-auto  ">
           <div className="flex md:flex-row flex-col">
             <div className="md:w-6/12 w-full">
               <Greeting />
@@ -66,7 +60,7 @@ export default function Home(props) {
                 <p className="text-center text-lg font-semibold">Fahri Alpiansyah</p>
                 <p className="text-center text-sm">Front-End</p>
                 <p className="text-center text-sm">Developer/Designer</p>
-                <div className="border border-2 border-gray-400 bg-gray-400 h-1 my-3 mr-3"></div>
+                <div className="border-2 border-gray-400 bg-gray-400 h-1 my-3 mr-3"></div>
                 <div className="flex justify-center mb-3">
                   <img src="facebook.svg" alt="" className="w-5 mx-1" />
                   <img src="github.svg" alt="" className="w-5 mx-1" />
