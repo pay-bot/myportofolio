@@ -27,7 +27,9 @@
     "react-icon": "^1.0.0",
     "react-icons": "^4.2.0",
     "react-multi-carousel": "^2.6.2",
+    "react-pdf": "^5.2.0",
     "react-responsive-carousel": "^3.2.18",
+    "sweetalert": "^2.1.2",
     "tailwind-darkmode-toggle": "^1.0.5"
   },
   "devDependencies": {

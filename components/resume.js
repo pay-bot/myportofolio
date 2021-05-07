@@ -1,0 +1,1 @@
+export const RESUME = 'https://firebasestorage.googleapis.com/v0/b/myportofolio-945c7.appspot.com/o/fahri%20alpiansyah_201843500885_S6E_UTS-PemVis.pdf?alt=media&token=4d622e72-f8a4-4a5b-9780-3520af3952b5'
