@@ -3493,6 +3493,11 @@ react-easy-swipe@^0.0.21:
   dependencies:
     prop-types "^15.5.8"
 
+react-hook-form@^7.4.2:
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.4.2.tgz#7d68f7fbdb8477a8ed7efe880cd507a8b074f6c0"
+  integrity sha512-raKWXkD/gtOWWtnHMx53b7an3yBcJjD4DPo4c9GgsE0tL35ypHjwRHrC4DqnhI28JxcYVjqf7xcVBubrZ/ez1w==
+
 react-icon@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/react-icon/-/react-icon-1.0.0.tgz"

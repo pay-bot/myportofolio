@@ -4,7 +4,7 @@ import Wrapper from '../layouts/Wrapper'
 const about = () => {
   return (
     <Wrapper>
-      <div className="lg:w-11/12 w-full mx-auto mt-10">
+      <div className="lg:w-9/12 w-full mx-auto mt-10">
         <p className="text-center text-lg font-semibold">Tentang Saya</p>
         <div className="flex lg:flex-row flex-col">
           <div className="lg:w-6/12 w-full mx-auto p-5">
