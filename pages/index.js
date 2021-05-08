@@ -9,15 +9,20 @@ import { RESUME } from "../components/resume"
 export default function Home(props) {
 
   const Greeting = () =>
-    <div className="greeting">
-      <div className="text-4xl sm:text-5xl md:text-6xl font-black text-start dark:text-gray-300">Halo...</div>
-      <div className="text-4xl sm:text-5xl md:text-6xl font-black text-start dark:text-gray-300">Saya <span className="text-blue-500">Fahri</span>
+    <div className="">
+      <div className="lg:text-left text-center">
+        <div className="text-4xl sm:text-5xl md:text-6xl font-black  dark:text-gray-300">Halo...</div>
+        <div className="text-4xl sm:text-5xl md:text-6xl font-black  dark:text-gray-300">Saya <span className="text-blue-500">Fahri</span>
+        </div>
+
+        <div className="mt-5 mb-5 sm:text-xl font-semibold  text-gray-400">"Di saat VScode kubuka di situlah aplikasimu akan jadi nyata"</div>
       </div>
 
-      <div className="mt-5 mb-5 text-start sm:text-xl font-semibold  text-gray-400">"Di saat VScode kubuka di situlah aplikasimu akan jadi nyata"</div>
+      <div className="flex lg:justify-start justify-center">
 
-      <button className="bg-blue-500 px-4 py-2 mr-3 text-lg font-semibold tracking-wider text-white rounded hover:bg-blue-600">Contact</button>
-      <button className="bg-blue-100 px-4 py-2 text-lg font-semibold tracking-wider text-blue-600 rounded hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"  ><a href={RESUME}>Download CV</a></button>
+        <button className="bg-blue-500 px-4 py-2 mr-3 text-lg font-semibold tracking-wider text-white rounded hover:bg-blue-600">Contact</button>
+        <button className="bg-blue-100 px-4 py-2 text-lg font-semibold tracking-wider text-blue-600 rounded hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"  ><a href={RESUME}>Download CV</a></button>
+      </div>
 
     </div>
 
@@ -45,7 +50,7 @@ export default function Home(props) {
       < Wrapper >
         <div className="lg:w-9/12 w-full mx-auto  ">
           <div className="flex md:flex-row flex-col">
-            <div className="md:w-6/12 w-full">
+            <div className="md:w-6/12 w-full ">
               <Greeting />
             </div>
             <div className="md:w-6/12 w-full flex md:flex-row flex-col border shadow-xl rounded-xl my-5 items-center">
@@ -60,7 +65,7 @@ export default function Home(props) {
                 <p className="text-center text-lg font-semibold">Fahri Alpiansyah</p>
                 <p className="text-center text-sm">Front-End</p>
                 <p className="text-center text-sm">Developer/Designer</p>
-                <div className="border-2 border-gray-400 bg-gray-400 h-1 my-3 mr-3"></div>
+                <div className="border-2 border-gray-400 bg-gray-400 h-1 my-3 lg:ml-0 ml-3 mr-3"></div>
                 <div className="flex justify-center mb-3">
                   <img src="facebook.svg" alt="" className="w-5 mx-1" />
                   <img src="github.svg" alt="" className="w-5 mx-1" />

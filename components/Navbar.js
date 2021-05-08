@@ -25,7 +25,7 @@ export default function Navbar() {
           </div>
           <div className="lg:w-3/12 w-full flex z-30">
             <button
-              className="lg:mt-0 mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto"
+              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto"
               type="button"
               onClick={toggleDarkMode}
             >
@@ -66,7 +66,7 @@ export default function Navbar() {
           <div className="w-6/12 -ml-16 lg:-ml-0 md:-ml-52 lg:hidden text-right">
             <img src="/menu.svg" className="cursor-pointer inline-block mt-6 mr-5 w-8" onClick={() => setOffcanvas(true)} />
           </div>
-          <div className={classnames("fixed bg-white t mt-3 h-full w-full p-10 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
+          <div className={classnames("fixed bg-white t mt-3 h-full w-full py-10 pr-10 pl-5 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
             <img src="/X.svg" className="cursor-pointer absolute top-3 right-5 w-8" onClick={() => setOffcanvas(false)} />
             <Nav
               scheme="dark"

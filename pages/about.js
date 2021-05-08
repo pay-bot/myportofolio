@@ -7,10 +7,10 @@ const about = () => {
       <div className="lg:w-9/12 w-full mx-auto mt-10">
         <p className="text-center text-lg font-semibold">Tentang Saya</p>
         <div className="flex lg:flex-row flex-col">
-          <div className="lg:w-6/12 w-full mx-auto p-5">
+          <div className="lg:w-6/12 w-full mx-auto py-5">
             <img src="mario.png" alt="" />
           </div>
-          <div className="lg:w-6/12 w-full mx-auto p-5">
+          <div className="lg:w-6/12 w-full mx-auto py-5">
             <p className="">
               What is Lorem Ipsum?
 
