@@ -4,22 +4,30 @@ import Wrapper from '../layouts/Wrapper'
 const about = () => {
   return (
     <Wrapper>
-      <div className="lg:w-9/12 w-full mx-auto mt-10">
-        <p className="text-center text-lg font-semibold">Tentang Saya</p>
+      <div className="bg-blue-700 h-[250px] w-full -mb-32"><p className="text-center text-lg font-semibold">Tentang Saya</p>
+      </div>
+      <div className="lg:w-9/12 bg-white h-[350px] w-full mx-auto rounded-md shadow-md">
+
         <div className="flex lg:flex-row flex-col">
-          <div className="lg:w-6/12 w-full mx-auto py-5">
-            <img src="mario.png" alt="" />
+          <div className="lg:w-3/12 w-full mx-auto p-5">
+            <img src="mario.png" className="h-[300px]" alt="" />
           </div>
-          <div className="lg:w-6/12 w-full mx-auto py-5">
+          <div className="lg:w-9/12 w-full mx-auto p-5">
             <p className="">
-              What is Lorem Ipsum?
+              Saya adalah fullstack app developer yang selalu berusaha melakukan yang terbaik disetiap pekerjaan. Menjadi seorang app developer adalah impian saya sejak dulu. Berkat rasa ingin tahu dan keinginan untuk terus belajar, sekarang saya berhasil menguasai beberapa pengetahuan dalam bidang pengembangan aplikasi.</p>
 
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              Why do we use it?
-
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-
-
+            <div className="flex">
+              <p className="flex"><img src="calendar-date-svgrepo-com.svg" alt="" className="" />tes</p>
+            </div>
+            <div className="flex">
+              <p className="flex"><img src="calendar-date-svgrepo-com.svg" alt="" className="" />tes</p>
+            </div>
+            <div className="flex">
+              <p className="flex"><img src="calendar-date-svgrepo-com.svg" alt="" className="" />tes</p>
+            </div>
+            <div className="flex">
+              <p className="flex"><img src="calendar-date-svgrepo-com.svg" alt="" className="" />tes</p>
+            </div>
           </div>
         </div>
       </div>

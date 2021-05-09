@@ -4,9 +4,9 @@ import Wrapper from '../layouts/Wrapper'
 const project = () => {
   return (
     <Wrapper>
-      <div className="lg:w-9/12 w-full mx-auto">
+      <div className="lg:w-9/12 w-full mx-auto lg:py-10 p-4 ">
         <p className="text-center text-lg text-gray-700 font-semibold mb-5">Project Yang Pernah Saya Kerjakan</p>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <ProjectCard
             image="dipoles.png"
             judul="dipoles"

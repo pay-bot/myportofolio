@@ -48,7 +48,7 @@ export default function Home(props) {
 
     <>
       < Wrapper >
-        <div className="lg:w-9/12 w-full mx-auto  ">
+        <div className="lg:w-9/12 w-full mx-auto lg:py-10 p-4  ">
           <div className="flex md:flex-row flex-col">
             <div className="md:w-6/12 w-full ">
               <Greeting />

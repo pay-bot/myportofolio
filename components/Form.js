@@ -13,12 +13,7 @@ export default function Form() {
     message: '',
     reply_to: '',
   });
-
-
-
-
-
-  const onSubmit = (e) => {
+ const onSubmit = (e) => {
     e.preventDefault();
     send(
       'service_aizdo2a',
@@ -39,59 +34,45 @@ export default function Form() {
       .catch((err) => {
         console.log('FAILED...', err);
       });
-
   };
 
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
+      e.target.reset();
   };
 
-  const registerUser = event => {
-    event.preventDefault() // don't redirect the page
-    // where we'll add our form logic
-  }
   return (
 
     <>
       <form onSubmit={onSubmit}>
-        <div className="flex">
-          <div className="flex-col">
             <label htmlFor="">Nama Anda</label>
-            <input className="border border-gray-500 rounded w-full"
+            <input className="border border-gray-500 rounded py-1 w-full"
               type='text'
               name='from_name'
-
               value={toSend.from_name}
               onChange={handleChange}
-            />
-          </div>
-          <div className="flex-col">
+            />         
             <label htmlFor="">Email Anda</label>
-            <input className="border border-gray-500 rounded w-full"
+            <input className="border border-gray-500 rounded py-1 w-full"
               type='text'
-              name='from_name'
-
-              value={toSend.from_name}
+              name='reply_to'
+              value={toSend.reply_to}
               onChange={handleChange}
-            />
-          </div>
-        </div>
-        <div className="flex-col">
-          <label htmlFor="">No. Telpon Anda</label>
-          <input className="border border-gray-500 rounded w-full"
-            type='text'
-            name='from_name'
-
-            value={toSend.from_name}
-            onChange={handleChange}
-          />
+            />        
           <label className="block" htmlFor="">Pesan Anda</label>
-          <textarea className="border border-black" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-
-
-        <button type='submit'>Submit</button>
+          <textarea className="border border-black" 
+          name="message" 
+          value={toSend.message}
+          onChange={handleChange} 
+          id="" 
+          cols="50" 
+          rows="10">
+          </textarea>
+        <button className="rounded font-semibold py-1 px-4 bg-blue-500 mx-auto" 
+        type='submit'>
+        SEND
+        </button>
       </form>
 
 

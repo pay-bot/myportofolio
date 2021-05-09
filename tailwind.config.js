@@ -6,6 +6,14 @@ module.exports = {
   presets: [],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    extend: {
+      transformOrigin: {
+        "0": "0%",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+    },
     screens: {
       sm: '360px',
       md: '638px',
@@ -735,6 +743,7 @@ module.exports = {
     'disabled',
   ],
   variants: {
+    borderColor: ["responsive", "hover", "focus", "focus-within"],
     accessibility: ['responsive', 'focus-within', 'focus'],
     alignContent: ['responsive'],
     alignItems: ['responsive'],
@@ -826,7 +835,7 @@ module.exports = {
     ringOffsetWidth: ['responsive', 'focus-within', 'focus'],
     ringOpacity: ['responsive', 'dark', 'focus-within', 'focus'],
     ringWidth: ['responsive', 'focus-within', 'focus'],
-    rotate: ['responsive', 'hover', 'focus'],
+    rotate: ['responsive', 'hover', 'expanded', 'focus'],
     scale: ['responsive', 'hover', 'focus'],
     skew: ['responsive', 'hover', 'focus'],
     space: ['responsive'],
@@ -834,7 +843,7 @@ module.exports = {
     strokeWidth: ['responsive'],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+    textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'current', 'focus'],
     textDecoration: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOverflow: ['responsive'],
@@ -854,5 +863,7 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@alexcarpenter/tailwindcss-aria'),
+  ],
 }

@@ -1,11 +1,14 @@
 import Logo from "./Logo";
 import Nav from "./Nav";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useDarkMode from "../hooks/useDarkMode";
 import classnames from "classnames";
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+  const { pathname } = useRouter()
   const [offcanvas, setOffcanvas] = useState(false);
+  useEffect(() => setOffcanvas(false), [pathname])
   const { toggleDarkMode, darkMode } = useDarkMode();
 
 
@@ -25,7 +28,7 @@ export default function Navbar() {
           </div>
           <div className="lg:w-3/12 w-full flex z-30">
             <button
-              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto"
+              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto lg:mr-5 mr-0"
               type="button"
               onClick={toggleDarkMode}
             >
