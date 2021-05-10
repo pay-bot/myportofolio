@@ -4,12 +4,19 @@ import { send } from 'emailjs-com';
 
 import Wrapper from '../layouts/Wrapper'
 import Form from '../components/Form';
+import Head from 'next/head'
 
 
 const contact = () => {
 
   return (
+    <>
+
     <Wrapper>
+      <Head>
+        <title>Contact</title>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </Head>
       <div className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col lg:py-10 py-5">
         <div className="lg:w-6/12 w-full mr-5 ">
           <h2 className="font-semibold text-lg text-gary-700 mb-4">Message Us</h2>
@@ -28,6 +35,7 @@ const contact = () => {
         </div>
       </div>
     </Wrapper >
+    </>
   )
 }
 

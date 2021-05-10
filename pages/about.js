@@ -1,10 +1,15 @@
 import React from 'react'
 import AboutCard from '../components/AboutCard'
 import Wrapper from '../layouts/Wrapper'
+import Head from 'next/head'
 
 const about = () => {
   return (
     <Wrapper>
+      <Head>
+        <title>About</title>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </Head>
       <div className="mt-10">
 
         <p className="text-center capitalize font-semibold text-gray-700 text-2xl">tentang</p>

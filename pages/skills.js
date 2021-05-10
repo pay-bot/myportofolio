@@ -1,9 +1,14 @@
 import React from 'react'
 import Wrapper from '../layouts/Wrapper'
+import Head from 'next/head'
 
 const skills = () => {
   return (
     <Wrapper>
+      <Head>
+        <title>Skills</title>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </Head>
       <div className='lg:w-9/12 w-full mb-4 mx-auto lg:py-10 p-4 '>
         <h1 className='text-2xl text-gray-700 font-semibold text-center'>Skills</h1>
         <p className="text-center text-md text-gray-500  mb-10">Kemampuan yang saya miliki</p>
