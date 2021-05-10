@@ -9,7 +9,7 @@ export default function Nav({ scheme, dir }) {
   const pickedDir = dirs[dir];
   return (
     <div className="lg:flex items-center z-30">
-      <ul className={classnames("flex my-6 uppercase lg:mx-auto mr-0", pickedDir)}>
+      <ul className={classnames("flex my-6 capitalize lg:mx-auto mr-0", pickedDir)}>
         <Navitems scheme={scheme} href="/">home</Navitems>
         <Navitems scheme={scheme} href="/about">about</Navitems>
         <Navitems scheme={scheme} href="/skills">skills</Navitems>

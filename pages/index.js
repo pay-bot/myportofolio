@@ -53,7 +53,7 @@ export default function Home(props) {
             <div className="md:w-6/12 w-full ">
               <Greeting />
             </div>
-            <div className="md:w-6/12 w-full flex md:flex-row flex-col border shadow-xl rounded-xl my-5 items-center">
+            <div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl my-5 items-center">
               <div className="w-4/12 mx-auto">
                 <div className="border-1 m-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
 
@@ -77,7 +77,7 @@ export default function Home(props) {
             </div>
           </div>
           <div className="flex font-bold text-4xl uppercase text-center flex-col ">
-            <h1 className='mt-20'>skills</h1>
+            <h1 className='lg:mt-20 mt-0'>skills</h1>
 
             <Carousel
               swipeable={false}
