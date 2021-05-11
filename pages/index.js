@@ -4,14 +4,17 @@ import CarouselProfile from "../components/CarouselProfile"
 import Greeting from "../components/Greeting"
 import ProfileCard from "../components/ProfileCard";
 import Head from 'next/head'
+import SEO_DATA from '../components/seo'
 
 export default function Home() {
   return (
     <>
       < Wrapper >
         <Head>
-          <title>Home</title>
-          <link rel="icon" href="/favicon-32x32.png" />
+          <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
+          <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
+          <meta property="og:title" content={'Home'} key="ogtitle" />
+          <title>{SEO_DATA.title + ' - Home'}</title>
         </Head>
         <div className="lg:w-9/12 w-full mx-auto lg:py-10 p-4 mt-28 ">
           <div className="flex md:flex-row flex-col">
