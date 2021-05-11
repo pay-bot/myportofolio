@@ -13,7 +13,7 @@ const about = () => {
         <meta property="og:title" content={'About'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - About'}</title>
       </Head>
-      <div className="mt-28
+      <div className="mt-28 px-4
       ">
 
         <p className="text-center capitalize font-semibold text-gray-700 text-2xl">tentang</p>

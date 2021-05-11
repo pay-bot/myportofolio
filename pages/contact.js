@@ -11,13 +11,13 @@ const contact = () => {
     <>
 
       <Wrapper>
-      <Head>
-        <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
-        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
-        <meta property="og:title" content={'Contact'} key="ogtitle" />
-        <title>{SEO_DATA.title + ' - Contact'}</title>
-      </Head>
-        <div className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col mt-28">
+        <Head>
+          <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
+          <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
+          <meta property="og:title" content={'Contact'} key="ogtitle" />
+          <title>{SEO_DATA.title + ' - Contact'}</title>
+        </Head>
+        <div className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col mt-28 px-4">
           <div className="lg:w-6/12 w-full mr-5 ">
             <h2 className="font-semibold text-lg text-gary-700 mb-4">Message Us</h2>
             <p className="text-gray-400 text-md text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
