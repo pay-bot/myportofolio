@@ -1,10 +1,8 @@
 import React from 'react'
-import { useState } from 'react';
-import { send } from 'emailjs-com';
-
 import Wrapper from '../layouts/Wrapper'
 import Form from '../components/Form';
 import Head from 'next/head'
+import SEO_DATA from '../components/seo'
 
 
 const contact = () => {
@@ -13,10 +11,12 @@ const contact = () => {
     <>
 
       <Wrapper>
-        <Head>
-          {/* <title>Contact</title> */}
-          <link rel="icon" href="/favicon-32x32.png" />
-        </Head>
+      <Head>
+        <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
+        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
+        <meta property="og:title" content={'Contact'} key="ogtitle" />
+        <title>{SEO_DATA.title + ' - Contact'}</title>
+      </Head>
         <div className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col mt-28">
           <div className="lg:w-6/12 w-full mr-5 ">
             <h2 className="font-semibold text-lg text-gary-700 mb-4">Message Us</h2>

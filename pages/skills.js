@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../layouts/Wrapper'
 import Head from 'next/head'
-import SEO_DATA from '../component/seo'
+import SEO_DATA from '../components/seo'
 
 const skills = () => {
   return (
