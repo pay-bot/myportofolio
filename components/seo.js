@@ -6,4 +6,4 @@ const SEO = {
   link_image: 'https://next-portofolio-template.vercel.app/tailwind-logo.svg' // must be jpg or png file
 }
 
-export default SEO0
+export default SEO
