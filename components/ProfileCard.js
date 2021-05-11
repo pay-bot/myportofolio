@@ -4,7 +4,7 @@ export default function ProfileCard() {
       <div className="w-4/12 mx-auto">
         <div className="border-1 m-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
 
-          <img src="portofolio 1.svg" className="rounded-full p-1" />
+          <img src="portofolio.png" className="rounded-full p-1" />
 
         </div>
       </div>
