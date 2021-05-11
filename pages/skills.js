@@ -1,13 +1,16 @@
 import React from 'react'
 import Wrapper from '../layouts/Wrapper'
 import Head from 'next/head'
+import SEO_DATA from '../component/seo'
 
 const skills = () => {
   return (
     <Wrapper>
       <Head>
-        <title>Skills</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
+        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
+        <meta property="og:title" content={'Skills'} key="ogtitle" />
+        <title>{SEO_DATA.title + ' - Skills'}</title>
       </Head>
       <div className='lg:w-9/12 w-full mb-4 mx-auto mt-28'>
         <h1 className='text-2xl text-gray-700 font-semibold text-center'>Skills</h1>
