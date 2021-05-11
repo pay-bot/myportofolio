@@ -6,5 +6,5 @@ import "../assets/app.css";
 
 
 export default function MyApp({ Component, pageProps }) {
-  return <Componebnt {...pageProps} />;
+  return <Component {...pageProps} />;
 }
