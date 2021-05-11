@@ -12,9 +12,9 @@ const project = () => {
         <meta property="og:title" content={'Project'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - Project'}</title>
       </Head>
-      <div className="lg:w-9/12 w-11/12 mx-auto mt-28">
-        <h1 className='text-2xl text-gray-700 font-semibold text-center'>Project</h1>
-        <p className="text-center text-md text-gray-500  mb-10">Project yang telah saya kerjakan</p>
+      <div className="lg:w-9/12 w-11/12 mx-auto mt-28 px-8">
+        <h1 className='text-2xl text-gray-700 dark:text-gray-300 font-semibold text-center'>Project</h1>
+        <p className="text-center text-md text-gray-500  mb-5">Project yang telah saya kerjakan</p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <ProjectCard
             image="dipoles.png"

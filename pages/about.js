@@ -13,12 +13,12 @@ const about = () => {
         <meta property="og:title" content={'About'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - About'}</title>
       </Head>
-      <div className="mt-28 px-4
+      <div className="mt-28 px-8
       ">
 
-        <p className="text-center capitalize font-semibold text-gray-700 text-2xl">tentang</p>
-        <p className="text-center mb-5 text-gray-500 text-md ">Profil singkat saya</p>
-        <div className="lg:w-9/12 w-11/12 bg-white lg:h-[350px] h-full mx-auto shadow-xl flex lg:flex-row flex-col lg:mb-0 mb-5">
+        <p className="text-center capitalize font-semibold text-gray-700 dark:text-gray-300 text-2xl">tentang</p>
+        <p className="text-center mb-5 text-gray-500 dark:text-gray-400 text-md ">Profil singkat saya</p>
+        <div className="lg:w-9/12 w-11/12 bg-white dark:bg-gray-600 dark:text-gray-300 lg:h-[350px] h-full mx-auto shadow-xl flex lg:flex-row flex-col lg:mb-0 mb-5">
           <AboutCard />
         </div>
       </div>

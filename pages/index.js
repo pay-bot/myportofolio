@@ -21,7 +21,7 @@ export default function Home() {
             <div className="md:w-6/12 w-full ">
               <Greeting />
             </div>
-            <div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl my-5 items-center">
+            <div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl my-5 items-center dark:bg-gray-600">
               <ProfileCard />
             </div>
           </div>
