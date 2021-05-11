@@ -4,7 +4,7 @@ import Head from 'next/head'
 import SEO_DATA from '../components/seo'
 import Index from '../components/About/Index'
 
-const about = () => {
+export default function about() {
   return (
     <>
       <Wrapper>
@@ -20,4 +20,3 @@ const about = () => {
   )
 }
 
-export default about
