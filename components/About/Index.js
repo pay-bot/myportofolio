@@ -2,7 +2,7 @@ import AboutCard from "./AboutCard"
 import AboutDesc from "./AboutDesc"
 import AboutTitle from "./AboutTitle"
 
-export default function () {
+export default function Index() {
   return (
     <>
       <div className="mt-28 px-8">
