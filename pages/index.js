@@ -1,10 +1,10 @@
 import Wrapper from "../layouts/Wrapper";
 import "react-multi-carousel/lib/styles.css";
-import CarouselProfile from "../components/CarouselProfile"
-import Greeting from "../components/Greeting"
-import ProfileCard from "../components/ProfileCard";
+import Index from "../components/Home/Index"
+
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
+
 
 export default function Home() {
   return (
@@ -16,20 +16,7 @@ export default function Home() {
           <meta property="og:title" content={'Home'} key="ogtitle" />
           <title>{SEO_DATA.title + ' - Home'}</title>
         </Head>
-        <div className="lg:w-9/12 w-full mx-auto lg:py-10 p-4 mt-28 ">
-          <div className="flex md:flex-row flex-col">
-            <div className="md:w-6/12 w-full ">
-              <Greeting />
-            </div>
-            <div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl my-5 items-center dark:bg-gray-600">
-              <ProfileCard />
-            </div>
-          </div>
-          <div className="flex font-bold text-4xl uppercase text-center flex-col ">
-            <h1 className='lg:mt-20 mt-0'>skills</h1>
-            <CarouselProfile />
-          </div>
-        </div>
+        <Index />
       </ Wrapper>
     </>
   )

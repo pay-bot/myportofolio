@@ -1,5 +1,5 @@
 const SEO = {
-  title: 'Next Portofolio template starter',
+  title: 'Portofolio ',
   description: 'Next portofolio template starter with seo, sitemap, analytic',
   url: 'https://next-portofolio-template.vercel.app/',
   site_name: 'Portofolio - Template Starter',
