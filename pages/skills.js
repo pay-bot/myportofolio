@@ -9,7 +9,7 @@ const skills = () => {
         <title>Skills</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <div className='lg:w-9/12 w-full mb-4 mx-auto lg:py-10 p-4 '>
+      <div className='lg:w-9/12 w-full mb-4 mx-auto mt-28'>
         <h1 className='text-2xl text-gray-700 font-semibold text-center'>Skills</h1>
         <p className="text-center text-md text-gray-500  mb-10">Kemampuan yang saya miliki</p>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>

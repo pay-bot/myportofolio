@@ -10,7 +10,8 @@ const about = () => {
         <title>About</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <div className="mt-10">
+      <div className="mt-28
+      ">
 
         <p className="text-center capitalize font-semibold text-gray-700 text-2xl">tentang</p>
         <p className="text-center mb-5 text-gray-500 text-md ">Profil singkat saya</p>
