@@ -8,7 +8,7 @@ export default function Nav({ dir }) {
   }
   const pickedDir = dirs[dir];
   return (
-    <div className="lg:flex items-center z-30 dark:bg-gray-800">
+    <div className="lg:w-9/12 w-11/12 lg:flex items-center z-30 dark:bg-gray-800">
       <ul className={classnames("flex my-6 capitalize lg:mx-auto mr-0", pickedDir)}>
         <Navitems href="/">home</Navitems>
         <Navitems href="/about">about</Navitems>
