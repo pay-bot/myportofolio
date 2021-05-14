@@ -24,7 +24,7 @@ export default function Navbar() {
           </div>
           <div className="w-6/12 lg:block hidden ">
 
-            <Nav dir="horizontal" scheme="dark" />
+            <Nav dir="horizontal" />
           </div>
           <div className="lg:w-3/12 w-full flex z-30">
             <button
@@ -69,10 +69,9 @@ export default function Navbar() {
           <div className="w-6/12 -ml-14 lg:-ml-0 md:-ml-52 lg:hidden text-right">
             <img src="/menu.svg" className="cursor-pointer inline-block mt-6 mr-5 w-8" onClick={() => setOffcanvas(true)} />
           </div>
-          <div className={classnames("fixed bg-white mt-3 h-full w-full py-10 pr-10 pl-5 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
+          <div className={classnames("fixed bg-white dark:bg-gray-800 mt-3 h-full w-full py-10 pr-10 pl-5 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
             <img src="/X.svg" className="cursor-pointer absolute top-3 right-5 w-8" onClick={() => setOffcanvas(false)} />
             <Nav
-              scheme="dark"
               dir="vertical"
             />
           </div>
