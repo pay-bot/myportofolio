@@ -7,6 +7,7 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+
       transformOrigin: {
         "0": "0%",
       },
@@ -80,6 +81,8 @@ module.exports = {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
+      arrowr: 'arrowr 3s ease-in-out infinite',
+      wiggle: 'wiggle 1s ease-in-out infinite',
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
@@ -384,6 +387,7 @@ module.exports = {
       '-full': '-100%',
     }),
     keyframes: {
+
       spin: {
         to: {
           transform: 'rotate(360deg)',
@@ -400,17 +404,16 @@ module.exports = {
           opacity: '.5',
         },
       },
-      bounce: {
-        '0%, 100%': {
-          transform: 'translateY(-25%)',
-          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
-        },
+
+      arrowr: {
+        '0%, 100%': { transform: 'translateX(0rem)' },
         '50%': {
-          transform: 'none',
-          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+          transform: 'translateX(2rem)'
         },
-      },
+      }
     },
+
+
     letterSpacing: {
       tighter: '-0.05em',
       tight: '-0.025em',

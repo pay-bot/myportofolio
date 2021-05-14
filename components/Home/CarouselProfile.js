@@ -21,49 +21,50 @@ export default function CarouselProfile(props) {
   };
 
   return (
-    <Carousel
-      swipeable={false}
-      draggable={false}
-      showDots={false}
-      responsive={responsive}
-      ssr={true} // means to render carousel on server-side.
-      infinite={true}
-      autoPlay={props.deviceType !== "mobile" ? true : false}
-      autoPlaySpeed={1000}
-      keyBoardControl={true}
-      customTransition="all 2"
-      transitionDuration={500}
-      containerClassName="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-      deviceType={props.deviceType}
-      dotListClassName="custom-dot-list-style"
-      itemClassName="carousel-item-padding-40-px"
-    >
-      <CarouselCard
-        image="/images/js.png"
-        judul="Javascript"
-      />
-      <CarouselCard
-        image="/images/css.png"
-        judul="css"
-      />
-      <CarouselCard
-        image="/images/next.svg"
-        judul="nextjs"
-      />
-      <CarouselCard
-        image="/images/nodejs.svg"
-        judul="nodejs"
-      />
-      <CarouselCard
-        image="/images/react.png"
-        judul="reactjs"
-      />
-      <CarouselCard
-        image="/images/tailwind.svg"
-        judul="tailwind"
-      />
-    </Carousel>
-
+    <>
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={false}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={props.deviceType !== "mobile" ? true : false}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="all 2"
+        transitionDuration={500}
+        containerClassName="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        deviceType={props.deviceType}
+        dotListClassName="custom-dot-list-style"
+        itemClassName="carousel-item-padding-40-px"
+      >
+        <CarouselCard
+          image="/images/js.png"
+          judul="Javascript"
+        />
+        <CarouselCard
+          image="/images/css.png"
+          judul="css"
+        />
+        <CarouselCard
+          image="/images/next.svg"
+          judul="nextjs"
+        />
+        <CarouselCard
+          image="/images/nodejs.svg"
+          judul="nodejs"
+        />
+        <CarouselCard
+          image="/images/react.png"
+          judul="reactjs"
+        />
+        <CarouselCard
+          image="/images/tailwind.svg"
+          judul="tailwind"
+        />
+      </Carousel>
+    </>
   )
 }

@@ -46,21 +46,21 @@ export default function Form() {
     <>
       <form onSubmit={onSubmit}>
         <label htmlFor="" className="dark:text-gray-300">Nama Anda</label>
-        <input className="border border-gray-500 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
+        <input className="border border-gray-500 bg-gray-50 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
           type='text'
           name='from_name'
           value={toSend.from_name}
           onChange={handleChange}
         />
         <label htmlFor="" className="dark:text-gray-300">Email Anda</label>
-        <input className="border border-gray-500 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
+        <input className="border border-gray-500 bg-gray-50  dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
           type='text'
           name='reply_to'
           value={toSend.reply_to}
           onChange={handleChange}
         />
         <label className="block dark:text-gray-300" htmlFor="">Pesan Anda</label>
-        <textarea className="border border-gray-500 dark:bg-gray-600 w-full dark:text-gray-400"
+        <textarea className="border border-gray-500 bg-gray-50  dark:bg-gray-600 w-full dark:text-gray-400"
           name="message"
           value={toSend.message}
           onChange={handleChange}
