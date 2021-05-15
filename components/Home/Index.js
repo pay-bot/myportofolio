@@ -2,7 +2,7 @@ import CarouselProfile from "./CarouselProfile"
 import Greeting from "./Greeting"
 import ProfileCard from "./ProfileCard";
 import SkillsTitle from "./SkillsTitle";
-import SoftSkills from "./SoftSkills";
+import Layanan from "./Layanan";
 
 export default function Index() {
   return (
@@ -17,11 +17,11 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="mb-10 p-5 bg-gray-200">
-        <SoftSkills />
+      <div className="mb-10 p-5 bg-gray-200 dark:bg-gray-800">
+        <Layanan />
       </div>
       <div className="flex flex-col w-9/12 mx-auto">
-        <SkillsTitle>Skills</SkillsTitle>
+        <SkillsTitle>Kemampuan saya</SkillsTitle>
         <CarouselProfile />
       </div>
 
