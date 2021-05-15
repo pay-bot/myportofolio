@@ -4,7 +4,7 @@ import ProfileCard from "./ProfileCard";
 import SkillsTitle from "./SkillsTitle";
 import Layanan from "./Layanan";
 
-export default function Index() {
+export default function Icndex() {
   return (
     <>
       <div className="lg:w-9/12 w-11/12 mx-auto px-4">

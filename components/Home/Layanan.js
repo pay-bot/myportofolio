@@ -8,9 +8,9 @@ export default function Layanan() {
     <>
       <div className="lg:w-9/12 w-11/12 mx-auto py-10">
         <LayananTitle>Layanan terbaik saya</LayananTitle>
-        <div className="flex flex-col shadow-xl dark:bg-gray-600 mx-5">
+        <div className="dark:shadow-2xl shadow-xl border-white mx-5">
+          <LayananCardTitle>Favorit</LayananCardTitle>
           <div className="w-full mx-auto flex lg:flex-row flex-col">
-            <LayananCardTitle>Favorit</LayananCardTitle>
             <LayananCard
               image="/images/next.svg"
               item="NextJS"
@@ -24,8 +24,8 @@ export default function Layanan() {
               "
             />
           </div>
+          <LayananCardTitle>Prinsip</LayananCardTitle>
           <div className="w-full mx-auto flex lg:flex-row flex-col">
-            <LayananCardTitle>Prinsip</LayananCardTitle>
 
             <LayananCard
               image="responsive.svg"
