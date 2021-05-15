@@ -8,7 +8,7 @@ export default function Layanan() {
     <>
       <div className="lg:w-9/12 w-11/12 mx-auto py-10">
         <LayananTitle>Layanan terbaik saya</LayananTitle>
-        <div className="dark:shadow-2xl shadow-xl border-white mx-5">
+        <div className="p-5">
           <LayananCardTitle>Favorit</LayananCardTitle>
           <div className="w-full mx-auto flex lg:flex-row flex-col">
             <LayananCard
