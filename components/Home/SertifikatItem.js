@@ -6,22 +6,10 @@ export default function SertifikatItem() {
     <>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
         <SertifikatCard
-          image="dipoles.png"
-          judul="dipoles"
-          deskripsi="aplikasi jasa poles lantai"
-          href="https://dipoles.vercel.app/"
-        />
-        <SertifikatCard
-          image="dipoles.png"
-          judul="dipoles"
-          deskripsi="aplikasi jasa poles lantai"
-          href=""
-        />
-        <SertifikatCard
-          image="dipoles.png"
-          judul="dipoles"
-          deskripsi="aplikasi jasa poles lantai"
-          href=""
+          image="javascript.jpg"
+          judul="Javascript"
+          deskripsi="JavaScript Ultimate Course"
+          href="https://www.udemy.com/share/1023hGAEIZcF5QTXUH/"
         />
       </div>
     </>
