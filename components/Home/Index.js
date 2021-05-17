@@ -21,7 +21,7 @@ export default function Index() {
       <div className="mb-10 p-5 bg-gray-200 dark:bg-gray-700">
         <Layanan />
       </div>
-      <div className="flex flex-col w-9/12 mx-auto p-5">
+      <div className="flex flex-col w-9/12 mx-auto lg:p-5 p-0">
         <SkillsTitle>Keterampilan saya</SkillsTitle>
         <CarouselItem />
       </div>

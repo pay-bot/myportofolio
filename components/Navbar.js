@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="fixed z-30 w-full h-[80px]  bg-white dark:bg-gray-900 shadow-xl">
         <div className="lg:w-9/12 w-11/12 flex mx-auto">
           <div className="w-3/12 my-auto z-30 ">
-            <Logo>FA</Logo>
+            <Logo href="/">FA</Logo>
           </div>
           <div className="w-6/12 lg:block hidden ">
 
@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="w-6/12 -ml-14 lg:-ml-0 md:-ml-52 lg:hidden text-right">
             <img src="/menu.svg" className="cursor-pointer inline-block mt-6 mr-5 w-8" onClick={() => setOffcanvas(true)} />
           </div>
-          <div className={classnames("fixed bg-white dark:bg-gray-800 mt-3 h-full w-full py-10 pl-10 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
+          <div className={classnames("fixed bg-white dark:bg-gray-900 mt-3 h-full w-full py-10 pl-10 md:block transition-all", offcanvas ? "right-0" : "-right-full")}>
             <img src="/X.svg" className="cursor-pointer absolute top-3 right-10 w-8" onClick={() => setOffcanvas(false)} />
             <Nav
               dir="vertical"

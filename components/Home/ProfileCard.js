@@ -2,13 +2,13 @@ export default function ProfileCard() {
   return (
     <>
       <div className="w-4/12 mx-auto">
-        <div className="border-1 m-5 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
+        <div className="border-1 lg:m-5 mt-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
 
           <img src="portofolio.png" className="rounded-full p-1" />
 
         </div>
       </div>
-      <div className="md:w-8/12 w-full my-5">
+      <div className="md:w-8/12 w-full my-3">
         <p className="text-center text-lg font-semibold dark:text-gray-300">Fahri Alpiansyah</p>
         <p className="text-center text-sm dark:text-gray-300">Front-End</p>
         <p className="text-center text-sm dark:text-gray-300">Developer/Designer</p>

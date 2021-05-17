@@ -5,7 +5,7 @@ import ProjectDesc from "./ProjectDesc"
 export default function Index() {
   return (
     <>
-      <div className="lg:w-9/12 w-11/12 mx-auto mt-28 px-8">
+      <div className="lg:w-9/12 w-11/12 mx-auto mt-28 px-8 mb-10">
         <ProjectTitle>Project</ProjectTitle>
         <ProjectDesc>Project yang telaha saya kerjakan</ProjectDesc>
         <ProjectItem />
