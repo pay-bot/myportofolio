@@ -38,7 +38,7 @@ export default function CarouselProfile(props) {
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         deviceType={props.deviceType}
         dotListClassName="custom-dot-list-style"
-        itemClassName="carousel-item-padding-40-px"
+      // itemClassName="carousel-item-padding-40-px"
       >
         <CarouselCard
           image="/images/js.png"

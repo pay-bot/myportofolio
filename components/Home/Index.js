@@ -1,4 +1,4 @@
-import CarouselProfile from "./CarouselProfile"
+import CarouselItem from "./CarouselItem"
 import Greeting from "./Greeting"
 import ProfileCard from "./ProfileCard";
 import SkillsTitle from "./SkillsTitle";
@@ -21,12 +21,12 @@ export default function Index() {
       <div className="mb-10 p-5 bg-gray-200 dark:bg-gray-700">
         <Layanan />
       </div>
-      <div className="flex flex-col w-9/12 mx-auto">
-        <SkillsTitle>Kemampuan saya</SkillsTitle>
-        <CarouselProfile />
+      <div className="flex flex-col w-9/12 mx-auto p-5">
+        <SkillsTitle>Keterampilan saya</SkillsTitle>
+        <CarouselItem />
       </div>
-      <div className="lg:w-9/12 w-11/12 mx-auto mb-10">
-        <p className="">Sertifikat</p>
+      <div className="lg:w-9/12 w-11/12 mx-auto mb-10 p-5">
+        <p className="mt-0 mb-5 font-semibbold md:text-4xl text-3xl dark:text-gray-200 text-center">Sertifikat</p>
         <SertifikatItem />
       </div>
 

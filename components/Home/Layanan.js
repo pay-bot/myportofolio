@@ -9,34 +9,34 @@ export default function Layanan() {
       <div className="lg:w-9/12 w-11/12 mx-auto py-10">
         <LayananTitle>Layanan terbaik saya</LayananTitle>
         <div className="p-5">
-          <LayananCardTitle>Favorit</LayananCardTitle>
+          <LayananCardTitle>Favorite</LayananCardTitle>
           <div className="w-full mx-auto flex lg:flex-row flex-col">
             <LayananCard
               image="/images/next.svg"
               item="NextJS"
-              description="Next.js adalah sebuah React framework yang dibuat untuk mengatasi masalah client-side rendering yang dimiliki React.
+              description="NextJS membantu saya untuk menciptakan aplikasi yang powerfull dan mudah saya kontrol dengan segala fitur yang dimilikinya.
               "
             />
             <LayananCard
               image="/images/tailwind.svg"
               item="Tailwind"
-              description="Tailwind CSS merupakan framework yang bersifat utility-first untuk membangun desain antarmuka khusus dengan cepat..
+              description="Tailwind CSS membantu saya membuat kit komponen yang mudah untuk saya custom.
               "
             />
           </div>
-          <LayananCardTitle>Prinsip</LayananCardTitle>
+          <LayananCardTitle>Disiplin</LayananCardTitle>
           <div className="w-full mx-auto flex lg:flex-row flex-col">
 
             <LayananCard
               image="responsive.svg"
               item="Responsive"
-              description="Responsive web design adalah sebuah metode bagi web designer untuk membuat suatu layout website yang dapat menyesuaikan diri sesuai dengan ukuran layar pengguna.
+              description="Membuat aplikasi responsive adalah suatu kewajiban untuk saya, agar pengguna dapat menikmati aplikasi saya di berbagai platform.
               "
             />
             <LayananCard
               image="cleancode.png"
               item="Clean Code"
-              description="Clean Code adalah kode di dalam aplikasi yang formatnya benar dan disusun dengan baik dan rapi agar kode programnya mudah dibaca,dimengerti,ditelusuri oleh siapapun
+              description="Membuat kode program yang bersih adalah ambisi saya, dengan kode yang bersih saya dapat dengan mudah menemukan bug pada aplikasi saya.
               "
             />
           </div>

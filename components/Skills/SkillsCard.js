@@ -1,8 +1,8 @@
 export default function SkillsCard({ image, alt, title, desc, descspan }) {
   return (
     <>
-      <div className='bg-white dark:bg-gray-600 shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
-        <div className='mb-3'>
+      <div className='bg-white dark:bg-gray-700 shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+        <div className='h-full'>
           <img className='w-24' src={image} alt={alt} />
         </div>
         <div className='flex flex-col items-center'>

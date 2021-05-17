@@ -7,8 +7,8 @@ export default function Index() {
   return (
     <>
       <div className='lg:w-9/12 w-full mb-4 mx-auto mt-28 px-4'>
-        <SkillsTitle>Kemampuan</SkillsTitle>
-        <SkillsDesc>Kemapuan yang saya miliki</SkillsDesc>
+        <SkillsTitle>Keterampilan</SkillsTitle>
+        <SkillsDesc>Keterampilan yang saya miliki</SkillsDesc>
         <SkillsItem />
       </div>
     </>
