@@ -1,11 +1,10 @@
-import Wrapper from '../layouts/Wrapper'
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
 import Index from '../components/Project/Index'
 
 export default function project() {
   return (
-    <Wrapper>
+    <>
       <Head>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
         <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
@@ -13,7 +12,7 @@ export default function project() {
         <title>{SEO_DATA.title + ' - Project'}</title>
       </Head>
       <Index />
-    </Wrapper>
+    </>
   )
 }
 

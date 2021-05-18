@@ -1,10 +1,16 @@
 
 import 'tailwindcss/tailwind.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import "../assets/app.css";
+import Wrapper from '../layouts/Wrapper';
 
 
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Wrapper>
+        <Component {...pageProps} />;
+  </Wrapper>
+    </>
+  )
 }
