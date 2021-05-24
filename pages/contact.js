@@ -1,5 +1,4 @@
 import React from 'react'
-import Wrapper from '../layouts/Wrapper'
 import Form from '../components/Form';
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
@@ -9,8 +8,6 @@ const contact = () => {
 
   return (
     <>
-
-      <Wrapper>
         <Head>
           <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
           <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
@@ -34,7 +31,6 @@ const contact = () => {
 
           </div>
         </div>
-      </Wrapper >
     </>
   )
 }
