@@ -12,17 +12,12 @@ export default function ProjectItem() {
           href="https://dipoles.vercel.app/"
         />
         <ProjectCard
-          image="dipoles.png"
-          judul="dipoles"
-          deskripsi="aplikasi jasa poles lantai"
-          href=""
+          image="myporto.png"
+          judul="MyPortofolio"
+          deskripsi="aplikasi Portofolio"
+          href="https://myportofolio-vert.vercel.app/"
         />
-        <ProjectCard
-          image="dipoles.png"
-          judul="dipoles"
-          deskripsi="aplikasi jasa poles lantai"
-          href=""
-        />
+
       </div>
     </>
   )
