@@ -4,18 +4,25 @@ import ProfileCard from "./ProfileCard";
 import SkillsTitle from "./SkillsTitle";
 import Layanan from "./Layanan";
 import SertifikatItem from "./SertifikatItem";
+import { motion } from "framer-motion"
 
-export default function Index() {
+export default function Home() {
   return (
     <>
       <div className="lg:w-9/12 w-11/12 mx-auto px-4">
         <div className="flex md:flex-row flex-col items-center justify-center h-screen">
-          <div className="md:w-6/12 w-full mx-auto mb-5">
+          <motion.div className="md:w-6/12 w-full mx-auto mb-5"
+            initial={{ x: -250 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}>
             <Greeting />
-          </div>
-          <div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl dark:bg-gray-600 ">
+          </motion.div>
+          <motion.div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl dark:bg-gray-600 "
+            initial={{ x: 250 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}>
             <ProfileCard />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="mb-10 p-5 bg-gray-200 dark:bg-gray-700">

@@ -3,10 +3,14 @@ import { useState } from 'react';
 import { send } from 'emailjs-com';
 import swal from 'sweetalert';
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/router"
 
 
 
 export default function Form() {
+
+  const router = useRouter()
+
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
@@ -34,6 +38,7 @@ export default function Form() {
       .catch((err) => {
         console.log('FAILED...', err);
       });
+    router.push('/');
   };
 
 

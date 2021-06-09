@@ -1,11 +1,11 @@
 import "react-multi-carousel/lib/styles.css";
-import Index from "../components/Home/Index"
+import Home from "../components/Home/Home"
 
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
 
 
-export default function Home() {
+export default function index() {
   return (
     <>
       <Head>
@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:title" content={'Home'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - Home'}</title>
       </Head>
-      <Index />
+      <Home />
     </>
   )
 }
