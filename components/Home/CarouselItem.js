@@ -50,10 +50,10 @@ export default function CarouselProfile(props) {
         />
         <CarouselCard
           image="/images/next.svg"
-          judul="nextjs"
+          judul="nextJS"
         />
         <CarouselCard
-          image="/images/nodejs.svg"
+          image="/images/nodeJS.svg"
           judul="nodejs"
         />
         <CarouselCard

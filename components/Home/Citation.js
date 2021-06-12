@@ -52,10 +52,10 @@ export default function Citation({ citation }) {
               duration: 1.2,
             }}
           >
-            Jika Kamu tidak sanggup menahan lelahnya belajar maka kamu harus sanggup menahan perihnya kebodohan
+            "Jika Kamu tidak sanggup menahan lelahnya belajar maka kamu harus sanggup menahan perihnya kebodohan"
           </motion.p>
           <motion.p
-            className="text-base md:text-right dark:text-white text-black-700"
+            className="text-base text-right   dark:text-white text-black-700"
             initial="initial"
             animate="visible"
             variants={textVariants}
