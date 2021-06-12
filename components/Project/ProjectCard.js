@@ -5,7 +5,7 @@ export default function ProjectCard({ href, image, judul, deskripsi, deskripsiCa
     <>
       <div className="flex mb-20">
         <div className="lg:w-7/12 lg:relative absolute lg:mr-0 mr-3"><Link href={href}><a>
-          <img src={image} alt="" className=" rounded shadow-2xl h-full" />
+          <img src={image} alt="" className=" rounded shadow-2xl" />
         </a></Link>
         </div>
         <div className="lg:w-5/12 w-full -z-30 relative lg:mt-10 mt-0 lg:px-0 px-3  lg:bg-transparent bg-gray-200 bg-opacity-10">
