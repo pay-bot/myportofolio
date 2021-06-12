@@ -33,6 +33,7 @@
     "react-hook-form": "^7.4.2",
     "react-icon": "^1.0.0",
     "react-icons": "^4.2.0",
+    "react-intersection-observer": "^8.32.0",
     "react-multi-carousel": "^2.6.2",
     "react-pdf": "^5.2.0",
     "react-responsive-carousel": "^3.2.18",

@@ -1,10 +1,30 @@
+import { motion } from "framer-motion"
+
 export default function ProfileCard() {
   return (
     <>
       <div className="w-4/12 mx-auto">
         <div className="border-1 lg:m-5 mt-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
 
-          <img src="portofolio.png" className="rounded-full p-1" />
+          <motion.img src="portofolio.png" className="rounded-full p-1"
+            variants={{
+              hidden: {
+                scale: 0,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+              },
+            }}
+            transition={{
+              damping: 5,
+              mass: 1,
+              delay: 0.2,
+            }}
+            initial="hidden"
+            animate="visible"
+          />
 
         </div>
       </div>

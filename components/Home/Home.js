@@ -5,22 +5,51 @@ import SkillsTitle from "./SkillsTitle";
 import Layanan from "./Layanan";
 import SertifikatItem from "./SertifikatItem";
 import { motion } from "framer-motion"
+import Citation from "./Citation";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
+  const container = {
+    hidden: {
+      opacity: 0,
+
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerDirection: 1,
+        duration: 1.5
+      },
+      y: -250,
+    },
+  };
+
+  const [citation, setCitation] = useState(true);
+
+  useEffect(() => {
+    const ids = [
+      setTimeout(() => setCitation(false), 4800),
+    ];
+
+    return () => ids.forEach((id) => clearTimeout(id));
+  }, [setCitation]);
+
+
   return (
     <>
-      <div className="lg:w-9/12 w-11/12 mx-auto px-4">
+      <div className="lg:w-9/12 w-11/12 mx-auto px-4 relative">
+        <Citation citation={citation} />
         <div className="flex md:flex-row flex-col items-center justify-center h-screen">
           <motion.div className="md:w-6/12 w-full mx-auto mb-5"
-            initial={{ x: -250 }}
+            initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
-            transition={{ duration: 1.5 }}>
+            transition={{ duration: 2, delay: 4 }}>
             <Greeting />
           </motion.div>
           <motion.div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl dark:bg-gray-600 "
-            initial={{ x: 250 }}
+            initial={{ x: "100vw" }}
             animate={{ x: 0 }}
-            transition={{ duration: 1.5 }}>
+            transition={{ duration: 2, delay: 4 }}>
             <ProfileCard />
           </motion.div>
         </div>
