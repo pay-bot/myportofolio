@@ -37,19 +37,19 @@ export default function Home() {
 
   return (
     <>
+      <Citation citation={citation} />
       <div className="lg:w-9/12 w-11/12 mx-auto px-4 relative">
-        <Citation citation={citation} />
         <div className="flex md:flex-row flex-col items-center justify-center h-screen">
           <motion.div className="md:w-6/12 w-full mx-auto mb-5"
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 2, delay: 4 }}>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 5 }}>
             <Greeting />
           </motion.div>
           <motion.div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl dark:bg-gray-600 "
-            initial={{ x: "100vw" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 2, delay: 4 }}>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 5 }}>
             <ProfileCard />
           </motion.div>
         </div>
