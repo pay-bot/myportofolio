@@ -1,8 +1,8 @@
 export default function AboutCard() {
   return (
     <>
-      <div className="lg:w-4/12 w-full lg:m-3 mx-auto ">
-        <img src="portofolio.png" className="h-full rounded-md " alt="" />
+      <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto ">
+        <img src="portofolio.png" className="h-full rounded-md md:rounded-full " alt="" />
       </div>
       <div className="lg:w-8/12 w-full lg:m-3 mx-auto">
         <div className="mx-auto lg:mt-0 mt-4 ">
