@@ -13,7 +13,7 @@ export default function ProjectItem() {
         href="https://dipoles.vercel.app/"
       /> */}
       <ProjectCard
-        image="putih.jpg"
+        image="myporto.png"
         judul="MyPortofolio"
         deskripsi="aplikasi Portofolio"
         deskripsiCard="Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating."

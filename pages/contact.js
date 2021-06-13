@@ -23,7 +23,7 @@ const contact = () => {
           <div className="flex text-black text-md font-semibold dark:text-gray-300"><img src="phoneout.svg" className="w-6 mx-2 " />Phone</div>
           <p className="ml-10 mb-7 dark:text-gray-400 ">08984629140</p>
           <div className="flex text-black text-md font-semibold dark:text-gray-300"><img src="mail.svg" className="w-6 mx-2 dark:text-gray-300 " />Mail</div>
-          <p className="ml-10 mb-7 dark:text-gray-400 ">afahri@yahoo.com</p>
+          <p className="ml-10 mb-7 dark:text-gray-400 ">afahri22@yahoo.com</p>
         </div>
 
         <div className="lg:w-6/12 w-11/12 flex flex-col h-full mx-auto">
