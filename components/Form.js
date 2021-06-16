@@ -10,6 +10,7 @@ import { useRouter } from "next/router"
 export default function Form() {
 
   const router = useRouter()
+  const { handleSubmit, errors, reset } = useForm()
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -54,6 +55,7 @@ export default function Form() {
         <input className="border border-gray-500 bg-gray-50 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
           type='text'
           name='from_name'
+          required="true"
           value={toSend.from_name}
           onChange={handleChange}
         />
@@ -61,6 +63,7 @@ export default function Form() {
         <input className="border border-gray-500 bg-gray-50  dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
           type='text'
           name='reply_to'
+          required="true"
           value={toSend.reply_to}
           onChange={handleChange}
         />
@@ -68,6 +71,7 @@ export default function Form() {
         <textarea className="border border-gray-500 bg-gray-50  dark:bg-gray-600 w-full dark:text-gray-400"
           name="message"
           value={toSend.message}
+          required="true"
           onChange={handleChange}
           id=""
           cols=""

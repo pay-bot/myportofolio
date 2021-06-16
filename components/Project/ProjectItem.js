@@ -11,7 +11,7 @@ export default function ProjectItem() {
         judul="MyPortofolio"
         deskripsi="aplikasi Portofolio"
         deskripsiCard="Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating."
-        tech="NextJS      Tailwind"
+        techImages="clean-code.svg"
         href="https://myportofolio-vert.vercel.app/"
       />
       <ProjectCardRight

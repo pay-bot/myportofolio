@@ -23,19 +23,19 @@ export default function CarouselProfile(props) {
   return (
     <>
       <Carousel
-        swipeable={false}
-        draggable={false}
+        swipeable={true}
+        draggable={true}
         showDots={false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={props.deviceType !== "mobile" ? true : false}
-        autoPlaySpeed={1000}
+        autoPlay={false}
+        autoPlaySpeed={5000}
         keyBoardControl={true}
         customTransition="all 2"
-        transitionDuration={500}
+        transitionDuration={5000}
         containerClassName="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
         deviceType={props.deviceType}
         dotListClassName="custom-dot-list-style"
       // itemClassName="carousel-item-padding-40-px"

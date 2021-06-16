@@ -4,7 +4,7 @@ export default function AboutCard() {
       <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto ">
         <img src="portofolio.png" className="h-full rounded-md md:rounded-full " alt="" />
       </div>
-      <div className="lg:w-8/12 w-full lg:m-3 mx-auto">
+      <div className="lg:w-8/12 w-full lg:m-3 mx-auto ">
         <div className="mx-auto lg:mt-0 mt-4 ">
           <p className="pb-5 text-gray-800 dark:text-gray-300 text-justify">
             Saya adalah Web Develover yang fokus kepada bahasa pemrograman JavaScript. saya menggunakan RactJS sebagai library JavaScript dan menggunakan NextJS sebagai framework. saya sangat senang menggunakan NextJS dan Tailwind CSS.  </p>
