@@ -30,10 +30,10 @@ export default function CarouselProfile(props) {
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={false}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={1}
         keyBoardControl={true}
         customTransition="all 2"
-        transitionDuration={5000}
+        transitionDuration={1}
         containerClassName="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         deviceType={props.deviceType}
