@@ -23,19 +23,19 @@ export default function CarouselProfile(props) {
   return (
     <>
       <Carousel
-        swipeable={true}
-        draggable={true}
-        showDots={["mobile", "tablet"]}
+        swipeable={false}
+        draggable={false}
+        showDots={false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={false}
-        autoPlaySpeed={1}
+        autoPlay={props.deviceType !== "mobile" ? true : false}
+        autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all 2"
-        transitionDuration={1}
+        transitionDuration={500}
         containerClassName="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         deviceType={props.deviceType}
         dotListClassName="custom-dot-list-style"
       // itemClassName="carousel-item-padding-40-px"
@@ -53,8 +53,8 @@ export default function CarouselProfile(props) {
           judul="nextJS"
         />
         <CarouselCard
-          image="/images/nodeJS.svg"
-          judul="nodejs"
+          image="/images/nodejs.svg"
+          judul="NodeJS"
         />
         <CarouselCard
           image="/images/react.png"
