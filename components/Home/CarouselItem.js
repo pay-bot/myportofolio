@@ -25,7 +25,7 @@ export default function CarouselProfile(props) {
       <Carousel
         swipeable={true}
         draggable={true}
-        showDots={false}
+        showDots={["mobile", "tablet"]}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
