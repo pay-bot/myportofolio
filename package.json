@@ -21,6 +21,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@svgr/webpack": "^5.5.0",
     "build": "^0.1.4",
+    "clsx": "^1.1.1",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
@@ -39,6 +40,8 @@
     "react-responsive-carousel": "^3.2.18",
     "sweetalert": "^2.1.2",
     "tailwind-darkmode-toggle": "^1.0.5",
+    "tailwindcss-box-shadow": "^1.0.0",
+    "tailwindcss-neumorphism": "^0.1.0",
     "vite": "^2.3.0"
   },
   "devDependencies": {

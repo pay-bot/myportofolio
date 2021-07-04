@@ -46,7 +46,7 @@ export default function Home() {
             transition={{ duration: 2, delay: 5 }}>
             <Greeting />
           </motion.div>
-          <motion.div className="md:w-6/12 w-full flex md:flex-row flex-col shadow-xl rounded-xl dark:bg-gray-600 "
+          <motion.div className="md:w-6/12 w-full flex md:flex-row flex-col rounded-xl dark:bg-gray-600 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 5 }}>
