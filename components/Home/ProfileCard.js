@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Typist from 'react-typist';
 
 export default function ProfileCard() {
   return (
@@ -36,7 +37,9 @@ export default function ProfileCard() {
         <div className="md:w-8/12 w-full my-3">
           <p className="text-center text-lg font-semibold dark:text-gray-300">Fahri Alpiansyah</p>
           <p className="text-center text-sm dark:text-gray-300">Front-End</p>
+          <Typist>
           <p className="text-center text-sm dark:text-gray-300">Developer/Designer</p>
+          </Typist>
           <div className="border-2 border-gray-400 bg-gray-400 h-1 my-3 lg:ml-0 ml-3 mr-5"></div>
           <div className="flex justify-center mb-3">
             <img src="facebook.svg" alt="" className="w-5 mx-1" />

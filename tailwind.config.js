@@ -865,9 +865,9 @@ module.exports = {
     width: ['responsive'],
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
-   
+
   },
-  
+
   corePlugins: {
     boxShadow: false,
   },
