@@ -1,14 +1,12 @@
 import { motion } from "framer-motion"
 import clsx from "clsx";
 import styles from "./styles.module.css";
-import Typist from 'react-typist';
+import Typewriter from 'typewriter-effect';
 
 export default function ProfileCard() {
   return (
     <>
-      <div className={clsx(
-        styles.description && "flex"
-      )}>
+      <div className="shadow-2xl">
         <div className="w-4/12 mx-auto">
           <div className="border-1 lg:m-5 mt-2 rounded-full bg-gradient-to-r from-indigo-600 to-gray-800 ">
 
@@ -37,9 +35,7 @@ export default function ProfileCard() {
         <div className="md:w-8/12 w-full my-3">
           <p className="text-center text-lg font-semibold dark:text-gray-300">Fahri Alpiansyah</p>
           <p className="text-center text-sm dark:text-gray-300">Front-End</p>
-          <Typist>
-          <p className="text-center text-sm dark:text-gray-300">Developer/Designer</p>
-          </Typist>
+         
           <div className="border-2 border-gray-400 bg-gray-400 h-1 my-3 lg:ml-0 ml-3 mr-5"></div>
           <div className="flex justify-center mb-3">
             <img src="facebook.svg" alt="" className="w-5 mx-1" />

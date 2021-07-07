@@ -17,7 +17,7 @@ export default function Navbar() {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <div className="fixed z-30 w-full h-[80px]  bg-white dark:bg-gray-900 shadow-xl">
+      <div className="fixed z-30 w-full h-[80px]  bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 shadow-xl">
         <div className="lg:w-9/12 w-11/12 flex mx-auto">
           <div className="w-3/12 my-auto z-30 ">
             <Logo href="/">FA</Logo>

@@ -8,7 +8,7 @@ export default function Index() {
       <div className="mt-28 px-8">
         <AboutTitle>Tentang</AboutTitle>
         <AboutDesc>Profil singkat saya</AboutDesc>
-        <div className="lg:w-9/12 w-11/12 dark:text-gray-300 shadow-xl dark:bg-gray-700 lg:h-[350px] h-full mx-auto flex lg:flex-row flex-col lg:mb-0 p-3 mb-5">
+        <div className="lg:w-9/12 w-11/12 dark:text-gray-300 shadow-2xl dark:bg-gray-700 lg:h-[350px] h-full mx-auto flex lg:flex-row flex-col lg:mb-0 p-3 mb-5">
           <AboutCard />
         </div>
       </div>
