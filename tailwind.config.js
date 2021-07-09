@@ -6,6 +6,10 @@ module.exports = {
   presets: [],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'blur(20px)',
+    },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
