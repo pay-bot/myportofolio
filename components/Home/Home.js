@@ -38,7 +38,6 @@ export default function Home() {
   return (
     <>
       <Citation citation={citation} />
-        <div className="h-screen bg-gradient-conic-t from-gray-900 via-gray-100 to-gray-900 dark:bg-gradient-to-r dark:from-blue-gray-900 dark:via-purple-900 dark:to-blue-gray-900">
       <div className="lg:w-9/12 w-11/12 flex md:flex-row flex-col my-auto h-screen items-center justify-center mx-auto px-4 ">
           <motion.div className="md:w-6/12 w-full mx-auto mb-5"
             initial={{ opacity: 0 }}
@@ -52,7 +51,6 @@ export default function Home() {
             transition={{ duration: 2, delay: 5 }}>
           </motion.div>
         </div>
-      </div>
       <div className="mb-10 p-5 bg-gray-200 dark:bg-gradient-to-r dark:from-blue-gray-800 dark:via-purple-800 dark:to-blue-gray-800">
         <Layanan />
       </div>

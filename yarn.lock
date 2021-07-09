@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@alexcarpenter/tailwindcss-aria@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@alexcarpenter/tailwindcss-aria/-/tailwindcss-aria-0.1.1.tgz#3609afb3ffcacf3b9598560c8476babd543116de"
-  integrity sha512-vWCpdoSytV5hLAI/kQCnEnWa/OU3i0CHN5GCc1TQSEt+iNxLwJj+jOjqdVaO1EKjanhDTVYW4oE9FcmzVNWLZA==
-
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"

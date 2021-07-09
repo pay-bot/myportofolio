@@ -902,6 +902,5 @@ module.exports = {
 
 
   plugins: [
-    require('@alexcarpenter/tailwindcss-aria'),
   ],
 }
