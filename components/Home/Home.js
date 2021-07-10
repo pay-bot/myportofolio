@@ -47,19 +47,17 @@ export default function Home() {
           transition={{ duration: 2, delay: 5 }}>
           <Greeting />
         </motion.div>
-        <motion.div className="md:w-6/12 w-full  flex md:flex-row flex-col rounded-full  "
+        <motion.div className="md:w-6/12  relative w-full mx-auto flex md:flex-row justify-center flex-col"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 5 }}>
-            <CustomCard
-                effectColor="#C780FF" // required
-                color="#14AEFF" // default color is white
-                blur={10} // default blur value is 10px
-                borderRadius={0} // default border radius value is 10px
-            >
-                <h1>Hello</h1>
-                <p>This is an example</p>
-            </CustomCard>
+          <div className="rounded-full relative h-[400px] w-[400px] px-5 border-4 border-green-500">
+            <img src="mongodb.svg" alt="" className="ml-4 flex absolute  w-20 h-20 rounded-full p-2 border glassmorphism-25" />
+            <img src="expressjs.svg" alt="" className="right-8 flex absolute  w-20 h-20 rounded-full p-2 border glassmorphism-25" />
+            <img src="react-2.svg" alt="" className="-ml-14 flex absolute  w-20 h-20 rounded-full p-2 mt-52 border glassmorphism-25" />
+            <img src="node-js.svg" alt="" className="-right-8 flex absolute  w-20 h-20 rounded-full p-2 mt-52 border glassmorphism-25" />
+            <img src="fix porto.png" alt="" className=" absolute h-[500px]" />
+          </div>
         </motion.div>
       </div>
       <div className="mb-10 p-5 bg-gradient-conic-t from-gray-900 via-gray-100 to-gray-900 dark:bg-gradient-to-r dark:from-blue-gray-800 dark:via-blue-800 dark:to-blue-gray-800 ">
