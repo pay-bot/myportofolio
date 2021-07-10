@@ -415,6 +415,13 @@ module.exports = {
       '-full': '-100%',
     }),
     keyframes: {
+      wiggle: {
+
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+
+        '50%': { transform: 'rotate(3deg)' },
+
+      },
 
       spin: {
         to: {
@@ -895,7 +902,10 @@ module.exports = {
     zIndex: ['responsive', 'focus-within', 'focus'],
     extend: {
       // ...
+      animation: {
 
+        wiggle: 'wiggle 1s ease-in-out infinite',
+       },
       boxShadow: ['active'],
     }
   },
