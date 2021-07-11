@@ -4,11 +4,11 @@ import classnames from "classnames";
 export default function Nav({ dir }) {
   const dirs = {
     horizontal: "justify-around space-x-10",
-    vertical: "flex-col space-y-6"
+    vertical: "flex-col space-y-6 z-50"
   }
   const pickedDir = dirs[dir];
   return (
-    <div className="lg:flex items-center z-30 dark:bg-gradient-to-r dark:from-blue-gray-900 dark:via-purple-900 dark:to-blue-gray-900">
+    <div className="lg:flex items-center z-50 dark:bg-gradient-to-r dark:from-blue-gray-900 dark:via-purple-900 dark:to-blue-gray-900">
       <ul className={classnames("flex my-6 capitalize lg:mx-auto mr-0", pickedDir)}>
         <Navitems href="/">home</Navitems>
         <Navitems href="/about">about</Navitems>

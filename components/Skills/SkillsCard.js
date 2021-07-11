@@ -1,7 +1,7 @@
 export default function SkillsCard({ image, alt, title, desc, descspan }) {
   return (
     <>
-      <div className='dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-md p-6 box-border flex flex-col items-center m-3 justify-center'>
+      <div className='dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-md p-6 flex flex-col items-center m-2 justify-center'>
         <div className='h-full'>
           <img className='w-24' src={image} alt={alt} />
         </div>
