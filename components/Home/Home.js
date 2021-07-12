@@ -12,43 +12,27 @@ import '@tsamantanis/react-glassmorphism/dist/index.css'
 import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0.2,
-  });
-  const animation = useAnimation();
-
-  const container = {
-    hidden: {
-      opacity: 0,
-
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerDirection: 1,
-        duration: 1.5
-      },
-      y: -250,
-    },
-  };
-
+  
   const [citation, setCitation] = useState(true);
-
+  
   useEffect(() => {
     const ids = [
       setTimeout(() => setCitation(false), 4800),
     ];
-
+    
     return () => ids.forEach((id) => clearTimeout(id));
   }, [setCitation]);
+
+  const { ref, inView} = useInView({
+    threshold: 0,
+  });
+  const animation = useAnimation();
 
   useEffect(() => {
 
     if (inView) {
       animation.start({
         y: 0,
-        opacity: 1,
         transition: {
           y: {duration: 2,stiffness: 1000, velocity: -100 }
         
@@ -58,13 +42,11 @@ export default function Home() {
     if (!inView) {
       animation.start({
         y: 50,
-        opacity: 0,
         transition: {
           y: { stiffness: 1000 }}})
     }
   },
     [inView]);
-
 
   return (
     <>
