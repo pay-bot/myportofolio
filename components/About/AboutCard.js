@@ -26,7 +26,7 @@ export default function AboutCard() {
               </div>
             </div>
           </div>
-          <div className="flex justify-around md:-mt-10 mt-5">
+          <div className="flex justify-around lg:-mt-5 md:mt-5 mt-5">
             <Link href="https://github.com/pay-bot"><a className=""><img src="github.svg" alt="" className="w-20" /></a></Link>
             <img src="facebook.svg" alt="" className="w-20" />
             <img src="instagram-text.svg" alt="" className="w-20" />

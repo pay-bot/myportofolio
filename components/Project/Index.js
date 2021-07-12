@@ -7,7 +7,7 @@ export default function Index() {
     <>
       <div className="lg:w-9/12 w-11/12 mx-auto mt-28 lg:px-5 px-0 mb-10">
         <ProjectTitle>Project</ProjectTitle>
-        <ProjectDesc>Project yang telaha saya kerjakan</ProjectDesc>
+        <ProjectDesc>Project yang telah saya kerjakan</ProjectDesc>
         <ProjectItem />
       </div>
     </>

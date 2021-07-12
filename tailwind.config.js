@@ -922,7 +922,7 @@ module.exports = {
       animation: {
 
         wiggle: 'wiggle 1s ease-in-out infinite',
-       },
+      },
       boxShadow: ['active'],
     }
   },

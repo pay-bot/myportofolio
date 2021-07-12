@@ -52,7 +52,7 @@ export default function Form() {
     <>
       <form onSubmit={onSubmit}>
         <label htmlFor="" className="dark:text-gray-300">Nama Anda</label>
-        <input className="border border-gray-500 bg-gray-50 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
+        <input className="focus:px-3 border border-gray-500 bg-gray-50 dark:bg-gray-600 rounded py-1 w-full dark:text-gray-400"
           type='text'
           name='from_name'
           required="true"
