@@ -8,7 +8,7 @@ export default function Hero() {
     <>
 
 
-      <div className="lg:w-9/12 w-11/12 flex md:flex-row flex-col my-auto lg:h-screen h-full items-center justify-center mx-auto px-4 lg:mt-0 mt-24 overflow-hidden lg:-mb-2 mb-[88px]  ">
+      <div className="lg:w-9/12 w-11/12 flex md:flex-row flex-col my-auto lg:h-screen h-full items-center justify-center mx-auto px-4 lg:mt-0 mt-24 lg:overflow-hidden lg:-mb-2 mb-[88px]  ">
         <motion.div className="md:w-6/12 w-full mx-auto mb-5 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
