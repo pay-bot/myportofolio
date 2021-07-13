@@ -3,7 +3,7 @@ import AboutDesc from "./AboutDesc"
 import AboutTitle from "./AboutTitle"
 import { motion } from "framer-motion"
 
-export default function Index() {
+export default function About() {
   return (
     <>
       <motion.div className="mt-28 md:px-8 px-0"

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
-import Index from '../components/About/Index'
+import About from '../components/About/About'
 
 export default function about() {
   return (
@@ -13,7 +13,7 @@ export default function about() {
         <meta property="og:title" content={'About'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - About'}</title>
       </Head>
-      <Index />
+      <About />
     </>
   )
 }

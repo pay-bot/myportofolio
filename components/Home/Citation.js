@@ -1,8 +1,9 @@
 
 import { motion } from "framer-motion";
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
-export default function Citation({ citation }) {
+
+export default function Citation() {
   const textVariants = {
     initial: {
       opacity: 0,
@@ -11,6 +12,14 @@ export default function Citation({ citation }) {
       opacity: 1,
     },
   };
+
+  const [citation, setCitation] = useState(true);
+  useEffect(() => {
+    const ids = [
+      setTimeout(() => setCitation(false), 4800),
+    ];
+    return () => ids.forEach((id) => clearTimeout(id));
+  }, [setCitation]);
   return (
     <>
       <motion.div
