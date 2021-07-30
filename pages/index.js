@@ -3,6 +3,7 @@ import Home from "../components/Home/Home"
 
 import Head from 'next/head'
 import SEO_DATA from '../components/seo'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 
 export default function index() {
@@ -17,4 +18,13 @@ export default function index() {
       <Home />
     </>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'footer'])),
+      // Will be passed to the page component as props
+    },
+  };
 }

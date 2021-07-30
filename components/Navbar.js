@@ -3,6 +3,8 @@ import Nav from "./Nav";
 import { useState, useEffect } from 'react';
 import useDarkMode from "../hooks/useDarkMode";
 import classnames from "classnames";
+import en from '../locales/en';
+import id from '../locales/id';
 import { useRouter } from 'next/router'
 
 export default function Navbar() {
@@ -15,6 +17,15 @@ export default function Navbar() {
   const [click, setClick] = useState(true);
 
   const handleClick = () => setClick(!click);
+
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : id;
+
+  const changeLanguage = (e) => {
+    const locale = e.target.value;
+    router.push(router.pathname, router.asPath, { locale });
+  };
   return (
     <>
       <div className="fixed z-50 w-full h-[80px]  bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 shadow-xl">
@@ -27,8 +38,16 @@ export default function Navbar() {
             <Nav dir="horizontal" />
           </div>
           <div className="lg:w-3/12 w-full flex z-30">
+          <select
+            onChange={changeLanguage}
+            defaultValue={locale}
+            className="ml-auto mr-2 lg:pt-0 pt-5 text-black dark:text-white text-shadow-sm text-lg bg-transparent"
+          >
+            <option className="text-black pt-5" value="id">ID 🇮🇩</option>
+            <option className="text-black pt-5" value="en">EN 🇬🇧</option>
+            </select>
             <button
-              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto ml-auto lg:mr-5 mr-0"
+              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto md:mr-3 mr-0"
               type="button"
               onClick={toggleDarkMode}
             >
@@ -66,7 +85,7 @@ export default function Navbar() {
               )}
             </button>
           </div>
-          <div className="w-6/12 -ml-14 lg:-ml-0 md:-ml-52 lg:hidden text-right">
+          <div className="w-6/12 -ml-20 lg:-ml-0 md:-ml-52 lg:hidden text-right">
             <img src="/menu.svg" className="cursor-pointer inline-block mt-6 mr-5 w-8" onClick={() => setOffcanvas(true)} />
           </div>
           <div className={classnames("fixed bg-white dark:bg-gray-900 mt-3 h-full w-full py-10 pl-10 md:block transition-all z-50", offcanvas ? "right-0" : "-right-full")}>

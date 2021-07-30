@@ -1,0 +1,9 @@
+{
+  "greeting": {
+    "p1": "Halo...",
+    "p2": "Saya"
+  },
+  "service": {
+    "p": "Layanan terbaik saya"
+  }
+}

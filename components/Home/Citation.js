@@ -1,9 +1,13 @@
 
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from 'next-i18next';
+
 
 
 export default function Citation() {
+  const { t } = useTranslation('common');
+
   const textVariants = {
     initial: {
       opacity: 0,
@@ -61,7 +65,7 @@ export default function Citation() {
               duration: 1.2,
             }}
           >
-            "Jika Kamu tidak sanggup menahan lelahnya belajar maka kamu harus sanggup menahan perihnya kebodohan"
+            {t("citation.p")}
           </motion.p>
           <motion.p
             className="text-base text-right   dark:text-white text-black-700"

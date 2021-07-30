@@ -2,10 +2,11 @@
 import 'tailwindcss/tailwind.css'
 import "../assets/app.css";
 import Wrapper from '../layouts/Wrapper';
+import { appWithTranslation } from 'next-i18next';
 
 
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Wrapper>
@@ -14,3 +15,5 @@ export default function MyApp({ Component, pageProps }) {
     </>
   )
 }
+
+export default appWithTranslation(MyApp);

@@ -1,9 +1,11 @@
 import Button from "./Button"
 import Typewriter from 'typewriter-effect';
 import { motion } from "framer-motion"
+import { useTranslation } from 'next-i18next';
 
 
 export default function Hero() {
+  const { t } = useTranslation('common');
   return (
     <>
 
@@ -14,8 +16,8 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 5 }}>
           <div className="lg:text-left text-center lg:mt-24 ">
-            <p className="text-4xl sm:text-5xl md:text-left text-center md:text-6xl font-black  dark:text-white">Halo...</p>
-            <p className="text-4xl sm:text-5xl md:text-left text-center md:text-6xl font-black  dark:text-white">Saya <span className="text-blue-500">Fahri</span>
+            <p className="text-4xl sm:text-5xl md:text-left text-center md:text-6xl font-black  dark:text-white mb-3">{t("greeting.p1")}</p>
+            <p className="text-4xl sm:text-5xl md:text-left text-center md:text-6xl font-black  dark:text-white">{t("greeting.p2")}<span className="text-blue-500"> Fahri</span>
             </p>
 
             <div className="mt-5 mb-5 sm:text-4xl font-bold text-blue-500 md:text-left text-center">
