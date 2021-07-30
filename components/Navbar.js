@@ -47,7 +47,7 @@ export default function Navbar() {
             <option className="text-black pt-5" value="en">EN 🇬🇧</option>
             </select>
             <button
-              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto md:mr-3 mr-0"
+              className="mt-6 h-8 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white my-auto mr-3"
               type="button"
               onClick={toggleDarkMode}
             >
