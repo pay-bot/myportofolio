@@ -1,7 +1,20 @@
 {
+  "navbar": {
+    "about": "TENTANG",
+    "skills": "KEMAMPUAN",
+    "project": "PROYEK",
+    "contact": "KONTAK"
+  },
+  "citation": {
+    "p": "Jika kamu tidak sanggup menehan lelahnya belajar, Maka kamu harus sanggup menahan perihnya kebodohan"
+  },
   "greeting": {
     "p1": "Halo...",
     "p2": "Saya"
+  },
+  "button": {
+    "contact": "Kontak",
+    "download": "Unduh CV"
   },
   "service": {
     "p": "Layanan terbaik saya"

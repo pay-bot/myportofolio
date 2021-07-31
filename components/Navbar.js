@@ -41,7 +41,7 @@ export default function Navbar() {
           <select
             onChange={changeLanguage}
             defaultValue={locale}
-            className="ml-auto mr-2 lg:pt-0 pt-5 text-black dark:text-white text-shadow-sm text-lg bg-transparent"
+            className="ml-auto mr-2 lg:pt-0 pt-5 text-black dark:text-white text-shadow-sm text-lg bg-transparent hover:cursor-pointer"
           >
             <option className="text-black pt-5" value="id">ID 🇮🇩</option>
             <option className="text-black pt-5" value="en">EN 🇬🇧</option>

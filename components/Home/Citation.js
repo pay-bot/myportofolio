@@ -68,7 +68,7 @@ export default function Citation() {
             {t("citation.p")}
           </motion.p>
           <motion.p
-            className="text-base text-right   dark:text-white text-black-700"
+            className="text-base text-right   dark:text-white text-black-700 mt-3"
             initial="initial"
             animate="visible"
             variants={textVariants}

@@ -1,3 +1,6 @@
 export default {
-  about: 'About'
+  about: 'ABOUT',
+  skills: 'SKILLS',
+  project: 'PROJECT',
+  contact: 'CONTACT'
 };

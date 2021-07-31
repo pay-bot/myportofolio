@@ -8,9 +8,10 @@ export default function Index() {
   return (
     <>
       <motion.div className='lg:w-9/12 w-full mb-4 mx-auto mt-28 md:px-4 px-0'
-      initial={{ scale: 0, y: "-100%" }}
-      animate={{ scale: 1, y: 0 }}
-      transition={{ duration: 1 }}>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1}}
+      transition={{ duration: 2 }}>
+        
         <SkillsTitle>Keterampilan</SkillsTitle>
         <SkillsDesc>Keterampilan yang saya miliki</SkillsDesc>
         <SkillsItem />

@@ -24,11 +24,11 @@ export default function Nav({ dir }) {
   return (
     <div className="lg:flex items-center z-50 dark:bg-gradient-to-r dark:from-blue-gray-900 dark:via-purple-900 dark:to-blue-gray-900">
       <ul className={classnames("flex my-6 capitalize lg:mx-auto mr-0", pickedDir)}>
-        <Navitems href="/">home</Navitems>
+        <Navitems href="/">HOME</Navitems>
         <Navitems href="/about">{t.about}</Navitems>
-        <Navitems href="/skills">skills</Navitems>
-        <Navitems href="/project">project</Navitems>
-        <Navitems href="/contact">contact</Navitems>
+        <Navitems href="/skills">{t.skills}</Navitems>
+        <Navitems href="/project">{t.project}</Navitems>
+        <Navitems href="/contact">{t.contact}</Navitems>
       </ul >
 
     </div>

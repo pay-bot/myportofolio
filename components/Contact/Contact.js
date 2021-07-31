@@ -6,9 +6,9 @@ export default function Contact() {
   return (
     <>
       <motion.div className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col mt-28 px-4"
-      initial={{ scale: 0, y: "-100%" }}
-      animate={{ scale: 1, y: 0 }}
-      transition={{ duration: 1 }}>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1}}
+      transition={{ duration: 2 }}>
         <div className="lg:w-6/12 w-full mr-5 ">
           <h2 className="font-semibold text-lg text-gary-700 dark:text-gray-300 mb-4">Hubungi Saya</h2>
           <p className="text-gray-900 dark:text-gray-300 text-md text-justify">Saya sangat senang membangun relasi dengan semua orang yang saya jumpai, saya berharap apa yang saya miliki memberikan manfaat bagi saya dan juga orang lain. jadi jangan sungkan untuk menyapa saya :) </p>

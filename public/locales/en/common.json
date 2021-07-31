@@ -1,11 +1,20 @@
 {
-  "headTitle": "Home | ironsoul",
+  "navbar": {
+    "about": "ABOUT",
+    "skills": "SKILLS",
+    "project": "PROJECT",
+    "contact": "CONTACT"
+  },
+  "citation": {
+    "p": "If you can't stand the tiredness of studying, then you have to be able to endure the pain of stupidity"
+  },
   "greeting": {
     "p1": "Hy...",
     "p2": "I'm"
   },
-  "citation": {
-    "p": "If you can't stand the tiredness of studying, then you have to be able to endure the pain of stupidity"
+  "button": {
+    "contact": "Contact",
+    "download": "Download CV"
   },
   "service": {
     "p": "My best service"
