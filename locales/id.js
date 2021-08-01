@@ -1,6 +1,5 @@
 export default {
   about: 'TENTANG',
-  skills: 'KEMAMPUAN',
+  skills: 'KETERAMPILAN',
   project: 'PROYEK',
-  contact: 'KONTAK'
 };

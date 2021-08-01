@@ -13,10 +13,38 @@
     "p2": "I'm"
   },
   "button": {
-    "contact": "Contact",
+    "hire": "Hire Me",
     "download": "Download CV"
   },
   "service": {
-    "p": "My best service"
+    "title": "My Best Service",
+    "favorite": "Favorite",
+    "next": "NextJS helps me to create applications with good performance",
+    "tailwind": "Tailwind CSS helps me to create beautiful and unique interface designs",
+    "discipline": "Discipline",
+    "responsive": "Responsive",
+    "presponsive": "Creating responsive apps is an obligation for me, so that users can enjoy my apps on multiple platforms",
+    "clean": "Clean Code",
+    "pclean": "Creating clean program code is my ambition, so that the application development process can run well"
+  },
+  "hire": {
+    "title": "Call Me",
+    "p": "I hope you find what you are looking for on this website. If you find it then I'm the one, I'm ready to be part of the great team you have.",
+    "address": "Address",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "SEND"
+  },
+
+  "about": {
+    "title": "About",
+    "desc": "My Short Profile",
+    "p": "I am a Front End Web Developer. I use RactJS as a JavaScript library and use NextJS as a framework. I really enjoy using NextJS and Tailwind CSS"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "desc": "Skills I Have"
   }
 }

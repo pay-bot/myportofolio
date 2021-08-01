@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import SEO_DATA from '../../components/seo'
+import SEO_DATA from '../../data/seo'
 import Index from '../../components/Project/Index'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from "next/link"

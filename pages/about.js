@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import SEO_DATA from '../components/seo'
+import SEO_DATA from '../data/seo'
 import About from '../components/About/About'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function about() {
   return (
@@ -16,5 +17,14 @@ export default function about() {
       <About />
     </>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      // Will be passed to the page component as props
+    },
+  };
 }
 

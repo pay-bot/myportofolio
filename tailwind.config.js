@@ -1,4 +1,6 @@
 const colors = require('tailwindcss/colors')
+const plugin = require("tailwindcss/plugin");
+
 
 module.exports = {
   mode: 'jit',
@@ -931,5 +933,18 @@ module.exports = {
   plugins: [
     require('tailwind-glassmorphism'),
     require("tailwindcss-glow")(),
+
+    plugin(function ({ addUtilities }) {
+      const utilities = {
+        ".bg-blog": {
+          "background-image": "url(/under.jpg)",
+          "background-size": "cover",
+          "background-position": "top",
+          "background-repeat": "no-repeat",
+
+        }
+      };
+      addUtilities(utilities);
+    })
   ],
 }

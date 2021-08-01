@@ -1,8 +1,8 @@
 import { withRouter } from 'next/router';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Header/Navbar';
 import Head from 'next/head';
-import SEO_DATA from '../components/seo';
+import SEO_DATA from '../data/seo';
 
 function Wrapper({ children }) {
   return (

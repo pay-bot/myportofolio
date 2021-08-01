@@ -26,13 +26,13 @@ export default function Hero() {
             <div className="mt-5 mb-5 sm:text-4xl font-bold text-blue-500 md:text-left text-center">
               <Typewriter
                 options={{
-                  strings: ['Web Developer'],
+                  strings: ['Front End', 'Web Developer'],
                   autoStart: true,
                   loop: true,
                 }}
               /></div>
             <div className="flex md:justify-start justify-center">
-      <button className="bg-blue-500 px-4 py-2 mr-3 text-lg font-semibold tracking-wider text-white rounded hover:bg-blue-600"><Link href="/contact"><a >{t("button.contact")}</a></Link></button>
+      <button className="bg-blue-500 px-4 py-2 mr-3 text-lg font-semibold tracking-wider text-white rounded hover:bg-blue-600"><Link href="#hire"><a >{t("button.hire")}</a></Link></button>
       <button className="bg-blue-100 px-4 py-2 text-lg font-semibold tracking-wider text-blue-600 rounded hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"  ><a href={RESUME}>{t("button.download")}</a></button>
     </div>
 

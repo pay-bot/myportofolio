@@ -1,4 +1,4 @@
-export default function SkillsCard({ image, alt, title, desc, descspan }) {
+export default function SkillsCard({ image, alt, title}) {
   return (
     <>
       <div className='transform hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-md p-6 flex flex-col items-center m-2 justify-center'>
@@ -7,7 +7,6 @@ export default function SkillsCard({ image, alt, title, desc, descspan }) {
         </div>
         <div className='flex flex-col items-center'>
           <span className='block text-xl mb-2'>{title}</span>
-          <span className='text-center'><span className='font-medium'>{desc}</span>{descspan}</span>
         </div>
       </div>
     </>

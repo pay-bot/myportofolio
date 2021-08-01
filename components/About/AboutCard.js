@@ -1,6 +1,10 @@
 import Link from "next/link"
+import { useTranslation } from 'next-i18next';
+
 
 export default function AboutCard() {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto ">
@@ -11,7 +15,7 @@ export default function AboutCard() {
           <div className="mx-auto flex lg:mt-0 mt-4 items-center h-full">
             <div className="">
               <p className="mb-5 text-gray-800 dark:text-gray-300 text-justify">
-                Saya adalah Web Develover yang fokus kepada bahasa pemrograman JavaScript. saya menggunakan RactJS sebagai library JavaScript dan menggunakan NextJS sebagai framework. saya sangat senang menggunakan NextJS dan Tailwind CSS.  </p>
+               {t("about.p")}</p>
               <div className="flex mb-2">
                 <img src="profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">Fahri Alpiansyah</span>

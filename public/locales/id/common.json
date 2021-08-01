@@ -13,10 +13,38 @@
     "p2": "Saya"
   },
   "button": {
-    "contact": "Kontak",
+    "hire": "Rekrut Saya",
     "download": "Unduh CV"
   },
   "service": {
-    "p": "Layanan terbaik saya"
+    "title": "Pelayanan Terbaik Saya",
+    "favorite": "Kesukaan",
+    "next": "NextJS membantu saya menciptakan aplikasi dengan performa yang baik",
+    "tailwind": "Tailwind CSS membantu saya menciptakan desain antarmuka yang cantik dan unik",
+    "discipline": "Disiplin",
+    "responsive": "Responsif",
+    "presponsive": "Membuat aplikasi responsive adalah kewajiban untuk saya, agar pengguna dapat menikmati aplikasi saya di berbagai platform. ",
+    "clean": "Kode Bersih",
+    "pclean": "Membuat kode program yang bersih adalah ambisi saya, agar proses pengembangan aplikasi dapat berjalan dengan baik"
+  },
+  "hire": {
+    "title": "Hubungi Saya",
+    "p": "Saya harap Anda menemukan apa yang Anda cari di situs web ini. Jika Anda menemukannya maka saya orangnya, saya siap menjadi bagian dari tim hebat yang Anda miliki.",
+    "address": "Alamat",
+    "name": "Nama Anda",
+    "email": "Email Anda",
+    "message": "Pesan Anda",
+    "send": "KIRIM"
+  },
+
+  "about": {
+    "title": "Tentang",
+    "desc": "Profile Singkat Saya",
+    "p": "Saya adalah Front End Web Develover . saya menggunakan RactJS sebagai library JavaScript dan menggunakan NextJS sebagai framework. saya sangat senang menggunakan NextJS dan Tailwind CSS "
+  },
+
+  "skills": {
+    "title": "Keterampilan",
+    "desc": "Keterampilan Yang Saya Miliki"
   }
 }
