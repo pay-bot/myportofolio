@@ -17,7 +17,7 @@ export default function home() {
       <div className="mt-28 w-9/12 w-11/12 mx-auto mt-28 lg:px-5 px-0 mb-10 ">
         <Category />
       </div>
-      <Project />
+      {/* <Project /> */}
     </>
   )
 }
