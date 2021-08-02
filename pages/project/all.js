@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import SEO_DATA from '../../data/seo'
 import Project from '../../components/Project/Project'
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Category from '../../components/Project/Category';
 
 export default function home() {
@@ -16,13 +16,13 @@ export default function home() {
       <div className="mt-28 w-9/12 w-11/12 mx-auto mt-28 lg:px-5 px-0 mb-10 ">
         <Category />
       </div>
-      {/* <Project /> */}
+      <Project />
     </>
   )
 }
 
-// export const getServerSideProps = async ({ locale }) => ({
-//   props: {
-//     ...(await serverSideTranslations(locale, ['common']))
-//   }
-// });
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common']))
+  }
+});
