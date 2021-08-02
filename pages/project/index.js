@@ -4,7 +4,7 @@ import Project from '../../components/Project/Project'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Category from '../../components/Project/Category';
 
-export default function home() {
+export default function index() {
   return (
     <>
       <Head>
