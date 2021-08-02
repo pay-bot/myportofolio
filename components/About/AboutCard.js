@@ -21,19 +21,19 @@ export default function AboutCard() {
                 <span className="mx-3 font-semibold">Fahri Alpiansyah</span>
               </div>
               <div className="flex mb-2">
-                <img src="profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
+                <img src="/profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">11 oktober 1995</span>
               </div>
               <div className="flex mb-2">
-                <img src="profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
+                <img src="/profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">Depok</span>
               </div>
             </div>
           </div>
           <div className="flex justify-around lg:-mt-5 md:mt-5 mt-5">
-            <Link href="https://github.com/pay-bot"><a className=""><img src="github.svg" alt="" className="w-20" /></a></Link>
-            <img src="facebook.svg" alt="" className="w-20" />
-            <img src="instagram-text.svg" alt="" className="w-20" />
+            <Link href="https://github.com/pay-bot"><a className=""><img src="/github.svg" alt="" className="w-20" /></a></Link>
+            <img src="/facebook.svg" alt="" className="w-20" />
+            <img src="/instagram-text.svg" alt="" className="w-20" />
           </div>
         </div>
       </div>
