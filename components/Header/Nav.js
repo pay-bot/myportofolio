@@ -27,7 +27,7 @@ export default function Nav({ dir }) {
         <Navitems href="/">HOME</Navitems>
         <Navitems href="/about">{t.about}</Navitems>
         <Navitems href="/skills">{t.skills}</Navitems>
-        <Navitems href="/project/">{t.project}</Navitems>
+        <Navitems href="/project/home">{t.project}</Navitems>
         <Navitems href="/blog">BLOG</Navitems>
       </ul >
 

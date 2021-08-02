@@ -11,19 +11,19 @@ export default function ProjectItem() {
   const projects = useMemo(
     () => [
       {
-        image:"MyWEB.png",
+        image:"/MyWEB.png",
         judul:t("greeting.p1"),
         deskripsi:"aplikasi Portofolio",
         deskripsiCard:"Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
-        techImage:["react-2.svg", "nextlogo.svg", "/images/tailwind.svg" ],
+        techImage:["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg" ],
         href:"https://myportofolio-vert.vercel.app/"
       },
       {
-        image:"dipoles.png",
+        image:"/dipoles.png",
         judul:t("greeting.p1"),
         deskripsi:"aplikasi Portofolio",
         deskripsiCard:"Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
-        techImage:["react-2.svg", "nextlogo.svg", "/images/tailwind.svg" ],
+        techImage:["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg" ],
         href:"https://myportofolio-vert.vercel.app/"
       }
     ],
