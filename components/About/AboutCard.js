@@ -26,7 +26,7 @@ export default function AboutCard() {
               </div>
               <div className="flex mb-2">
                 <img src="/profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
-                <span className="mx-3 font-semibold">Depok</span>
+                <span className="mx-3 font-semibold">Depok, Jawa Barat</span>
               </div>
             </div>
           </div>

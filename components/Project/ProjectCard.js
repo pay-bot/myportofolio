@@ -23,7 +23,7 @@ export default function ProjectCard({ href, image, judul, deskripsi, deskripsiCa
               <img key={tech} src={tech} className="w-8 h-8 mx-2" alt="" />
 
             )}
-            <div className=""><Link href={href}><a className="relative hover"><img src="/link.svg" alt="" className="w-8 h-8 mx-2 animate-wiggle" /></a></Link>
+            <div className=""><Link href={href}><a className="relative "><img src="/link.svg" alt="" className="w-8 h-8 mx-2" /></a></Link>
             </div>
           </div>
         </div>

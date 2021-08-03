@@ -1,45 +1,52 @@
 import SkillsCard from "./SkillsCard"
+import React, { useMemo } from "react";
+
 
 export default function SkillsItem() {
+  const skills = useMemo (
+    () => [
+      {
+        image: "/images/html.svg",
+        alt: "html",
+        title: "HTML",
+      },
+      {
+        image:"/images/css.png",
+          alt:"css",
+          title:"CSS"
+      },
+      {
+        image:"/images/js.png",
+          alt:"Javascript",
+          title:"Javascript"
+      },
+      {
+        image:"/images/nodejs.svg",
+          alt:"node",
+          title:"NodeJS"
+      },
+      {
+        image:"/images/react.png",
+          alt:"react",
+          title:"ReactJS"
+      },
+      {
+        image:"/images/next.svg",
+        alt:"next",
+        title:"NextJS"
+      },
+      {
+        image:"/images/tailwind.svg",
+          alt:"tailwind",
+          title:"Tailwind"
+      }
+    ])
   return (
     <>
       <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
-        <SkillsCard
-          image="/images/html.svg"
-          alt="html"
-          title="HTML"
-        />
-        <SkillsCard
-          image="/images/css.png"
-          alt="css"
-          title="CSS"
-        />
-        <SkillsCard
-          image="/images/js.png"
-          alt="Javascript"
-          title="Javascript"
-        />
-        <SkillsCard
-          image="/images/nodejs.svg"
-          alt="node"
-          title="NodeJS"
-        />
-        <SkillsCard
-          image="/images/react.png"
-          alt="react"
-          title="ReactJS"
-        />
-        <SkillsCard
-          image="/images/next.svg"
-          alt="next"
-          title="NextJS"
-        />
-        <SkillsCard
-          image="/images/tailwind.svg"
-          alt="tailwind"
-          title="Tailwind"
-        />
-
+      {skills.map((skill) => (
+        <SkillsCard key={skill} {...skill} />
+      ))}
       </div>
     </>
   )
