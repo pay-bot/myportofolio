@@ -24,7 +24,7 @@ export default function ProjectItem() {
         deskripsi:"aplikasi Portofolio",
         deskripsiCard:"Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
         techImage:["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg" ],
-        href:"https://myportofolio-vert.vercel.app/"
+        href:"https://dipoles.vercel.app/"
       }
     ],
     [t]
