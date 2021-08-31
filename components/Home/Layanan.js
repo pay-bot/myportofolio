@@ -42,7 +42,7 @@ export default function Layanan() {
 
   return (
     <>
-    <div ref={ref} className="mt-2 bg-gradient-conic-t from-gray-900 via-gray-100 to-gray-900 dark:bg-gradient-to-r dark:from-blue-gray-800 dark:via-blue-800 dark:to-blue-gray-800 ">
+    <div ref={ref} className="mt-2  dark:bg-[#192949]  dark:border-gray-600 bg-gradient-to-t bg-[#EAECF4]">
     <motion.div className="mb-10 md:p-5 p-0 "
       animate={animation}>
       <div className="lg:w-9/12 w-11/12 mx-auto py-10">

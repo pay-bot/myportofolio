@@ -23,9 +23,9 @@ export default function Form() {
     message: '',
     reply_to: '',
   });
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    send(
+    await send(
       'service_aizdo2a',
       'template_5camc1c',
       toSend,
@@ -44,7 +44,7 @@ export default function Form() {
       .catch((err) => {
         console.log('FAILED...', err);
       });
-    router.push('/');
+    await router.push('/');
   };
 
 
@@ -57,7 +57,7 @@ export default function Form() {
     <>
       <form onSubmit={onSubmit}>
         <label htmlFor="" className="dark:text-gray-300 text-md font-semibold">{t("hire.name")}</label>
-        <input className="focus:px-3 border border-gray-500 bg-gray-50 dark:bg-gray-600 rounded py-1 px-4 w-full dark:text-gray-400"
+        <input className="focus:px-3 border border-gray-500 bg-[#EAECF4] dark:bg-[#455781] rounded py-1 px-4 w-full dark:text-gray-400"
           type='text'
           name='from_name'
           required="true"
@@ -65,7 +65,7 @@ export default function Form() {
           onChange={handleChange}
         />
         <label htmlFor="" className="dark:text-gray-300 text-md font-semibold">{t("hire.email")}</label>
-        <input className="border border-gray-500 bg-gray-50  dark:bg-gray-600 rounded py-1 px-4 w-full dark:text-gray-400"
+        <input className="border border-gray-500 bg-[#EAECF4]  dark:bg-[#455781] rounded py-1 px-4 w-full dark:text-gray-400"
           type='text'
           name='reply_to'
           required="true"
@@ -73,7 +73,7 @@ export default function Form() {
           onChange={handleChange}
         />
         <label className="block dark:text-gray-300 text-md font-semibold" htmlFor="">{t("hire.message")}</label>
-        <textarea className="border border-gray-500 bg-gray-50  dark:bg-gray-600 w-full dark:text-gray-400 mb-5 px-4 py-1"
+        <textarea className="border border-gray-500 bg-[#EAECF4]  dark:bg-[#455781] w-full dark:text-gray-400 mb-5 px-4 py-1"
           name="message"
           value={toSend.message}
           required="true"
@@ -82,7 +82,7 @@ export default function Form() {
           cols=""
           rows="10">
         </textarea>
-        <button className="rounded font-semibold py-1 px-4 bg-blue-500 mx-auto dark:text-gray-300 mb-5"
+        <button className="rounded font-semibold py-1 px-4 bg-[#008FFF] dark:bg-[#45ADFF] mx-auto dark:text-gray-300 mb-5"
           type='submit'>
           {t("hire.send")}
         </button>

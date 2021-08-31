@@ -1,5 +1,4 @@
 
-import ProjectCardRight from "./ProjectCardRight"
 import ProjectCard from "./ProjectCard"
 import { useTranslation } from 'next-i18next';
 import React, { useMemo } from "react";
@@ -11,21 +10,13 @@ export default function ProjectItem() {
   const projects = useMemo(
     () => [
       {
-        image:"/MyWEB.png",
-        judul:t("greeting.p1"),
-        deskripsi:"aplikasi Portofolio",
-        deskripsiCard:"Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
-        techImage:["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg" ],
-        href:"https://myportofolio-vert.vercel.app/"
+        image: "/MyWEB.png",
+        judul: t("greeting.p1"),
+        deskripsi: "aplikasi Portofolio",
+        deskripsiCard: "Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
+        techImage: ["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg"],
+        href: "https://myportofolio-vert.vercel.app/"
       },
-      {
-        image:"/dipoles.png",
-        judul:t("greeting.p1"),
-        deskripsi:"aplikasi Portofolio",
-        deskripsiCard:"Web app selects and lets you solve algorithmic problems of your level by looking at your Codeforces rating.",
-        techImage:["/react-2.svg", "/nextlogo.svg", "/images/tailwind.svg" ],
-        href:"https://dipoles.vercel.app/"
-      }
     ],
     [t]
   );
