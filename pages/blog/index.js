@@ -3,16 +3,19 @@ import axios from 'axios'
 import Link from 'next/link'
 import moment from "moment"
 import { useRouter } from 'next/router'
+import { getPost } from "../../utils/api"
 
 
-export default function index({ data }) {
+
+export default function index({ initialPost }) {
+
   const router = useRouter();
   const { locale } = router;
   const  language = locale;
   return (
     <>
       <div className="md:w-9/12 w-full mx-auto md:mt-28 mt-20 md:px-8   ">
-        {data.map((data, item) => (
+        {initialPost.map((data, item) => (
 
           <div className="flex md:flex-row flex-col-reverse hover:bg-[#F5F5F5] dark:hover:bg-[#233F64] p-5 md:hover:border-l-4 border-b">
             <div className="md:w-6/12 w-full mr-5 items-center justify-center flex">
@@ -39,10 +42,7 @@ export default function index({ data }) {
 
 
 export async function getServerSideProps() {
-  // Call external API from here directly
-  const response = await axios.get('http://127.0.0.1:8000/api/blog');
-  const data = response.data
-  return {
-    props: { data: data },
-  }
+  const [initialPost] = await Promise.all([getPost()]);
+
+  return { props: { initialPost } };
 }

@@ -4,19 +4,22 @@ import Link from 'next/link'
 import moment from "moment"
 import clsx from "clsx";
 import classnames from "classnames";
+import { getProject } from "../../utils/api"
+
 
 
 import { useRouter } from 'next/router'
 
 
-export default function index({ data, rightShift }) {
+export default function index({ initialProject }) {
+
   const router = useRouter();
   const { locale } = router;
   const language = locale;
   return (
     <>
       <div className="md:w-9/12 w-full mx-auto mt-28 md:px-8 px-4"   >
-        {data.map((data, i) => (
+        {initialProject.map((data, i) => (
 
           <div className={classnames(i % 2 === 0 ? "flex md:flex-row-reverse md:mb-20 mb-10 " : "flex md:mb-20 mb-10")}>
             <div className=" z-30 hover:md:z-0 hover:-z-10 md:w-7/12 w-11/12 md:relative absolute  ">
@@ -50,10 +53,7 @@ export default function index({ data, rightShift }) {
 
 
 export async function getServerSideProps() {
-  // Call external API from here directly
-  const response = await axios.get('http://127.0.0.1:8000/api/project');
-  const data = response.data
-  return {
-    props: { data: data },
-  }
+  const [initialProject] = await Promise.all([getProject()]);
+
+  return { props: { initialProject } };
 }
