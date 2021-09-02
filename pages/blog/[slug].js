@@ -12,14 +12,15 @@ export default function page({ detailPost }) {
   const  language = locale;
   return (
     <>
-      <img src={detail.img_url} alt="" />
-      <div className="w-8/12 mx-auto px-8">
+      <div className="w-9/12 mx-auto px-8">
+      <img src={detail.img_url} alt="" className="md:w-screen md:h-[600px] mt-20 object-cover" />
         <div className="my-10">
-          <h1 className="text-5xl text-center">{language === 'en' ? detail.title : detail.title_idn}</h1>
+          <h1 className="text-5xl text-center text-gray-700 dark:text-gray-50">{language === 'en' ? detail.title : detail.title_idn}</h1>
           <div className="flex justify-center my-5">
             <p className="text-xs text-gray-500 dark:text-gray-300"> {moment(detail.created_at).calendar()}</p>
             <p className="text-xs text-gray-500 dark:text-gray-300">&nbsp; - Fahri</p>
           </div>
+          <div className="text-gray-700 dark:text-gray-200" dangerouslySetInnerHTML={{ __html: language === 'en' ? detail.description : detail.description_idn }} />
         </div>
       </div>
     </>

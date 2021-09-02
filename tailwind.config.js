@@ -8,6 +8,14 @@ module.exports = {
   presets: [],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    truncate: {
+      lines: {
+        3: '3',
+        5: '5',
+        8: '8',
+      }
+    },
+
     glow: {
       colors: { // Defaults to all theme colors
       },
@@ -934,6 +942,7 @@ module.exports = {
   plugins: [
     require('tailwind-glassmorphism'),
     require("tailwindcss-glow")(),
+    require('tailwindcss-truncate-multiline')(),
 
     plugin(function ({ addUtilities }) {
       const utilities = {
