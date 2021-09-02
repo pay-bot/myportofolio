@@ -943,6 +943,7 @@ module.exports = {
     require('tailwind-glassmorphism'),
     require("tailwindcss-glow")(),
     require('tailwindcss-truncate-multiline')(),
+    require('@tailwindcss/line-clamp'),
 
     plugin(function ({ addUtilities }) {
       const utilities = {
