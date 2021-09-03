@@ -12,7 +12,7 @@ export default function page({ detailPost }) {
   const  language = locale;
   return (
     <>
-      <div className="w-9/12 mx-auto px-8">
+      <div className="md:w-9/12 w-full mx-auto md:px-6 px-2">
       <img src={detail.img_url} alt="" className="md:w-screen md:h-[600px] mt-20 object-cover" />
         <div className="my-10">
           <h1 className="text-5xl text-center text-gray-700 dark:text-gray-50">{language === 'en' ? detail.title : detail.title_idn}</h1>

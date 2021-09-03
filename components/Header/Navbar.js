@@ -28,7 +28,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="fixed z-50 w-full h-[80px]  bg-[#F4F4FB] dark:bg-[#2E3D60]   shadow-xl">
+      <div className="fixed z-50 w-full h-[80px]  bg-[#F4F4FB] dark:bg-[#2E3D60]   shadow-md">
         <div className="lg:w-9/12 w-11/12 flex mx-auto">
           <div className="w-3/12 my-auto z-30 ">
             <Logo href="/">FA</Logo>
