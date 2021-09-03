@@ -19,6 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/line-clamp": "^0.2.1",
     "@tsamantanis/react-glassmorphism": "^1.1.2",
     "axios": "^0.21.1",
     "build": "^0.1.4",
@@ -44,7 +45,7 @@
     "sweetalert": "^2.1.2",
     "tailwind-darkmode-toggle": "^1.0.5",
     "tailwind-glassmorphism": "^1.0.6",
-    "tailwindcss": "2.1.4",
+    "tailwindcss": "^2.2.9",
     "tailwindcss-glow": "^2.0.0-alpha.1",
     "tailwindcss-neumorphism": "^0.1.0",
     "tailwindcss-truncate-multiline": "^1.0.3",
@@ -52,9 +53,9 @@
     "vite": "^2.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.4",
     "gh-pages": "^3.1.0",
-    "postcss": "^8.3.2",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1"
   },
   "main": "index.js",

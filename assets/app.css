@@ -5,3 +5,12 @@
 #__next {
   @apply flex flex-col min-h-screen;
 }
+
+.truncate-3-lines {
+  max-height: 7.2em; /* double the size of line-height */
+  line-height: 1.8em;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+}

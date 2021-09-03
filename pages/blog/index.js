@@ -11,7 +11,7 @@ export default function index({ initialPost }) {
 
   const router = useRouter();
   const { locale } = router;
-  const  language = locale;
+  const language = locale;
   return (
     <>
       <div className="md:w-9/12 w-full mx-auto md:mt-28 mt-20 md:px-8 px-2  ">
@@ -22,7 +22,7 @@ export default function index({ initialPost }) {
               <div className="">
                 <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
                   <p className="md:text-center text-2xl mb-5 text-[#008FFF] dark:text-[#92C4FF]">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
-                <div className="text-gray-700 dark:text-gray-50" dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
+                <div className="text-gray-700 dark:text-gray-50 truncate-3-lines" dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
                 <div className="flex">
                   <p className="text-xs text-gray-500 dark:text-gray-300"> {moment(data.created_at).calendar()}</p>
                   <p className="text-xs text-gray-500 dark:text-gray-300">&nbsp; - Fahri</p>
