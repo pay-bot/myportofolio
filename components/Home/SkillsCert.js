@@ -39,14 +39,14 @@ export default function SkillsCert() {
     <>
       <div ref={ref} className="">
         <motion.div className=""
-      animate={animation}>
+          animate={animation}>
 
           <div className="w-9/12 mx-auto lg:p-5 p-0">
             <SkillsTitle>Keterampilan saya</SkillsTitle>
             <CarouselItem />
           </div>
           <div className="lg:w-9/12 w-11/12 mx-auto mb-10 p-5">
-            <p className="mt-0 mb-5 font-semibbold md:text-4xl text-3xl dark:text-gray-200 text-center">Sertifikat</p>
+            <p className="mt-0 mb-5 font-semibbold md:text-4xl text-3xl dark:text-white text-center">Sertifikat</p>
             <SertifikatItem />
           </div>
         </motion.div>

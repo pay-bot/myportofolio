@@ -4,7 +4,7 @@ import CategoryItem from './CategoryItem'
 export default function Category() {
   return (
     <>
-      <ul className="lg:w-8/12 w-11/12 mx-auto flex justify-between">
+      <ul className="lg:w-8/12 w-11/12 mx-auto mt-10 flex justify-between">
         <CategoryItem href="/project">
           <span className="py-1 md:block hidden">ALL</span>
           <span className="flex justify-center"><img src="/home.svg" alt="" className="w-8 h-8 my-1 md:hidden block" /></span>

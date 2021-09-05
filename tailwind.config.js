@@ -9,6 +9,12 @@ module.exports = {
         100: '#FBEBE9',
         200: '#F5CEC7',
       },
+      gray: {
+        100: '#455781'
+      },
+      white: {
+        100: '#EAECF4'
+      }
     },
     neumorphismSize: {
       xs: '0.05em',
@@ -37,10 +43,30 @@ module.exports = {
         8: '8',
       }
     },
+    zIndex: {
+      "-10": "-10",
+      "-30": "-30",
+      "50": "50"
+    },
     extend: {
-      zIndex: {
-        "-10": "-10",
-        "-30": "-30",
+
+    },
+    animation: {
+      none: 'none',
+      spin: 'spin 1s linear infinite',
+      ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+      pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      bounce: 'bounce 1s infinite',
+      arrowr: 'arrowr 3s ease-in-out infinite',
+      wiggle: 'wiggle 1s ease-in-out infinite',
+    },
+    keyframes: {
+      wiggle: {
+
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+
+        '50%': { transform: 'rotate(3deg)' },
+
       },
     },
   },
@@ -56,5 +82,6 @@ module.exports = {
   plugins: [
     require('tailwindcss-truncate-multiline')(['responsive', 'hover']),
     require('tailwindcss-neumorphism'),
+    require('@tailwindcss/line-clamp'),
   ],
 }

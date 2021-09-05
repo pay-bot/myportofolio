@@ -56,7 +56,7 @@ export default function Citation() {
         </motion.div>
         <div className="flex flex-col px-4 mx-auto max-w-screen-md">
           <motion.p
-            className="mt-4 mb-2 text-xl text-center font-medium leading-none md:text-2xl dark:text-white text-black-900 md:my-0"
+            className="mt-4 mb-2 uppercase text-xl text-center font-medium leading-none md:text-2xl dark:text-white text-black-900 md:my-0"
             variants={textVariants}
             initial="initial"
             animate="visible"

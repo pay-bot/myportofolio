@@ -4,6 +4,8 @@ import Link from 'next/link'
 import moment from "moment"
 import { useRouter } from 'next/router'
 import { getPost } from "../../utils/api"
+import { motion } from "framer-motion"
+
 
 
 
@@ -14,31 +16,55 @@ export default function index({ initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="md:w-9/12 w-full mx-auto md:mt-28 mt-24 md:px-8 px-2  ">
+      <motion.div className='md:w-10/12 w-full flex md:flex-row flex-col mx-auto justify-around md:mt-4 md:px-0 px-2'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}>
+
         {initialPost.map((data, i) => {
           if (data.length === 0) {
-            return (<div key={i} className="">
-              <p className="text-xl">kosong</p>
-            </div>)
+            return (
+              <div key={i} className="">
+                <p className="text-xl">kosong</p>
+              </div>
+            )
           } else {
             return (
-              <div key={i} className="flex  hover:bg-[#F5F5F5] dark:hover:bg-[#233F64] md:px-5 md:hover:border-l-4 border-b">
-                <div className="md:w-6/12 w-7/12 mr-5 items-center justify-center flex">
-                  <div className="">
+              <>
+
+                <div className="lg:w-8/12 md:px-5 px-0 mt-10">
+                  <div className="border-b-2  border-blue-700 mb-5 flex">
+                    <p className="text-md inline-block px-2 py-1 bg-blue-700 text-white">BLOG</p>
+                  </div>
+                  <div key={data.id} className="mt-5 border-b">
                     <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                      <p className="md:text-center md:text-2xl text-xl md:mb-5 mb-2 text-[#008FFF] dark:text-[#92C4FF]">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
-                    <div className="text-gray-700 dark:text-gray-50 truncate-3-lines " dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
-                    <div className="flex">
-                      <p className="text-xs text-gray-500 dark:text-gray-300"> {moment(data.created_at).calendar()}</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-300">&nbsp; - Fahri</p>
+                      <p className="md:text-3xl text-2xl capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
+                    <div className="flex  my-5">
+                      <p className="text-xs text-white0 dark:text-gray-300"> {moment(data.created_at).calendar()}</p>
+                      <p className="text-xs text-white0 dark:text-gray-300">&nbsp; - Fahri</p>
                     </div>
+                    <div className="card-zoom mb-3  ">
+                      <img src={data.img_url} alt="" className="card-zoom-image overflow-hidden lg:m-1 lg:w-full lg:h-[464px] w-full transition duration-500 ease-in-out transform " />
+                    </div>
+                    <div className="text-gray-700 md:block hidden dark:text-white truncate-3-lines line-clamp-3" dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
+                    <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
+                      <button className="text-white text-sm font-semibold p-2 my-6 bg-blue-400">Lanjutkan Membaca</button></a></Link>
                   </div>
                 </div>
-                <div className="md:w-6/12 w-5/12">
-                  <img src={data.img_url} alt="" className="rounded-md py-2 md:h-64 md:w-full w-44 h-full " />
+                <div className="lg:w-4/12 w-full mt-10">
+                  <div className="flex flex-col md:ml-5">
+                    <div className="border-b-2  border-black mb-5 flex">
+                      <p className="text-md inline-block px-2 py-1 bg-black text-white">RECENT POST</p>
 
+                    </div>
+                    <div className="">
+                      <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
+                        <p className="md:text-xl text-lg capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link></div>
+                  </div>
                 </div>
-              </div>)
+
+              </>
+            )
           }
 
         }
@@ -48,7 +74,7 @@ export default function index({ initialPost }) {
 
 
 
-      </div>
+      </motion.div>
     </>
   )
 }

@@ -7,7 +7,7 @@ export default function SertifikatCard({ href, image, judul, deskripsi }) {
         <img src={image} alt="" className="px-5 pt-5" />
         <div className="dark:bg-gray-700 bg-gray-300 ">
           <p className="uppercase  text-center text-md font-semibold text-gray-700 dark:text-gray-300 my-2">{judul}</p>
-          <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-2">{deskripsi}</p>
+          <p className="text-center text-sm text-white0 dark:text-gray-400 mb-2">{deskripsi}</p>
         </div>
       </a></Link>
       </div>

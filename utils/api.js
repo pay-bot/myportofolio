@@ -28,3 +28,14 @@ export const getProject = async () => {
     return [];
   }
 };
+
+export const getProjectByCategory = async (id) => {
+  try {
+    const data = await axios.get(
+      `${process.env.API_URL}/project/categories?category_id=${id}`
+    );
+    return data.data[0];
+  } catch (error) {
+    return [];
+  }
+};

@@ -21,11 +21,6 @@ export default function SkillsItem() {
           title:"Javascript"
       },
       {
-        image:"/images/nodejs.svg",
-          alt:"node",
-          title:"NodeJS"
-      },
-      {
         image:"/images/react.png",
           alt:"react",
           title:"ReactJS"
@@ -34,6 +29,16 @@ export default function SkillsItem() {
         image:"/images/next.svg",
         alt:"next",
         title:"NextJS"
+      },
+      {
+        image:"vue.svg",
+          alt:"vue",
+          title:"VUeJS"
+      },
+      {
+        image:"laravel.svg",
+          alt:"laravel",
+          title:"Laravel"
       },
       {
         image:"/images/tailwind.svg",

@@ -17,7 +17,7 @@ function Wrapper({ children }) {
         <meta name="Description" content={SEO_DATA.description}></meta>
       </Head>
       <Navbar />
-      <main className="flex-grow bg-white bg-gradient-conic-t dark:bg-[#1A2744]  ">{children}</main>
+      <main className="flex-grow bg-white bg-gradient-conic-t dark:bg-[#1A2744] mt-20">{children}</main>
       <Footer>© 2021 Build with Nextjs & Tailwind</Footer>
     </>
   )

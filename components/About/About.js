@@ -10,9 +10,9 @@ export default function About() {
 
   return (
     <>
-      <motion.div className="mt-28 md:px-8 px-0"
+      <motion.div className=" md:px-8 px-0 mt-5"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1}}
+        animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
         <AboutTitle>{t("about.title")}</AboutTitle>
         <AboutDesc>{t("about.desc")}</AboutDesc>

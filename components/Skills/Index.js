@@ -11,11 +11,11 @@ export default function Index() {
 
   return (
     <>
-      <motion.div className='lg:w-9/12 w-full mb-4 mx-auto mt-28 md:px-4 px-0'
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1}}
-      transition={{ duration: 2 }}>
-        
+      <motion.div className='lg:w-9/12 w-full mb-4 mx-auto mt-5 md:px-4 px-0'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}>
+
         <SkillsTitle>{t("skills.title")}</SkillsTitle>
         <SkillsDesc>{t("skills.desc")}</SkillsDesc>
         <SkillsItem />
