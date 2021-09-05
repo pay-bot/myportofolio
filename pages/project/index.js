@@ -10,7 +10,6 @@ import { motion } from "framer-motion"
 
 
 import { useRouter } from 'next/router'
-import Category from "../../components/Project/Category"
 
 
 export default function index({ initialProject }) {
@@ -24,7 +23,6 @@ export default function index({ initialProject }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
-        <Category />
 
         {initialProject.map((data, i) => (
 
