@@ -12,7 +12,7 @@ import axios from "axios";
 
 
 async function incrementLikes(slug) {
-  const res = await useSWR('https://cmsku.herokuapp.com/api/project/like/' + slug, {
+  const res = await useSWR('http://cmsku.herokuapp.com/api/project/like/' + slug, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
   });
@@ -21,7 +21,7 @@ async function incrementLikes(slug) {
 
 
 export const useContentMeta = slug => {
-  const baseUrl = "https://cmsku.herokuapp.com/api/project/"
+  const baseUrl = "http://cmsku.herokuapp.com/api/project/"
 
 
   const url = baseUrl + slug
