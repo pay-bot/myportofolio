@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const postLike = async (slug) => {
-    const res = await axios.post('http://cmsku.herokuapp.com/api/project/like/slug?=dipoles', {
+    const res = await axios.post('http://cmsku.herokuapp.com/api/project/like/dipoles', {
   headers: {
     'content-type': 'application/json'
   },
