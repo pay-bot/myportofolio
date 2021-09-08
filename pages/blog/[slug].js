@@ -13,7 +13,7 @@ export default function page({ detailPost, initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="md:w-10/12 w-full mx-auto md:px-6 px-2 ">
+      <div className="md:w-9/12 w-full mx-auto md:px-6 px-2 ">
 
         <div className="flex md:flex-row flex-col">
           <div className="md:w-8/12 w-full">

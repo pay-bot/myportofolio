@@ -1,5 +1,15 @@
 import axios from "axios";
 
+export const postLike = async (slug) => {
+    const res = await axios.post(`/like/slug=${slug}`, {
+  headers: {
+    'content-type': 'application/json'
+  },
+});
+return res.json();
+}
+
+
 export const getDetailPost = async (slug) => {
   try {
     const data = await axios.get(

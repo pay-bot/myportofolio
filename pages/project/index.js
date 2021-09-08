@@ -4,12 +4,12 @@ import Link from 'next/link'
 import moment from "moment"
 import clsx from "clsx";
 import classnames from "classnames";
-import { getProject } from "../../utils/api"
-
+import { getProject, postLike } from "../../utils/api"
 import { motion } from "framer-motion"
-
-
 import { useRouter } from 'next/router'
+import useLocalStorageState from 'use-local-storage-state'
+import LikeButton from '../../components/LikeButton';
+
 
 
 export default function index({ initialProject }) {
@@ -17,9 +17,14 @@ export default function index({ initialProject }) {
   const router = useRouter();
   const { locale } = router;
   const language = locale;
+  const [toggle, setToggle] = useLocalStorageState(false)
+
+  function onClick() {
+    setToggle(true)
+  }
   return (
     <>
-      <motion.div className='md:w-9/12 w-full mx-auto  md:pr-5 md:pl-7'
+      <motion.div className='lg:w-9/12 w-full mx-auto  md:pr-5 md:pl-7'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
@@ -49,8 +54,14 @@ export default function index({ initialProject }) {
                   <img src="/left-arrow.svg" alt="" className="w-8 h-5  mx-3 block" />
                 </a></Link>
               </div>
-            </div>
-          </div>
+              <button
+          className='rounded-md focus:outline-none heart-button'
+          onClick={postLike}
+        >
+          test
+        </button>
+              </div>
+              </div>
         ))}
       </motion.div>
     </>

@@ -16,7 +16,7 @@ export default function index({ initialPost }) {
   const language = locale;
   return (
     <>
-      <motion.div className='md:w-10/12 w-full flex md:flex-row flex-col mx-auto justify-around md:mt-4 md:px-0 px-2'
+      <motion.div className='md:w-9/12 w-full flex md:flex-row flex-col mx-auto justify-around md:mt-4 md:px-0 px-2'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
