@@ -13,7 +13,7 @@ export default function page({ detailPost, initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="md:w-9/12 w-full mx-auto md:px-6 px-2 ">
+      <div className="md:w-9/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
 
         <div className="flex md:flex-row flex-col">
           <div className="md:w-8/12 w-full">
@@ -32,9 +32,9 @@ export default function page({ detailPost, initialPost }) {
             </div>
           </div>
 
-          <div className="flex flex-col lg:ml-5">
+          <div className="lg:w-4/12 flex flex-col my-5">
             <div className="border-b-2  border-black mb-5 flex">
-              <p className="text-md inline-block px-2 py-1 bg-black text-white">RECENT POST</p>
+              <p className="text-md inline-block py-1 bg-black text-white px-2">RECENT POST</p>
 
             </div>
             <div className="">

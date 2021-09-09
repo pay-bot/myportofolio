@@ -49,6 +49,7 @@
     "swr": "^1.0.0",
     "tailwind-darkmode-toggle": "^1.0.5",
     "tailwind-glassmorphism": "^1.0.6",
+    "tailwind-scrollbar-hide": "^1.0.3",
     "tailwindcss": "^2.2.9",
     "tailwindcss-glow": "^2.0.0-alpha.1",
     "tailwindcss-neumorphism": "^0.1.0",

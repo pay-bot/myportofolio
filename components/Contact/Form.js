@@ -82,7 +82,7 @@ export default function Form() {
           cols=""
           rows="10">
         </textarea>
-        <button className="rounded font-semibold py-1 px-4 bg-[#008FFF] dark:bg-[#45ADFF] mx-auto dark:text-gray-300 mb-5"
+        <button className="rounded font-semibold py-1 px-4 bg-[#008FFF] dark:bg-[#45ADFF] mx-auto dark:text-white mb-5"
           type='submit'>
           {t("hire.send")}
         </button>

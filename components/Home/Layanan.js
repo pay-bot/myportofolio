@@ -42,43 +42,43 @@ export default function Layanan() {
 
   return (
     <>
-    <div ref={ref} className="mt-2  dark:bg-[#192949]  dark:border-gray-600 bg-gradient-to-t bg-[#EAECF4]">
-    <motion.div className="mb-10 md:p-5 p-0 "
-      animate={animation}>
-      <div className="lg:w-9/12 w-11/12 mx-auto py-10">
-        <LayananTitle>{t("service.title")}</LayananTitle>
-        <div className="p-5">
-          <LayananCardTitle>{t("service.favorite")}</LayananCardTitle>
-          <div className="w-full mx-auto flex lg:flex-row flex-col">
-            <LayananCard
-              image="/images/next.svg"
-              item="NextJS"
-              description={t("service.next")}
-            />
-            <LayananCard
-              image="/images/tailwind.svg"
-              item="Tailwind"
-              description={t("service.tailwind")}
-            />
-          </div>
-          <LayananCardTitle>{t("service.discipline")}</LayananCardTitle>
-          <div className="w-full mx-auto flex lg:flex-row flex-col">
+      <div ref={ref} className="lg:w-9/12 w-full items-center flex mx-auto lg:px-0 md:px-8 px-4 mt-2  dark:bg-[#192949]    bg-[#EAECF4]  ">
+        <motion.div className="py-10 rounded border border-4 border-[#008FFF] dark:border-[#45ADFF] "
+          animate={animation}>
+          <div className=" mx-auto ">
+            <LayananTitle>{t("service.title")}</LayananTitle>
+            <div className="p-5">
+              <LayananCardTitle>{t("service.favorite")}</LayananCardTitle>
+              <div className="w-full mx-auto flex lg:flex-row flex-col">
+                <LayananCard
+                  image="/images/next.svg"
+                  item="NextJS"
+                  description={t("service.next")}
+                />
+                <LayananCard
+                  image="/images/tailwind.svg"
+                  item="Tailwind"
+                  description={t("service.tailwind")}
+                />
+              </div>
+              <LayananCardTitle>{t("service.discipline")}</LayananCardTitle>
+              <div className="w-full mx-auto flex lg:flex-row flex-col">
 
-            <LayananCard
-              image="responsive.svg"
-              item={t("service.responsive")}
-              description={t("service.presponsive")}
-            />
-            <LayananCard
-              image="cleancode.png"
-              item={t("service.clean")}
-              description={t("service.pclean")}
-              
-            />
+                <LayananCard
+                  image="responsive.svg"
+                  item={t("service.responsive")}
+                  description={t("service.presponsive")}
+                />
+                <LayananCard
+                  image="cleancode.png"
+                  item={t("service.clean")}
+                  description={t("service.pclean")}
+
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      </motion.div>
+        </motion.div>
       </div>
     </>
   )

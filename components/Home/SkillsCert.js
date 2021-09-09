@@ -45,7 +45,7 @@ export default function SkillsCert() {
             <SkillsTitle>Keterampilan saya</SkillsTitle>
             <CarouselItem />
           </div>
-          <div className="lg:w-9/12 w-11/12 mx-auto mb-10 p-5">
+          <div className=" mx-auto mb-10 p-5">
             <p className="mt-0 mb-5 font-semibbold md:text-4xl text-3xl dark:text-white text-center">Sertifikat</p>
             <SertifikatItem />
           </div>

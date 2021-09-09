@@ -36,15 +36,17 @@
     "message": "Pesan Anda",
     "send": "KIRIM"
   },
-
   "about": {
     "title": "Tentang",
     "desc": "Profile Singkat Saya",
     "p": "Saya adalah Front End Web Develover . saya menggunakan RactJS sebagai library JavaScript dan menggunakan NextJS sebagai framework. saya sangat senang menggunakan NextJS dan Tailwind CSS "
   },
-
   "skills": {
     "title": "Keterampilan",
     "desc": "Keterampilan Yang Saya Miliki"
+  },
+  "projects": {
+    "title": "Proyek",
+    "desc": "Skills I Have"
   }
 }

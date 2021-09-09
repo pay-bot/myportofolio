@@ -16,7 +16,7 @@ export default function index({ initialPost }) {
   const language = locale;
   return (
     <>
-      <motion.div className='md:w-9/12 w-full flex md:flex-row flex-col mx-auto justify-around md:mt-4 md:px-0 px-2'
+      <motion.div className='lg:w-9/12 w-full flex lg:flex-row flex-col mx-auto justify-around md:mt-4 lg:px-0 md:px-8 px-4'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
@@ -32,9 +32,9 @@ export default function index({ initialPost }) {
             return (
               <>
 
-                <div className="lg:w-8/12 md:px-5 px-0 mt-10">
-                  <div className="border-b-2  border-blue-700 mb-5 flex">
-                    <p className="text-md inline-block px-2 py-1 bg-blue-700 text-white">BLOG</p>
+                <div className="lg:w-8/12 mt-10">
+                  <div className="border-b-2  border-[#008FFF] dark:border-[#45ADFF] mb-5 flex">
+                    <p className="text-md inline-block px-2 py-1 bg-[#008FFF] dark:bg-[#45ADFF] dark:text-white">BLOG</p>
                   </div>
                   <div key={data.id} className="mt-5 border-b">
                     <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
@@ -59,7 +59,7 @@ export default function index({ initialPost }) {
                     </div>
                     <div className="">
                       <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                        <p className="md:text-xl text-lg capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link></div>
+                        <p className=" text-lg capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link></div>
                   </div>
                 </div>
 

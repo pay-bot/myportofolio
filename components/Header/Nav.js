@@ -7,8 +7,8 @@ import id from '../../locales/id';
 
 export default function Nav({ dir }) {
   const dirs = {
-    horizontal: "justify-around space-x-10",
-    vertical: "flex-col space-y-6 z-50"
+    horizontal: "justify-center z-50 md:flex hidden lg:space-x-10 md:space-x-8",
+    vertical: "flex-col z-50 text-center h-screen items-center space-y-16 justify-center text-3xl"
   }
   const pickedDir = dirs[dir];
 
@@ -22,8 +22,8 @@ export default function Nav({ dir }) {
   };
 
   return (
-    <div className="lg:flex items-center z-50 dark:bg-gradient-to-r dark:from-blue-gray-900 dark:via-purple-900 dark:to-blue-gray-900">
-      <ul className={classnames("flex my-6 capitalize lg:mx-auto mr-0", pickedDir)}>
+    <div className="md:flex items-center z-50 ">
+      <ul className={classnames("flex my-4 capitalize md:mx-auto ", pickedDir)}>
         <Navitems href="/">HOME</Navitems>
         <Navitems href="/about">{t.about}</Navitems>
         <Navitems href="/skills">{t.skills}</Navitems>

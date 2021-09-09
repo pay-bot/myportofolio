@@ -5186,6 +5186,11 @@ tailwind-glassmorphism@^1.0.6:
   resolved "https://registry.yarnpkg.com/tailwind-glassmorphism/-/tailwind-glassmorphism-1.0.6.tgz#9800f8ddf60b6adb53b1d48b921f834ef9e4c378"
   integrity sha512-ToxQko9QOwMbQy7U7l3Anqz5NwWYQTywzd8rjR/NC8VvTjpp/JaZFOJ7kQXxSkN6D9up58fE+KGocQ/HO7YU4g==
 
+tailwind-scrollbar-hide@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.0.3.tgz#00d4851659389856bd3185d5e45bdf0462b4f166"
+  integrity sha512-BF+ITR3cJFFF8IP1B6snlZtwSJxwWIB030LX9ZGEITBfWiqn1V4rEJUF44HJH5w6hZBrqSlwJdhILya8OvWefg==
+
 tailwindcss-glow@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-glow/-/tailwindcss-glow-2.0.0-alpha.1.tgz#47888887681cb9684a52f81dab50e35f7363def4"

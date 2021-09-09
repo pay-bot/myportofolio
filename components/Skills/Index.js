@@ -1,7 +1,7 @@
 
-import SkillsDesc from './SkillsDesc'
+import Description from '../Description'
 import SkillsItem from './SkillsItem'
-import SkillsTitle from './SkillsTitle'
+import Title from '../Title'
 import { motion } from "framer-motion"
 import { useTranslation } from 'next-i18next';
 
@@ -11,13 +11,13 @@ export default function Index() {
 
   return (
     <>
-      <motion.div className='lg:w-9/12 w-full mb-4 mx-auto mt-5 md:px-4 px-0'
+      <motion.div className='lg:w-9/12 w-full mx-auto lg:px-0 md:px-7 px-2 my-10'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
 
-        <SkillsTitle>{t("skills.title")}</SkillsTitle>
-        <SkillsDesc>{t("skills.desc")}</SkillsDesc>
+        <Title>{t("skills.title")}</Title>
+        <Description>{t("skills.desc")}</Description>
         <SkillsItem />
       </motion.div>
     </>
