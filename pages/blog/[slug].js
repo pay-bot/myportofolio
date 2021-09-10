@@ -13,16 +13,16 @@ export default function page({ detailPost, initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="md:w-9/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
+      <div className="lg:w-9/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
 
-        <div className="flex md:flex-row flex-col">
-          <div className="md:w-8/12 w-full">
+        <div className="flex lg:flex-row flex-col">
+          <div className="lg:w-8/12 w-full">
             <div className="md:mt-5">
               <p className="pb-5 text-gray-700 dark:text-white">BLOG /</p>
               <h1 className="md:text-5xl text-4xl text-gray-700 dark:text-white md:font-bold font-semibold">{language === 'en' ? detail.title : detail.title_idn}</h1>
               <div className="flex  my-5">
-                <p className="text-xs text-white0 dark:text-gray-300"> {moment(detail.created_at).calendar()}</p>
-                <p className="text-xs text-white0 dark:text-gray-300">&nbsp; - Fahri</p>
+                <p className="text-xs text-white0 dark:text-gray-100"> {moment(detail.created_at).calendar()}</p>
+                <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
               </div>
             </div>
             <img src={detail.img_url} alt="" className="md:w-screen md:h-[600px] mt-5" />

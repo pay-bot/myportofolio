@@ -40,8 +40,8 @@ export default function index({ initialPost }) {
                     <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
                       <p className="md:text-3xl text-2xl capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
                     <div className="flex  my-5">
-                      <p className="text-xs text-white0 dark:text-gray-300"> {moment(data.created_at).calendar()}</p>
-                      <p className="text-xs text-white0 dark:text-gray-300">&nbsp; - Fahri</p>
+                      <p className="text-xs text-white0 dark:text-gray-100"> {moment(data.created_at).calendar()}</p>
+                      <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
                     </div>
                     <div className="card-zoom mb-3  ">
                       <img src={data.img_url} alt="" className="card-zoom-image overflow-hidden lg:m-1 lg:w-full lg:h-[464px] w-full transition duration-500 ease-in-out transform " />

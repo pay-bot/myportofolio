@@ -28,8 +28,18 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="fixed z-50 md:py-1 py-4 w-full bg-[#F4F4FB] dark:bg-[#2E3D60] transform transition duration-500  shadow-md">
+
+      <div className="fixed z-50 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  shadow-md">
         <div className=" lg:w-9/12 w-11/12 flex mx-auto ">
+        <div className="w-2/12  items-center flex md:hidden block ">
+            <img src="/menu.svg" className="cursor-pointer h-12 w-8" onClick={() => setOffcanvas(true)} />
+          </div>
+          <div className={classnames("-mt-4 fixed bg-white dark:bg-gray-900 h-screen w-full md:block transition-all z-50 ", offcanvas ? "left-0" : "-left-full")}>
+            <img src="/X.svg" className="cursor-pointer absolute top-5 left-4 w-8" onClick={() => setOffcanvas(false)} />
+            <Nav
+            dir="vertical"
+            />
+          </div>
           
             <Nav dir="horizontal" />
           <div className="md:w-2/12 w-full ml-auto items-center flex z-30">
@@ -80,15 +90,7 @@ export default function Navbar() {
               )}
             </button>
           </div>
-          <div className="w-2/12 justify-end items-center flex md:hidden block ">
-            <img src="/menu.svg" className="cursor-pointer h-12 w-8" onClick={() => setOffcanvas(true)} />
-          </div>
-          <div className={classnames("-mt-4 fixed bg-white dark:bg-gray-900 h-screen w-full md:block transition-all z-50 ", offcanvas ? "right-0" : "-right-full")}>
-            <img src="/X.svg" className="cursor-pointer absolute top-5 right-4 w-8" onClick={() => setOffcanvas(false)} />
-            <Nav
-              dir="vertical"
-            />
-          </div>
+          
         </div>
 
       </div>

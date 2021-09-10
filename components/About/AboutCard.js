@@ -14,7 +14,7 @@ export default function AboutCard() {
         <div className="items-center h-full">
           <div className="mx-auto flex lg:mt-0 mt-4 items-center h-full">
             <div className="">
-              <p className="mb-5 text-gray-800 dark:text-gray-300 text-justify">
+              <p className="mb-5 text-gray-800 dark:text-gray-100 text-justify">
                 {t("about.p")}</p>
               <div className="flex mb-2">
                 <img src="profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />

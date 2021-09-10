@@ -26,20 +26,22 @@ export default function index({ initialProject }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
+          <div className="lg:px-0 md:px-8 px-4">
         <Title>{t.project}</Title>
         <Description>{t.projectDesc}</Description>
+        </div>
 
         {initialProject.map((data, i) => (
 
           <div key={data.id} className={classnames("flex md:mb-20 my-10 ", i % 2 === 0 ? "md:flex-row-reverse " : " mb-10")}>
-          <div className=" overflow-hidden z-30 md:hover:none hover:md:z-0 md:w-7/12 w-full md:relative absolute rounded lg:px-0 md:px-8 px-4">
+          <div className=" overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-full lg:px-0 md:px-8 px-4 mx-auto md:relative absolute rounded ">
               <img src={data.img_url} alt="" className=" transform transition duration-500 ease-in-out hover:scale-110  rounded shadow-2xl w-full md:h-[420px] h-[313px] " />
             </div>
-            <div className={classnames(" md:px-0 px-3 lg:mx-0 md:mx-8 mx-4 md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:px-0  md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded", i % 2 === 0 ? "md:mr-1 md:ml-8 " : " md:ml-1  ")}
+            <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:px-0  md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded "
             >
               <p className={classnames(i % 2 === 0 ? "md:text-left text-right flex  capitalize mb-5 text-right text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white" : "capitalize mb-5 text-right text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white ")}>{data.title}</p>
               <div className={classnames("md:py-5 md:px-5 md:mt-14 mt-3 md:shadow-xl shadow-none md:bg-[#EAECF4]  dark:md:bg-[#455781] dark:md:text-white md:text-gray-700 text-black dark:text-white rounded absolute flex", i % 2 === 0 ? "md:-mr-20 -mr-0  " : "md:-ml-20 -ml-0  ")}>
-                <div className={classnames("flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3", i % 2 === 0 ? "text-left " : "text-right ")} dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
+                <div className={classnames("flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30", i % 2 === 0 ? "text-left " : "text-right ")} dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
 
               </div>
               <div className={classnames("-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative", i % 2 === 0 ? "-ml-2  " : " -right-2  flex-row-reverse  ")}>

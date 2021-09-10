@@ -34,7 +34,7 @@ export default function LikeButton({ slug }) {
         className={classNames(
           'mt-1 font-medium text-lg',
           like === 0
-            ? 'text-gray-400 dark:text-gray-500'
+            ? 'text-gray-200 dark:text-gray-500'
             : 'bg-clip-text text-transparent bg-gradient-to-tr from-accent-200 via-accent-300 to-accent-400'
         )}
       >
@@ -109,7 +109,7 @@ function LikeButtonHeart({ likes }) {
             fill='currentColor'
             className={classNames(
               'dark:text-gray-600',
-              likes === 5 ? 'text-white' : 'text-gray-400'
+              likes === 5 ? 'text-white' : 'text-gray-200'
             )}
           />
 
