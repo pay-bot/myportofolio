@@ -48,7 +48,7 @@ export default function SkillsItem() {
     ])
   return (
     <>
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
+      <div className='grid -mx-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
       {skills.map((skill) => (
         <SkillsCard key={skill} {...skill} />
       ))}

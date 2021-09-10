@@ -17,15 +17,15 @@ export default function AboutCard() {
               <p className="mb-5 text-gray-800 dark:text-gray-100 text-justify">
                 {t("about.p")}</p>
               <div className="flex mb-2">
-                <img src="profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
+                <img src="id.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">Fahri Alpiansyah</span>
               </div>
               <div className="flex mb-2">
-                <img src="/profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
+                <img src="cake.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">11 Oktober 1995</span>
               </div>
               <div className="flex mb-2">
-                <img src="/profile-svgrepo-com.svg" alt="" className="w-6 h-6 " />
+                <img src="location.svg" alt="" className="w-6 h-6 " />
                 <span className="mx-3 font-semibold">Depok, Jawa Barat</span>
               </div>
             </div>

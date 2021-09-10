@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <>
-      <motion.div id="hire" className=" lg:w-9/12 w-full mx-auto flex lg:flex-row flex-col mt-20 lg:px-0 md:px-8 px-4"
+      <motion.div id="hire" className=" lg:w-8/12 w-full mx-auto flex lg:flex-row flex-col mt-20 lg:px-0 md:px-8 px-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
@@ -18,7 +18,7 @@ export default function Contact() {
           <p className="text-gray-900 dark:text-gray-100 text-md text-justify">{t("hire.p")}</p>
           <div className="mt-5 flex text-black dark:text-gray-100 text-md font-semibold"><img src="location.svg" className="w-6 mx-2 " />{t("hire.address")}</div>
           <p className="ml-10 mb-7 dark:text-gray-200">Depok, Jawa Barat</p>
-          <div className="flex text-black text-md font-semibold dark:text-gray-100"><img src="phoneout.svg" className="w-6 mx-2 " />Phone</div>
+          <div className="flex text-black text-md font-semibold dark:text-gray-100"><img src="phone.svg" className="w-6 mx-2 " />Phone</div>
           <p className="ml-10 mb-7 dark:text-gray-200 ">08984629140</p>
           <div className="flex text-black text-md font-semibold dark:text-gray-100"><img src="mail.svg" className="w-6 mx-2 dark:text-gray-100 " />Mail</div>
           <p className="ml-10 mb-7 dark:text-gray-200 ">afahri22@yahoo.com</p>

@@ -13,7 +13,7 @@ export default function page({ detailPost, initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="lg:w-9/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
+      <div className="lg:w-8/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
 
         <div className="flex lg:flex-row flex-col">
           <div className="lg:w-8/12 w-full">
@@ -32,7 +32,7 @@ export default function page({ detailPost, initialPost }) {
             </div>
           </div>
 
-          <div className="lg:w-4/12 flex flex-col my-5">
+          <div className="lg:w-4/12 flex flex-col my-5 lg:ml-5 ml-0">
             <div className="border-b-2  border-black mb-5 flex">
               <p className="text-md inline-block py-1 bg-black text-white px-2">RECENT POST</p>
 
@@ -40,7 +40,7 @@ export default function page({ detailPost, initialPost }) {
             <div className="">
               {initialPost.map((data, i) => (
                 <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                  <p className="md:text-xl text-lg capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
+                  <p className="text-base capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
               ))}
             </div>
           </div>

@@ -16,7 +16,7 @@
 }
 
 .card-zoom {
-  @apply relative overflow-hidden  ;
+  @apply md:overflow-hidden  ;
 }
 
 .card-zoom-image {

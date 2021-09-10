@@ -42,8 +42,8 @@ export default function Layanan() {
 
   return (
     <>
-      <div ref={ref} className="lg:w-9/12 w-11/12 items-center flex mx-auto mt-2  dark:bg-[#273658]    bg-[#EAECF4]  ">
-        <motion.div className="w-full py-10 rounded border border-4 border-[#008FFF] dark:border-[#45ADFF] "
+      <div ref={ref} className="lg:w-8/12 w-11/12 items-center flex mx-auto mt-2  dark:bg-[#273658]    bg-[#EAECF4]  ">
+        <motion.div className="w-full py-10 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
           animate={animation}>
           <div className=" mx-auto ">
             <LayananTitle>{t("service.title")}</LayananTitle>

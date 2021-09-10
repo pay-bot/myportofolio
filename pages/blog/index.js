@@ -16,7 +16,7 @@ export default function index({ initialPost }) {
   const language = locale;
   return (
     <>
-      <motion.div className='lg:w-9/12 w-full flex lg:flex-row flex-col mx-auto justify-around md:mt-4 lg:px-0 md:px-8 px-4'
+      <motion.div className='lg:w-8/12 w-full flex lg:flex-row flex-col mx-auto justify-around md:mt-4 lg:px-0 md:px-8 px-4'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
@@ -38,7 +38,7 @@ export default function index({ initialPost }) {
                   </div>
                   <div key={data.id} className="mt-5 border-b">
                     <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                      <p className="md:text-3xl text-2xl capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
+                      <p className="md:text-3xl text-2xl capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
                     <div className="flex  my-5">
                       <p className="text-xs text-white0 dark:text-gray-100"> {moment(data.created_at).calendar()}</p>
                       <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
@@ -52,14 +52,14 @@ export default function index({ initialPost }) {
                   </div>
                 </div>
                 <div className="lg:w-4/12 w-full mt-10">
-                  <div className="flex flex-col md:ml-5">
+                  <div className="flex flex-col lg:ml-5">
                     <div className="border-b-2  border-black mb-5 flex">
                       <p className="text-md inline-block px-2 py-1 bg-black text-white">RECENT POST</p>
 
                     </div>
-                    <div className="">
+                    <div className="lg:my-0 my-5">
                       <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                        <p className=" text-lg capitalize  hover:text-blue-700 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link></div>
+                        <p className=" text-base capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link></div>
                   </div>
                 </div>
 

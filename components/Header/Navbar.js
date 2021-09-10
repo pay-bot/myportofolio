@@ -3,8 +3,6 @@ import Nav from "./Nav";
 import { useState, useEffect } from 'react';
 import useDarkMode from "../../hooks/useDarkMode";
 import classnames from "classnames";
-import en from '../../locales/en';
-import id from '../../locales/id';
 import { useRouter } from 'next/router'
 
 export default function Navbar() {
@@ -13,14 +11,8 @@ export default function Navbar() {
   useEffect(() => setOffcanvas(false), [pathname])
   const { toggleDarkMode, darkMode } = useDarkMode();
 
-
-  const [click, setClick] = useState(true);
-
-  const handleClick = () => setClick(!click);
-
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? en : id;
 
   const changeLanguage = (e) => {
     const locale = e.target.value;
@@ -30,8 +22,8 @@ export default function Navbar() {
     <>
 
       <div className="fixed z-50 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  shadow-md">
-        <div className=" lg:w-9/12 w-11/12 flex mx-auto ">
-        <div className="w-2/12  items-center flex md:hidden block ">
+        <div className=" lg:w-8/12 w-11/12 flex mx-auto ">
+        <div className="w-2/12  items-center flex md:hidden  ">
             <img src="/menu.svg" className="cursor-pointer h-12 w-8" onClick={() => setOffcanvas(true)} />
           </div>
           <div className={classnames("-mt-4 fixed bg-white dark:bg-gray-900 h-screen w-full md:block transition-all z-50 ", offcanvas ? "left-0" : "-left-full")}>
