@@ -1,56 +1,88 @@
-import SkillsCard from "./SkillsCard"
 import React, { useMemo } from "react";
+import { useRouter } from 'next/router'
+
 
 
 export default function SkillsItem() {
-  const skills = useMemo (
+
+  const router = useRouter();
+  const { locale } = router;
+  const language = locale;
+  
+  const skills = useMemo(
     () => [
       {
         image: "/images/html.svg",
         alt: "html",
         title: "HTML",
+        level: "Advanced",
+        level_idn: "Lanjutan"
       },
       {
-        image:"/images/css.png",
-          alt:"css",
-          title:"CSS"
+        image: "/images/css.png",
+        alt: "css",
+        title: "CSS",
+        level: "Advanced",
+        level_idn: "Lanjutan"
       },
       {
-        image:"/images/js.png",
-          alt:"Javascript",
-          title:"Javascript"
+        image: "/images/js.png",
+        alt: "Javascript",
+        title: "Javascript",
+        level: "Intermediate",
+        level_idn: "Menengah"
       },
       {
-        image:"/images/react.png",
-          alt:"react",
-          title:"ReactJS"
+        image: "/images/react.png",
+        alt: "react",
+        title: "ReactJS",
+        level: "Intermediate",
+        level_idn: "Menengah"
       },
       {
-        image:"/images/next.svg",
-        alt:"next",
-        title:"NextJS"
+        image: "/images/next.svg",
+        alt: "next",
+        title: "NextJS",
+        level: "Intermediate",
+        level_idn: "Menengah"
       },
       {
-        image:"vue.svg",
-          alt:"vue",
-          title:"VUeJS"
+        image: "vue.svg",
+        alt: "vue",
+        title: "VUeJS",
+        level: "Beginer",
+        level_idn: "Pemula"
       },
       {
-        image:"laravel.svg",
-          alt:"laravel",
-          title:"Laravel"
+        image: "laravel.svg",
+        alt: "laravel",
+        title: "Laravel",
+        level: "Beginer",
+        level_idn: "Pemula"
       },
       {
-        image:"/images/tailwind.svg",
-          alt:"tailwind",
-          title:"Tailwind"
-      }
+        image: "/images/tailwind.svg",
+        alt: "tailwind",
+        title: "Tailwind",
+        level: "Advanced",
+        level_idn: "Lanjutan"
+      },
     ])
   return (
     <>
       <div className='grid -mx-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
-      {skills.map((skill) => (
-        <SkillsCard key={skill} {...skill} />
+      {skills.map((data, i) => (
+      <div className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4] shadow-md p-6 flex flex-col items-center m-2 justify-center' key ={i}>
+        <div className='h-full'>
+          <img className='w-24' src={data.image} alt={data.alt} />
+        </div>
+        <div className='flex flex-col items-center'>
+          <span className='block text-xl mb-2'>{data.title}</span>
+        </div>
+        <div className="nm-inset-white-100 dark:nm-inset-gray-100 w-full py-3 text-center ">
+          <p className="font-semibold dark:text-white">{language === 'en' ? data.level : data.level_idn }</p>
+          </div>
+      </div>
       ))}
       </div>
     </>

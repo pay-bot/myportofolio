@@ -10,7 +10,7 @@ module.exports = {
         200: '#F5CEC7',
       },
       gray: {
-        100: '#455781'
+        100: '#455781',
       },
       white: {
         100: '#EAECF4'
@@ -91,9 +91,9 @@ module.exports = {
     },
   },
   variants: {
-    neumorphismFlat: ['responsive'],
-    neumorphismConcave: false,
-    neumorphismConvex: ['responsive', 'hover'],
+    neumorphismFlat: ['responsive', 'focus', 'active'],
+    neumorphismConcave: ['responsive', 'focus', 'active'],
+    neumorphismConvex: ['responsive', 'hover', 'focus', 'active'],
     neumorphismInset: ['focus', 'active'],
     extend: {
       boxShadow: ['active'],
