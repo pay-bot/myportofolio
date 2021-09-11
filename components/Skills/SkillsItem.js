@@ -77,7 +77,7 @@ export default function SkillsItem() {
           <img className='w-24' src={data.image} alt={data.alt} />
         </div>
         <div className='flex flex-col items-center'>
-          <span className='block text-xl mb-2'>{data.title}</span>
+          <span className='block text-xl mb-2 dark:text-white'>{data.title}</span>
         </div>
         <div className="nm-inset-white-100 dark:nm-inset-gray-100 w-full py-3 text-center ">
           <p className="font-semibold dark:text-white">{language === 'en' ? data.level : data.level_idn }</p>
