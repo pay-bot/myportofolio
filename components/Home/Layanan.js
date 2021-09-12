@@ -1,10 +1,12 @@
 import LayananCard from "./LayananCard"
 import LayananCardTitle from "./LayananCardTitle"
-import LayananTitle from "./LayananTitle"
+import Title from "../Title"
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from "framer-motion"
 import React, { useEffect } from "react";
 import { useTranslation } from 'next-i18next';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 
 
@@ -24,7 +26,7 @@ export default function Layanan() {
       animation.start({
         y: 0,
         transition: {
-          y: { duration: 2, stiffness: 1000, velocity: -100, type: 'spring', bounce: 0.3 }
+          y: { duration: 5, stiffness: 1000, velocity: -100, type: 'spring', bounce: 0.9 }
 
         }
       });
@@ -42,12 +44,12 @@ export default function Layanan() {
 
   return (
     <>
-      <div ref={ref} className="lg:w-8/12 w-11/12 items-center flex mx-auto mt-2  dark:bg-[#273658]    bg-[#EAECF4]  ">
+    
+      <div ref={ref} className="lg:w-8/12 w-11/12 items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
         <motion.div className="w-full py-10 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
           animate={animation}>
-          <div className=" mx-auto ">
-            <LayananTitle>{t("service.title")}</LayananTitle>
             <div className="p-5">
+            <Title>{t("service.title")}</Title>
               <LayananCardTitle>{t("service.favorite")}</LayananCardTitle>
               <div className="w-full mx-auto flex lg:flex-row flex-col">
                 <LayananCard
@@ -75,7 +77,6 @@ export default function Layanan() {
                   description={t("service.pclean")}
 
                 />
-              </div>
             </div>
           </div>
         </motion.div>

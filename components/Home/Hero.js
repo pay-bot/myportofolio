@@ -13,7 +13,7 @@ export default function Hero() {
     <>
 
 
-      <div className=" lg:w-8/12 w-full flex md:flex-row flex-col my-auto lg:h-screen items-center justify-center mx-auto lg:px-0 md:px-8 px-4 lg:-mt-16 md:mt-5 mt-10 lg:overflow-hidden lg:-mb-2 mb-[89px]  ">
+      <div className=" lg:w-8/12 w-full flex md:flex-row flex-col my-auto lg:h-screen items-center justify-center mx-auto lg:px-0 md:px-8 px-4 lg:-mt-14 md:mt-5 mt-10 lg:overflow-hidden lg:mb-0 mb-[89px]  ">
         <motion.div className=" md:w-6/12 w-full mx-auto mb-5 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -38,7 +38,7 @@ export default function Hero() {
 
           </div>
         </motion.div>
-        <motion.div className="lg:mr-2 mr-0 md:w-6/12 relative w-full mx-auto flex md:flex-row justify-center flex-col lg:mt-14 md:mt-10 mt-5 "
+        <motion.div className="lg:mr-2 mr-0 md:w-6/12 relative w-full mx-auto flex md:flex-row justify-center flex-col lg:mt-10 md:mt-10 mt-5 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 5 }}>
@@ -51,7 +51,7 @@ export default function Hero() {
 
 
 
-            <img src="porto.png" alt="" height="550" className=" absolute lg:h-[500px] h-[415px]" />
+            <img src="porto.png" alt="" className=" absolute lg:h-[500px] h-[415px] " />
           </div>
         </motion.div>
       </div>
