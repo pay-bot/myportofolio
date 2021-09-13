@@ -18,10 +18,10 @@ export default function Layanan() {
   
   return (
     <>
-      <div className="lg:w-8/12 w-full items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
-        <div className="w-full py-5 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
+      <div className="w-full items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
+        <div className="lg:w-8/12 w-full mx-auto py-5 rounded lg:px-0 md:px-8 px-4 "
           >
-            <div className="p-5" >
+            <div className="" >
     <About />
     <Index />
             <Title>{t("service.title")}</Title>
