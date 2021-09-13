@@ -17,7 +17,7 @@ function Wrapper({ children }) {
         <meta name="Description" content={SEO_DATA.description}></meta>
       </Head>
       <Navbar />
-      <main className="overflow-x-hidden w-full flex-grow bg-white  dark:bg-[#1A2744]  mx-auto mt-16 ">{children}</main>
+      <main className="overflow-x-hidden w-full flex-grow bg-white  dark:bg-[#1A2744]  mx-auto mt-16 scrollbar-hide ">{children}</main>
       <Footer>© 2021 Build with Nextjs & Tailwind</Footer>
     </>
   )
