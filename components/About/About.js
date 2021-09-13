@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <>
-      <motion.div className="w-full mx-auto lg:px-0 md:px-8 px-4 "
+      <motion.div className="w-full mx-auto  "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>

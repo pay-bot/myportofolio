@@ -11,7 +11,7 @@ export default function Index() {
 
   return (
     <>
-      <motion.div className='w-full mx-auto lg:px-0 md:px-8 px-4 my-10'
+      <motion.div className='w-full mx-auto my-5'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
