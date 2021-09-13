@@ -41,7 +41,7 @@ export default function index({ initialProject }) {
             >
               <p className={classnames("capitalize flex mb-5 text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white", i % 2 === 0 ? "" : "flex justify-end")}>{data.title}</p>
               <div className={classnames("md:py-5 md:px-5 md:mt-14 mt-3 md:shadow-xl shadow-none md:bg-[#EAECF4]  dark:md:bg-[#455781] dark:md:text-white md:text-gray-700 text-black dark:text-white rounded absolute flex", i % 2 === 0 ? "md:-mr-20 -mr-0  " : "md:-ml-20 -ml-0  ")}>
-                <div className={classnames("flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30", i % 2 === 0 ? "text-left " : "text-right ")} dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
+                <div className={classnames("select-none flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30", i % 2 === 0 ? "text-left " : "text-right ")} dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
 
               </div>
               <div className={classnames("-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative", i % 2 === 0 ? "-ml-2  " : " -right-2  flex-row-reverse  ")}>

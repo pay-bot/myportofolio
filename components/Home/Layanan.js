@@ -6,8 +6,8 @@ import { motion, useAnimation } from "framer-motion"
 import React, { useEffect } from "react";
 import { useTranslation } from 'next-i18next';
 import { ParallaxProvider } from 'react-scroll-parallax';
-
-
+import About from "../About/About"
+import Index from "../Skills/Index"
 
 
 
@@ -18,11 +18,12 @@ export default function Layanan() {
   
   return (
     <>
-    
       <div className="lg:w-8/12 w-11/12 items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
-        <div className="w-full py-10 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
+        <div className="w-full py-5 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
           >
             <div className="p-5" >
+    <About />
+    <Index />
             <Title>{t("service.title")}</Title>
               <LayananCardTitle>{t("service.favorite")}</LayananCardTitle>
               <div data-aos="fade-up-right" className="w-full mx-auto flex lg:flex-row flex-col">

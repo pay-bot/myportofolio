@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <>
     
-      <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id="hire" className=" lg:w-8/12 w-full mx-auto flex lg:flex-row flex-col mt-24 lg:px-0 md:px-8 px-4"
+      <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id="hire" className=" lg:w-8/12 w-full mx-auto flex lg:flex-row flex-col my-10 lg:px-0 md:px-8 px-4"
         >
         <div  className="lg:w-6/12 w-full mr-5 ">
           <Title>{t("hire.title")}</Title>
