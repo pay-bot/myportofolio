@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { useTranslation } from 'next-i18next';
 import { RESUME } from "./resume"
 import Link from "next/link"
-
+import Image from 'next/image'
 
 
 
@@ -48,9 +48,11 @@ export default function Hero() {
             <Link href="https://tailwindcss.com/"><a className="lg:-right-8 -right-3 flex absolute animate-wiggle lg:w-20 w-16 h-16 lg:h-20  rounded-full p-2 mt-52 nm-inset-white-100 dark:nm-inset-gray-100 "><img src="tailwind.svg" alt="" /></a></Link>
 
 
+<div className="relative lg:h-[500px] h-[415px]">
 
-
-            <img src="porto.png" alt="" className=" absolute lg:h-[500px] h-[415px] " />
+            <Image src="/porto.png" alt="" layout="fill" // required
+    objectFit="cover" className="  " />
+    </div>
           </div>
         </motion.div>
       </div>

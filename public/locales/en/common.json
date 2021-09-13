@@ -1,10 +1,5 @@
 {
-  "navbar": {
-    "about": "ABOUT",
-    "skills": "SKILLS",
-    "project": "PROJECT",
-    "contact": "CONTACT"
-  },
+  
   "citation": {
     "p": "If you can't stand the tiredness of studying, then you have to be able to endure the pain of stupidity"
   },
@@ -17,7 +12,7 @@
     "download": "Download CV"
   },
   "service": {
-    "title": "My Best Service",
+    "title": "Service",
     "favorite": "Favorite",
     "next": "NextJS helps me to create applications with good performance",
     "tailwind": "Tailwind CSS helps me to create beautiful and unique interface designs",
@@ -43,10 +38,6 @@
   },
   "skills": {
     "title": "Skills",
-    "desc": "Skills I Have"
-  },
-  "projects": {
-    "title": "Project",
     "desc": "Skills I Have"
   }
 }

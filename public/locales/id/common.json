@@ -1,10 +1,4 @@
 {
-  "navbar": {
-    "about": "TENTANG",
-    "skills": "KEMAMPUAN",
-    "project": "PROYEK",
-    "contact": "KONTAK"
-  },
   "citation": {
     "p": "Jika kamu tidak sanggup menehan lelahnya belajar, Maka kamu harus sanggup menahan perihnya kebodohan"
   },
@@ -17,7 +11,7 @@
     "download": "Unduh CV"
   },
   "service": {
-    "title": "Pelayanan Terbaik Saya",
+    "title": "Layanan",
     "favorite": "Kesukaan",
     "next": "NextJS membantu saya menciptakan aplikasi dengan performa yang baik",
     "tailwind": "Tailwind CSS membantu saya menciptakan desain antarmuka yang cantik dan unik",
@@ -44,9 +38,5 @@
   "skills": {
     "title": "Keterampilan",
     "desc": "Keterampilan Yang Saya Miliki"
-  },
-  "projects": {
-    "title": "Proyek",
-    "desc": "Skills I Have"
   }
 }

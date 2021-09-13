@@ -18,7 +18,7 @@ export default function Layanan() {
   
   return (
     <>
-      <div className="w-full items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
+      <div className="w-full items-center flex mx-auto  dark:bg-[#273658]  bg-[#EAECF4]  ">
         <div className="lg:w-8/12 w-full mx-auto py-5 rounded lg:px-0 md:px-8 px-4 "
           >
             <div className="" >

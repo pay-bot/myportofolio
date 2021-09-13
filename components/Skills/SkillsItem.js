@@ -8,7 +8,9 @@ export default function SkillsItem() {
   const router = useRouter();
   const { locale } = router;
   const language = locale;
-  const interval = 40
+  
+  const interval = 30
+
   
   const skills = useMemo(
     () => [
@@ -73,7 +75,7 @@ export default function SkillsItem() {
     <>
       <div  className='grid -mx-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
       {skills.map((data, i) => (
-      <div data-aos="fade-up" data-aos-offset={interval * i} className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4] shadow-md p-6 flex flex-col items-center m-2 justify-center' key ={i}>
+      <div data-aos="fade-up" data-aos-offset={interval * i} className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4] p-6 flex flex-col items-center m-2 justify-center' key ={i}>
         <div className='h-full'>
           <img className='w-24' src={data.image} alt={data.alt} />
         </div>

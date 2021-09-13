@@ -4,7 +4,7 @@ module.exports = {
     locales: ['en', 'id'],
   },
   react: {
-    useSuspense: false,
+    useSuspense: true,
     wait: true
   }
 };

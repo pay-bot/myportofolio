@@ -60,7 +60,7 @@ export default function Form() {
         <input data-aos="fade-left" className="focus:px-3 border border-gray-500 bg-[#EAECF4] dark:bg-[#455781] rounded py-1 px-4 w-full dark:text-gray-200"
           type='text'
           name='from_name'
-          required="true"
+          required={true}
           value={toSend.from_name}
           onChange={handleChange}
         />
@@ -68,7 +68,7 @@ export default function Form() {
         <input data-aos="fade-left" className="border border-gray-500 bg-[#EAECF4]  dark:bg-[#455781] rounded py-1 px-4 w-full dark:text-gray-200"
           type='text'
           name='reply_to'
-          required="true"
+          required={true}
           value={toSend.reply_to}
           onChange={handleChange}
         />
@@ -76,7 +76,7 @@ export default function Form() {
         <textarea data-aos="fade-left" className="border border-gray-500 bg-[#EAECF4]  dark:bg-[#455781] w-full dark:text-gray-200 mb-5 px-4 py-1"
           name="message"
           value={toSend.message}
-          required="true"
+          required={true}
           onChange={handleChange}
           id=""
           cols=""
