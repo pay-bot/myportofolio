@@ -9,7 +9,7 @@
     "p": "If you can't stand the tiredness of studying, then you have to be able to endure the pain of stupidity"
   },
   "greeting": {
-    "p1": "Hy...",
+    "p1": "Hy,",
     "p2": "I'm"
   },
   "button": {
@@ -39,7 +39,7 @@
   "about": {
     "title": "About",
     "desc": "My Short Profile",
-    "p": "I am a Front End Web Developer. I use RactJS as a JavaScript library and use NextJS as a framework. I really enjoy using NextJS and Tailwind CSS"
+    "p": "an computer science Student based in jakarta, indonesia.I specialize in Web Development.I have worked with many Technologies in several different projects."
   },
   "skills": {
     "title": "Skills",

@@ -9,7 +9,7 @@
     "p": "Jika kamu tidak sanggup menehan lelahnya belajar, Maka kamu harus sanggup menahan perihnya kebodohan"
   },
   "greeting": {
-    "p1": "Halo...",
+    "p1": "Halo,",
     "p2": "Saya"
   },
   "button": {
@@ -39,7 +39,7 @@
   "about": {
     "title": "Tentang",
     "desc": "Profile Singkat Saya",
-    "p": "Saya adalah Front End Web Develover . saya menggunakan RactJS sebagai library JavaScript dan menggunakan NextJS sebagai framework. saya sangat senang menggunakan NextJS dan Tailwind CSS "
+    "p": "seorang mahasiswa ilmu komputer yang berbasis di jakarta, indonesia. Saya mengkhususkan diri dalam Pengembangan Web. Saya telah bekerja dengan banyak Teknologi di beberapa proyek berbeda."
   },
   "skills": {
     "title": "Keterampilan",

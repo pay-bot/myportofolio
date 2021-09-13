@@ -15,43 +15,17 @@ export default function Layanan() {
 
   const { t } = useTranslation('common');
 
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
-  const animation = useAnimation();
-
-  useEffect(() => {
-
-    if (inView) {
-      animation.start({
-        y: 0,
-        transition: {
-          y: { duration: 5, stiffness: 1000, velocity: -100, type: 'spring', bounce: 0.9 }
-
-        }
-      });
-    }
-    if (!inView) {
-      animation.start({
-        y: 50,
-        transition: {
-          y: { stiffness: 1000 }
-        }
-      })
-    }
-  },
-    [inView]);
-
+  
   return (
     <>
     
-      <div ref={ref} className="lg:w-8/12 w-11/12 items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
-        <motion.div className="w-full py-10 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
-          animate={animation}>
-            <div className="p-5">
+      <div className="lg:w-8/12 w-11/12 items-center flex mx-auto  dark:bg-[#273658]  mb-5  bg-[#EAECF4]  ">
+        <div className="w-full py-10 rounded border-4 border-[#008FFF] dark:border-[#45ADFF] "
+          >
+            <div className="p-5" >
             <Title>{t("service.title")}</Title>
               <LayananCardTitle>{t("service.favorite")}</LayananCardTitle>
-              <div className="w-full mx-auto flex lg:flex-row flex-col">
+              <div data-aos="fade-up-right" className="w-full mx-auto flex lg:flex-row flex-col">
                 <LayananCard
                   image="/images/next.svg"
                   item="NextJS"
@@ -64,7 +38,7 @@ export default function Layanan() {
                 />
               </div>
               <LayananCardTitle>{t("service.discipline")}</LayananCardTitle>
-              <div className="w-full mx-auto flex lg:flex-row flex-col">
+              <div data-aos="fade-up-left" className="w-full mx-auto flex lg:flex-row flex-col">
 
                 <LayananCard
                   image="responsive.svg"
@@ -79,7 +53,7 @@ export default function Layanan() {
                 />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   )
