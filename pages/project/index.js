@@ -9,7 +9,7 @@ import Title from '../../components/Title';
 import en from '../../locales/en';
 import id from '../../locales/id';
 import Description from '../../components/Description';
-
+import Image from "next/image"
 
 export default function index({ initialProject }) {
 
@@ -34,8 +34,9 @@ export default function index({ initialProject }) {
         {initialProject.map((data, i) => (
 
           <div key={i} className={classnames("my-10 ", i % 2 === 0 ? "flex md:flex-row-reverse " : " flex flex-row ")}>
-            <div className={classnames(" overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-11/12 md:relative absolute rounded", i % 2 === 0 ? "md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 " : "md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4")} >
-              <img data-aos="zoom-in" src={data.img_url} alt="" className=" transform transition duration-500 ease-in-out hover:scale-110 rounded shadow-2xl md:h-[420px] h-[313px] " />
+            <div className={classnames(" overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-11/12 md:relative absolute rounded md:h-[420px] h-[313px]", i % 2 === 0 ? "md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 " : "md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4")} >
+              <Image data-aos="zoom-in" src={data.img_url} alt="" layout="fill" 
+    objectFit="fill" className=" transform transition duration-500 ease-in-out hover:scale-110 rounded shadow-2xl  " />
             </div>
             <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded "
             >

@@ -1,5 +1,8 @@
 import Link from "next/link"
 import { useTranslation } from 'next-i18next';
+import Image from "next/image"
+import AboutId from "./AboutId";
+import AboutSocial from "./AboutSocial";
 
 
 export default function AboutCard() {
@@ -7,35 +10,24 @@ export default function AboutCard() {
 
   return (
     <>
-      <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto ">
-        <img data-aos="zoom-in" src="code.webp" className="h-full rounded-md md:rounded-full " alt="" />
+    <div className=" dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4]dark:text-gray-100 mx-auto flex lg:flex-row flex-col lg:mb-0 p-3 mb-5 ">
+      <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto relative h-[280px]">
+        <Image data-aos="zoom-in" src="/code.webp" layout="fill"
+          objectFit="fill" className=" " alt="" />
       </div>
       <div className="lg:w-8/12 w-full lg:m-3  mx-auto ">
-        <div className="items-center h-full">
-          <div className="mx-auto flex lg:mt-0 mt-4 items-center h-full">
+        <div className="flex items-center h-full">
+          <div className="mx-auto lg:mt-0 mt-4 ">
             <div className="">
-              <p className="mb-5 text-gray-800 dark:text-gray-100 text-justify">
+              <p data-aos="fade-left" className="mb-5 text-gray-800 dark:text-gray-100 text-justify">
                 {t("about.p")}</p>
-              <div className="flex mb-2">
-                <img src="id.svg" alt="" className="w-6 h-6 " />
-                <span className="mx-3 font-semibold">Fahri Alpiansyah</span>
-              </div>
-              <div className="flex mb-2">
-                <img src="cake.svg" alt="" className="w-6 h-6 " />
-                <span className="mx-3 font-semibold">11 Oktober 1995</span>
-              </div>
-              <div className="flex mb-2">
-                <img src="location.svg" alt="" className="w-6 h-6 " />
-                <span className="mx-3 font-semibold">Depok, Jawa Barat</span>
-              </div>
+              <AboutId
+              />
             </div>
-          </div>
-          <div className="flex justify-around lg:-mt-5 md:mt-5 mt-5">
-            <Link href="https://github.com/pay-bot"><a className=""><img src="/github.svg" alt="" className="w-20" /></a></Link>
-            <img src="/facebook.svg" alt="" className="w-20" />
-            <img src="/instagram-text.svg" alt="" className="w-20" />
+            <AboutSocial />
           </div>
         </div>
+      </div>
       </div>
     </>
   )
