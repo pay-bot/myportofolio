@@ -38,7 +38,7 @@ export default function index({ initialProject }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}>
         <div className="lg:px-0 md:px-8 px-4">
-          <Title>{t.project}</Title>
+          <Title>PORTOFOLIO</Title>
           <Description>{t.projectDesc}</Description>
         </div>
 
@@ -62,7 +62,7 @@ export default function index({ initialProject }) {
               </div>
               <div data-aos="fade-up" className="">
               <div  className="transform transition duration-500 ease-in-out hover:scale-110 items-center flex -z-30 md:mt-[310px] mt-12 my-5 justify-center border tracking-widest rounded font-semibold py-1 bg-[#008FFF] dark:bg-[#45ADFF] text-white">
-                <Link href={data.href}><a className="flex -z-30">
+                <Link href={data.href}><a className="flex -z-30" target="_blank" rel="noreferrer">
                   <img src="/right-arrow.svg" alt="" className="w-8 h-5  mx-3 " />
                   <p className="">View Project</p>
                   <img src="/left-arrow.svg" alt="" className="w-8 h-5  mx-3 block" />

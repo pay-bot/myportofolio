@@ -10,7 +10,7 @@ export default function AboutCard() {
 
   return (
     <>
-      <div className=" dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4]dark:text-gray-100 mx-auto flex lg:flex-row flex-col lg:mb-0 p-3 mb-5 ">
+      <div className=" dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-white dark:text-gray-100 mx-auto flex lg:flex-row flex-col lg:mb-0 p-3 mb-5 ">
         <div className="lg:w-4/12 md:w-3/12 w-full lg:m-3 mx-auto relative h-[280px]">
           <Image data-aos="zoom-in" src="/code.webp" layout="fill"
             objectFit="fill" className=" " alt="" />

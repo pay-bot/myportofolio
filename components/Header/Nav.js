@@ -15,7 +15,7 @@ export default function Nav({ dir }) {
     <div className="md:flex items-center z-50 ">
       <ul className={classnames("flex my-4 capitalize md:mx-auto ", pickedDir)}>
         <Navitems href="/">HOME</Navitems>
-        <Navitems href="/project">PORTOFOLIO</Navitems>
+        <Navitems href="/portofolio">PORTOFOLIO</Navitems>
         <Navitems href="/blog">BLOG</Navitems>
       </ul >
 

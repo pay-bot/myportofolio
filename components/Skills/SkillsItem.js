@@ -39,21 +39,21 @@ export default function SkillsItem() {
       {
         image: "/images/react.png",
         alt: "react",
-        title: "ReactJS",
+        title: "React.JS",
         level: "Intermediate",
         level_idn: "Menengah"
       },
       {
         image: "/images/next.svg",
         alt: "next",
-        title: "NextJS",
+        title: "Next.JS",
         level: "Intermediate",
         level_idn: "Menengah"
       },
       {
         image: "/vue.svg",
         alt: "vue",
-        title: "VUeJS",
+        title: "Vue.JS",
         level: "Beginer",
         level_idn: "Pemula"
       },
@@ -77,7 +77,7 @@ export default function SkillsItem() {
       <div  className='grid -mx-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
       {skills.map((data, i) => (
         <div key ={i} data-aos="fade-up" data-aos-offset={i % 2 === 0 ? (interval+15) * i   : interval * i} className="">
-      <div  className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-gradient-to-t from-gray-100 via-gray-200 to-[#EAECF4] p-6 flex flex-col items-center m-2 justify-center' >
+      <div  className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-white p-6 flex flex-col items-center m-2 justify-center' >
         <div className='relative w-24 h-24'>
           <Image layout="fill"
           objectFit="fill" className=""  src={data.image} alt={data.alt} />
