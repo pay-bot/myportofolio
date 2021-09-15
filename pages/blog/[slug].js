@@ -4,6 +4,10 @@ import { useRouter } from 'next/router'
 import moment from "moment"
 import { getPost } from "../../utils/api"
 import Link from 'next/link'
+import SEO_DATA from '../../data/seo'
+import Head from 'next/head'
+import Navbar from "../../components/Header/Navbar";
+import Footer from "../../components/Footer";
 
 
 export default function page({ detailPost, initialPost }) {
@@ -13,7 +17,14 @@ export default function page({ detailPost, initialPost }) {
   const language = locale;
   return (
     <>
-      <div className="lg:w-8/12 w-full mx-auto my-10 lg:px-0 md:px-8 px-4">
+      <Head>
+        <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
+        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
+        <meta property="og:title" content={'Home'} key="ogtitle" />
+        <title>{'Blog -' + language === 'en' ? detail.title : detail.title_idn}</title>
+      </Head>
+      <Navbar />
+      <div className="lg:w-8/12 w-full mx-auto mt-24 mb-10 lg:px-0 md:px-8 px-4">
 
         <div className="flex lg:flex-row flex-col">
           <div className="lg:w-8/12 w-full">
@@ -46,6 +57,7 @@ export default function page({ detailPost, initialPost }) {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -4,6 +4,7 @@ import Home from "../components/Home/Home"
 import Head from 'next/head'
 import SEO_DATA from '../data/seo'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Navbar from "../components/Header/Navbar";
 
 
 export default function index() {

@@ -27,7 +27,7 @@ export default function Citation() {
   return (
     <>
       <motion.div
-        className="absolute flex -mt-16 items-center justify-center w-full"
+        className="absolute flex items-center justify-center w-screen h-screen "
         variants={{
           initial: {
             opacity: 1,

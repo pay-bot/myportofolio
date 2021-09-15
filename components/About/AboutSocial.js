@@ -26,7 +26,7 @@ export default function AboutSocial() {
   return (
     <>
 
-        <div  className="flex justify-around items-center mt-5">
+        <div  className="flex justify-around items-center lg:mb-0 mb-5">
       {social.map((data, i) => (
           <div key={i} className="relative w-24 h-6">
             <Link href={data.href}><a className=""><Image src={data.img} alt="" layout="fill"
