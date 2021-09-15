@@ -76,7 +76,7 @@ export default function SkillsItem() {
     <>
       <div  className='grid -mx-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
       {skills.map((data, i) => (
-        <div key ={i} data-aos="fade-up" data-aos-offset={i % 2 === 0 ? (interval+40) * i   : interval * i} className="">
+        <div key ={i} data-aos="fade-up" data-aos-offset={i % 2 === 0 ? (interval+10) * i   : interval * i++} className="">
       <div  className='transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-white p-6 flex flex-col items-center m-2 justify-center' >
         <div className='relative w-24 h-24'>
           <Image layout="fill"
