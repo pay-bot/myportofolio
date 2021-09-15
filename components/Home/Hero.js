@@ -79,7 +79,7 @@ export default function Hero() {
 
           </div>
         </motion.div>
-        <motion.div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center "
+        <motion.div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center md:mt-0 mt-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}>
@@ -92,8 +92,8 @@ export default function Hero() {
 
           </div>
             <div className=" relative w-3/4 lg:h-[500px] h-[420px]  ">
-              <Image src="/porto.png" alt="" layout="fill" 
-                objectFit="fill" className="" priority={true} />
+              <img src="/porto.png" alt="" layout="fill" 
+                objectFit="fill" className="" loading="eager" />
             </div>
         </motion.div>
       </div>
