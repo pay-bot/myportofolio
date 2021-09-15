@@ -93,7 +93,7 @@ export default function Hero() {
           </div>
             <div className=" relative w-3/4 lg:h-[500px] h-[420px]  ">
               <Image src="/porto.png" alt="" layout="fill" 
-                objectFit="fill" className="  " />
+                objectFit="fill" className="" priority={true} />
             </div>
         </motion.div>
       </div>

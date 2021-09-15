@@ -1,9 +1,9 @@
 const SEO = {
   title: 'Fahri ',
-  description: 'My Portofolio App, for show off what i can',
-  url: 'https://fahr.vercel.app/',
+  description: 'My Portofolio App, For Show Off What I Can',
+  url: 'https://fahri.vercel.app/',
   site_name: 'Portofolio',
-  link_image: 'https://next-portofolio-template.vercel.app/tailwind-logo.svg' // must be jpg or png file
+  link_image: 'https://fahri.vercel.app/porto.png' // must be jpg or png file
 }
 
 export default SEO
