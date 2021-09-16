@@ -11,10 +11,15 @@ module.exports = {
       },
       gray: {
         100: '#455781',
+        900: "#1A2744"
       },
       white: {
-        100: '#EAECF4'
-      }
+        100: '#EAECF4',
+        50: '#fff'
+      },
+      yellow: {
+        100: '#FFF47D',
+      },
     },
     neumorphismSize: {
       xs: '0.05em',

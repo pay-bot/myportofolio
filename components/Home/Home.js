@@ -15,14 +15,14 @@ export default function Home() {
       setTimeout(() => setHome([
         <motion.div className="" initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}>
+          transition={{ duration: 0.1 }}>
           <Navbar />
         </motion.div>,
         <Hero />,
         <Layanan />,
         <Contact />,
         <Footer />,
-      ]), 4800),
+      ]), 4700),
     ];
     return () => ids.forEach((id) => clearTimeout(id));
   }, [setHome]);

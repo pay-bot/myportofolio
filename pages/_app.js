@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
-      offset: 160,
+      offset: 100,
     });
   }, []);
   return (

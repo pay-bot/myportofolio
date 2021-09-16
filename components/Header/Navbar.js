@@ -38,47 +38,21 @@ export default function Navbar() {
             <select
               onChange={changeLanguage}
               defaultValue={locale}
-              className="ml-auto mx-2 appearance-none focus:border-none  text-black dark:text-white text-shadow-sm text-lg bg-transparent hover:cursor-pointer"
+              className="ml-auto mx-4 appearance-none focus:border-none  text-black dark:text-white text-shadow-sm text-lg bg-transparent hover:cursor-pointer"
             >
               <option className="text-black " value="id">ID 🇮🇩</option>
               <option className="text-black " value="en">EN 🇬🇧</option>
             </select>
             <button
-              className="h-8  z-50 px-2 border-2 border-blue-600 rounded bg-gray-500 dark:bg-white flex  items-center"
+              className="h-8  z-50 p-2 rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900 flex  items-center transition-all"
               type="button"
               onClick={toggleDarkMode}
             >
               {darkMode ? (
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth={2}
-                  viewBox="0 0 25 25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  height="1.3em"
-                  width="1.2em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="block"
-                >
-                  <circle cx={12} cy={12} r={3} />
-                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                </svg>
+                <img src="sun.svg" alt="" className="w-5 h-5" />
               ) : (
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth={2}
-                  viewBox="0 0 25 25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  height="1.3em"
-                  width="1.2em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="block"
-                >
-                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-                </svg>
+                <img src="moon.svg" alt="" className="w-5 h-5" />
+
               )}
             </button>
           </div>

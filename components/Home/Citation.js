@@ -20,7 +20,7 @@ export default function Citation() {
   const [citation, setCitation] = useState(true);
   useEffect(() => {
     const ids = [
-      setTimeout(() => setCitation(false), 4800),
+      setTimeout(() => setCitation(false), 4500),
     ];
     return () => ids.forEach((id) => clearTimeout(id));
   }, [setCitation]);

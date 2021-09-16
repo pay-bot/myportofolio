@@ -57,7 +57,7 @@ export default function index({ initialProject }) {
 
               </div>
               <div  className={classnames("-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative", i % 2 === 0 ? "-ml-2  " : " -right-2  flex-row-reverse  ")}>
-                {data.tech.map(data => <img src={data.code} title={data.name} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"} data-aos-offset={interval++ * 30} className="w-8 h-8 mx-2 transform transition duration-500 ease-in-out hover:scale-125" alt="" />)}
+                {data.tech.map(data => <img src={data.code} title={data.name} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"} data-aos-offset={interval++ * 20} className="w-8 h-8 mx-2 transform transition duration-500 ease-in-out hover:scale-125" alt="" />)}
 
               </div>
               <div data-aos="fade-up" className="">

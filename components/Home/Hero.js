@@ -59,7 +59,7 @@ export default function Hero() {
         <motion.div className=" md:w-6/12 w-full items-center md:justify-start justify-center flex "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 1 }}>
+          transition={{ duration: 1 }}>
           <div className="md:text-left text-center ">
             <p className="text-5xl  font-bold my-1 dark:text-white">{t("greeting.p1")}</p>
             <p className="text-5xl font-bold my-1  dark:text-white">{t("greeting.p2")}<span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-700 via-blue-500 to-blue-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-t dark:from-blue-400 dark:via-blue-600 dark:to-blue-400"> Fahri</span>
@@ -79,10 +79,10 @@ export default function Hero() {
 
           </div>
         </motion.div>
-        <motion.div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center md:mt-0 mt-5"
+        <motion.div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center md:mt-0.5 mt-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 1 }}>
+          transition={{ duration: 1 }}>
           <div className="mx-auto rounded-full absolute lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] h-[330px] w-[330px] mb-24 px-5 border-4 border-[#008FFF] dark:border-[#45ADFF] ">
 
             <Link href="https://reactjs.org/"><a className="ml-4 flex absolute animate-wiggle lg:w-20 lg:h-20 w-16 h-16  rounded-full  nm-inset-white-100 dark:nm-inset-gray-100 z-30 items-center"><img src="react-2.svg" alt="" className="p-2" /></a></Link>
@@ -91,7 +91,7 @@ export default function Hero() {
             <Link href="https://tailwindcss.com/"><a className="lg:-right-7 -right-3 flex absolute animate-wiggle lg:w-20 w-16 h-16 lg:h-20  rounded-full p-2 mt-52 nm-inset-white-100 dark:nm-inset-gray-100 "><img src="tailwind.svg" alt="" /></a></Link>
 
           </div>
-            <div className=" relative w-3/4 lg:h-[500px] h-[420px]  ">
+            <div className=" relative w-3/4 lg:h-[500px] ">
               <img src="/porto.png" alt="" layout="fill" 
                 objectFit="fill" className="" loading="eager" />
             </div>
