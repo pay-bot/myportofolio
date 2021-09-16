@@ -1,11 +1,8 @@
 import LayananCard from "./LayananCard"
 import LayananCardTitle from "./LayananCardTitle"
 import Title from "../Title"
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from "framer-motion"
 import React, { useEffect } from "react";
 import { useTranslation } from 'next-i18next';
-import { ParallaxProvider } from 'react-scroll-parallax';
 import About from "../About/About"
 import Index from "../Skills/Index"
 

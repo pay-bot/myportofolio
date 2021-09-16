@@ -1,11 +1,7 @@
-import "react-multi-carousel/lib/styles.css";
-import Home from "../components/Home/Home"
-
 import Head from 'next/head'
+import Home from "../components/Home/Home"
 import SEO_DATA from '../data/seo'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Navbar from "../components/Header/Navbar";
-
 
 export default function index() {
   return (
@@ -25,7 +21,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),
-      // Will be passed to the page component as props
     },
   };
 }

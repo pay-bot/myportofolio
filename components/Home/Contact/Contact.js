@@ -1,23 +1,14 @@
 import React from 'react'
 import Form from "./Form"
-import { motion } from "framer-motion"
 import { useTranslation } from 'next-i18next';
 import Title from "../../Title"
 import Description from "../../Description"
-import { fadeIn } from 'react-animations'
-import { bounce } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
 import { RESUME } from '../resume';
 import Link from "next/link"
 export default function Contact() {
   const { t } = useTranslation('common');
 
-  const styles = {
-    bounce: {
-      animation: 'x 1s',
-      animationName: Radium.keyframes(bounce, 'bounce')
-    }
-  }
+  
 
   return (
     <>

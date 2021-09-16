@@ -13,14 +13,14 @@ import Description from '../../components/Description'
 import Footer from '../../components/Footer'
 
 
-export default function index({ initialPost }) {
+export default function Index({ initialPost }) {
 
   const router = useRouter();
   const { locale } = router;
   const language = locale;
   return (
     <>
-    <Head>
+      <Head>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
         <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
         <meta property="og:title" content={'Home'} key="ogtitle" />
