@@ -11,7 +11,7 @@ import Navbar from '../../components/Header/Navbar'
 import Title from "../../components/Title"
 import Description from '../../components/Description'
 import Footer from '../../components/Footer'
-
+import Image from 'next/image'
 
 export default function Index({ initialPost }) {
 
@@ -53,8 +53,16 @@ export default function Index({ initialPost }) {
                       <p className="text-xs text-white0 dark:text-gray-100"> {moment(data.created_at).calendar()}</p>
                       <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
                     </div>
-                    <div className="card-zoom mb-3  ">
-                      <img src={data.img_url} alt="" className="card-zoom-image overflow-hidden lg:m-1 lg:w-full lg:h-[464px] w-full transition duration-500 ease-in-out transform " />
+                    <div className="card-zoom relative mb-3 h-[464px] w-full">
+                      <Image
+                        src={data.img_url}
+                        alt=""
+                        className="card-zoom-image overflow-hidden lg:m-1 transition duration-500 ease-in-out transform "
+                        layout="fill"
+                        objectFit="fill"
+                        loading="eager"
+                        priority={true}
+                      />
                     </div>
                     <div className="text-gray-700 md:block hidden dark:text-white truncate-3-lines line-clamp-3" dangerouslySetInnerHTML={{ __html: language === 'en' ? data.description : data.description_idn }} />
                     <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">

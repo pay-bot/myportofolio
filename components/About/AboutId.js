@@ -2,8 +2,7 @@ import React, { useMemo } from 'react'
 import Image from "next/image"
 
 export default function AboutId() {
-  const id = useMemo(
-    () => [
+  const id =  [
       {
         img: "/id.svg",
         desc: "Fahri Alpiansyah"
@@ -17,7 +16,7 @@ export default function AboutId() {
         desc: "Depok, Jawa Barat"
       },
       
-    ])
+    ]
 
   const interval = 30
 

@@ -14,25 +14,25 @@ export default function Hero() {
     particles: {
       "number": {
         "value": 20
-    },
-    "size": {
+      },
+      "size": {
         "value": 3
+      },
+      "color": {
+        "value": "#0000ff"
+      },
+      "line_linked": {
+        "enable": true,
+        "color": "#00B4D8",
+        "opacity": 0.4,
+      },
+
     },
-    "color": {
-      "value": "#0000ff"
-    },
-    "line_linked": {
-      "enable": true,
-      "color": "#00B4D8",
-      "opacity": 0.4,
-    },
-  
-},
-"interactivity": {
-    "events": {
+    "interactivity": {
+      "events": {
         "onhover": {
-            "enable": true,
-            "mode": "repulse"
+          "enable": true,
+          "mode": "repulse"
         }
       },
     }
@@ -42,14 +42,14 @@ export default function Hero() {
     particles: {
       "number": {
         "value": 0
-    },
-    "size": {
+      },
+      "size": {
         "value": 0
-    },
+      },
+    }
   }
-}
 
- 
+
   return (
     <>
 
@@ -79,10 +79,8 @@ export default function Hero() {
 
           </div>
         </motion.div>
-        <motion.div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center md:mt-0.5 mt-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}>
+        <div className=" md:w-6/12 relative h-full w-full  flex md:flex-row md:justify-center flex-col md:items-end items-center lg:mt-0 mt-10"
+        >
           <div className="mx-auto rounded-full absolute lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] h-[330px] w-[330px] mb-24 px-5 border-4 border-[#008FFF] dark:border-[#45ADFF] ">
 
             <Link href="https://reactjs.org/"><a className="ml-4 flex absolute animate-wiggle lg:w-20 lg:h-20 w-16 h-16  rounded-full  nm-inset-white-100 dark:nm-inset-gray-100 z-30 items-center"><img src="react-2.svg" alt="" className="p-2" /></a></Link>
@@ -91,11 +89,18 @@ export default function Hero() {
             <Link href="https://tailwindcss.com/"><a className="lg:-right-7 -right-3 flex absolute animate-wiggle lg:w-20 w-16 h-16 lg:h-20  rounded-full p-2 mt-52 nm-inset-white-100 dark:nm-inset-gray-100 "><img src="tailwind.svg" alt="" /></a></Link>
 
           </div>
-            <div className=" relative w-3/4 lg:h-[500px] ">
-              <img src="/porto.png" alt="" layout="fill" 
-                objectFit="fill" className="" loading="eager" />
-            </div>
-        </motion.div>
+          <div className=" relative w-3/4 lg:h-[500px] h-[400px] ">
+            <Image
+              src="/porto.png"
+              alt=""
+              layout="fill"
+              objectFit="fill"
+              loading="eager"
+              priority={true}
+              quality={100}
+            />
+          </div>
+        </div>
       </div>
 
     </>

@@ -8,9 +8,9 @@ import SEO_DATA from '../../data/seo'
 import Head from 'next/head'
 import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer";
+import Image from 'next/image'
 
-
-export default function page({ detailPost, initialPost }) {
+export default function Page({ detailPost, initialPost }) {
   const [detail, setDetail] = useState(detailPost);
   const router = useRouter();
   const { locale } = router;
@@ -36,7 +36,15 @@ export default function page({ detailPost, initialPost }) {
                 <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
               </div>
             </div>
-            <img src={detail.img_url} alt="" className="md:w-screen md:h-[600px] mt-5" />
+            <Image
+              src={detail.img_url}
+              alt=""
+              className="md:w-screen md:h-[600px] mt-5"
+              layout="fill"
+              objectFit="fill"
+              loading="eager"
+              priority={true}
+            />
             <div className="my-5">
 
               <div className="text-gray-700 dark:text-white" dangerouslySetInnerHTML={{ __html: language === 'en' ? detail.description : detail.description_idn }} />

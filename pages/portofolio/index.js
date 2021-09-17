@@ -15,7 +15,7 @@ import Head from 'next/head'
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer';
 
-export default function index({ initialProject }) {
+export default function Index({ initialProject }) {
 
   const router = useRouter();
   const { locale } = router;

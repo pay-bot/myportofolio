@@ -7,8 +7,8 @@ import Link from "next/link"
 export default function AboutSocial() {
   const interval = 40
 
-  const social = useMemo(
-    () => [
+  const social = 
+     [
       {
         img: "/github.svg",
         href: "https://github.com/pay-bot"
@@ -22,7 +22,7 @@ export default function AboutSocial() {
         href: ""
       },
 
-    ])
+    ]
   return (
     <>
 
