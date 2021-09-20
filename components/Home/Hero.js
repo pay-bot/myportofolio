@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from 'next/image'
 import Particles from 'react-particles-js';
 import React from "react";
+import { buildUrl } from 'cloudinary-build-url';
 
 
 export default function Hero() {
@@ -38,17 +39,14 @@ export default function Hero() {
     }
   }
 
-  const particlesOff = {
-    particles: {
-      "number": {
-        "value": 0
-      },
-      "size": {
-        "value": 0
-      },
+  const urlBlurred = buildUrl('portofolio/porto_nru7iy', {
+    cloud: {
+      cloudName: 'ds48xxpds',
+    },
+    transformations: {
+      quality: 1
     }
-  }
-
+  });
 
   return (
     <>
@@ -91,13 +89,15 @@ export default function Hero() {
           </div>
           <div className=" relative w-3/4 lg:h-[500px] h-[400px] ">
             <Image
-              src="/porto.png"
+              src={urlBlurred}
               alt=""
               layout="fill"
               objectFit="fill"
               loading="eager"
               priority={true}
               quality={100}
+              placeholder="blur"
+              blurDataURL={urlBlurred}
             />
           </div>
         </div>
