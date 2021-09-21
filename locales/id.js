@@ -1,3 +1,3 @@
 export default {
-  projectDesc: "Aplikasi yang telah saya buat"
+  projectDesc: 'Aplikasi yang telah saya buat'
 };

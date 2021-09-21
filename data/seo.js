@@ -4,6 +4,6 @@ const SEO = {
   url: 'https://fahri.vercel.app/',
   site_name: 'Portofolio',
   link_image: 'https://fahri.vercel.app/porto.png' // must be jpg or png file
-}
+};
 
-export default SEO
+export default SEO;

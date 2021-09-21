@@ -1,14 +1,13 @@
-import { getDetailPost } from "../../utils/api"
-import React, { useState } from "react";
-import { useRouter } from 'next/router'
-import moment from "moment"
-import { getPost } from "../../utils/api"
-import Link from 'next/link'
-import SEO_DATA from '../../data/seo'
-import Head from 'next/head'
-import Navbar from "../../components/Header/Navbar";
-import Footer from "../../components/Footer";
-import Image from 'next/image'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import moment from 'moment';
+import Link from 'next/link';
+import Head from 'next/head';
+import Image from 'next/image';
+import { getPost, getDetailPost } from '../../utils/api';
+import SEO_DATA from '../../data/seo';
+import Navbar from '../../components/Header/Navbar';
+import Footer from '../../components/Footer';
 
 export default function Page({ detailPost, initialPost }) {
   const [detail, setDetail] = useState(detailPost);
@@ -20,20 +19,28 @@ export default function Page({ detailPost, initialPost }) {
       <Head>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
         <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
-        <meta property="og:title" content={'Home'} key="ogtitle" />
-        <title>{'Blog -' + language === 'en' ? detail.title : detail.title_idn}</title>
+        <meta property="og:title" content="Home" key="ogtitle" />
+        <title>
+          {`Blog -${language}` === 'en' ? detail.title : detail.title_idn}
+        </title>
       </Head>
       <Navbar />
       <div className="lg:w-8/12 w-full mx-auto mt-24 mb-10 lg:px-0 md:px-8 px-4">
-
-        <div className="flex lg:flex-row flex-col">
+        <div key={detail.id} className="flex lg:flex-row flex-col">
           <div className="lg:w-8/12 w-full">
             <div className="md:mt-5">
               <p className="pb-5 text-gray-700 dark:text-white">BLOG /</p>
-              <h1 className="md:text-5xl text-4xl text-gray-700 dark:text-white md:font-bold font-semibold">{language === 'en' ? detail.title : detail.title_idn}</h1>
+              <h1 className="md:text-5xl text-4xl text-gray-700 dark:text-white md:font-bold font-semibold">
+                {language === 'en' ? detail.title : detail.title_idn}
+              </h1>
               <div className="flex  my-5">
-                <p className="text-xs text-white0 dark:text-gray-100"> {moment(detail.created_at).calendar()}</p>
-                <p className="text-xs text-white0 dark:text-gray-100">&nbsp; - Fahri</p>
+                <p className="text-xs text-white0 dark:text-gray-100">
+                  {' '}
+                  {moment(detail.created_at).calendar()}
+                </p>
+                <p className="text-xs text-white0 dark:text-gray-100">
+                  &nbsp; - Fahri
+                </p>
               </div>
             </div>
             <Image
@@ -43,23 +50,41 @@ export default function Page({ detailPost, initialPost }) {
               layout="fill"
               objectFit="fill"
               loading="eager"
-              priority={true}
+              priority
             />
             <div className="my-5">
-
-              <div className="text-gray-700 dark:text-white" dangerouslySetInnerHTML={{ __html: language === 'en' ? detail.description : detail.description_idn }} />
+              <div
+                className="text-gray-700 dark:text-white"
+                dangerouslySetInnerHTML={{
+                  __html:
+                    language === 'en'
+                      ? detail.description
+                      : detail.description_idn
+                }}
+              />
             </div>
           </div>
 
           <div className="lg:w-4/12 flex flex-col my-5 lg:ml-5 ml-0">
             <div className="border-b-2  border-black mb-5 flex">
-              <p className="text-md inline-block py-1 bg-black text-white px-2">RECENT POST</p>
-
+              <p className="text-md inline-block py-1 bg-black text-white px-2">
+                RECENT POST
+              </p>
             </div>
             <div className="">
               {initialPost.map((data, i) => (
-                <Link href={`/blog/${language === 'en' ? data.slug : data.slug_idn}`}><a className="">
-                  <p className="text-base capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">{language === 'en' ? data.title : data.title_idn}</p></a></Link>
+                <Link
+                  key={i}
+                  href={`/blog/${
+                    language === 'en' ? data.slug : data.slug_idn
+                  }`}
+                >
+                  <a className="">
+                    <p className="text-base capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">
+                      {language === 'en' ? data.title : data.title_idn}
+                    </p>
+                  </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -67,12 +92,14 @@ export default function Page({ detailPost, initialPost }) {
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-
 export async function getServerSideProps(ctx) {
-  const [detailPost, initialPost] = await Promise.all([getDetailPost(ctx.params.slug), getPost()]);
+  const [detailPost, initialPost] = await Promise.all([
+    getDetailPost(ctx.params.slug),
+    getPost()
+  ]);
 
   return { props: { detailPost, initialPost } };
 }

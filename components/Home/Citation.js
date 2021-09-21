@@ -1,28 +1,23 @@
-
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
-
-
 
 export default function Citation() {
   const { t } = useTranslation('common');
 
   const textVariants = {
     initial: {
-      opacity: 0,
+      opacity: 0
     },
     visible: {
-      opacity: 1,
-    },
+      opacity: 1
+    }
   };
 
   const [citation, setCitation] = useState(true);
   useEffect(() => {
-    const ids = [
-      setTimeout(() => setCitation(false), 4500),
-    ];
-    return () => ids.forEach((id) => clearTimeout(id));
+    const ids = [setTimeout(() => setCitation(false), 4500)];
+    return () => ids.forEach(id => clearTimeout(id));
   }, [setCitation]);
   return (
     <>
@@ -31,18 +26,18 @@ export default function Citation() {
         variants={{
           initial: {
             opacity: 1,
-            height: "100%",
+            height: '100%'
           },
           invisible: {
             opacity: 0,
-            height: 0,
-          },
+            height: 0
+          }
         }}
         transition={{
-          duration: 0.6,
+          duration: 0.6
         }}
         initial="initial"
-        animate={citation ? "initial" : "invisible"}
+        animate={citation ? 'initial' : 'invisible'}
       >
         <motion.div
           variants={textVariants}
@@ -50,10 +45,9 @@ export default function Citation() {
           animate="visible"
           transition={{
             delay: 3.0,
-            duration: 1.2,
+            duration: 1.2
           }}
-        >
-        </motion.div>
+        />
         <div className="flex flex-col px-4 mx-auto max-w-screen-md">
           <motion.p
             className="mt-4 mb-2 uppercase text-xl text-center font-medium leading-none md:text-2xl dark:text-white text-black-900 md:my-0"
@@ -62,10 +56,10 @@ export default function Citation() {
             animate="visible"
             transition={{
               delay: 1.0,
-              duration: 1.2,
+              duration: 1.2
             }}
           >
-            {t("citation.p")}
+            {t('citation.p')}
           </motion.p>
           <motion.p
             className="text-base text-right   dark:text-white text-black-700 mt-3"
@@ -74,7 +68,7 @@ export default function Citation() {
             variants={textVariants}
             transition={{
               delay: 2.0,
-              duration: 1.2,
+              duration: 1.2
             }}
           >
             Imam Syafi'i
@@ -82,5 +76,5 @@ export default function Citation() {
         </div>
       </motion.div>
     </>
-  )
+  );
 }

@@ -1,3 +1,3 @@
 export default {
-  projectDesc: "Aplication i have been made"
+  projectDesc: 'Aplication i have been made'
 };

@@ -1,20 +1,20 @@
-import axios from "axios";
+import axios from 'axios';
 
-export const postLike = async (slug) => {
-    const res = await axios.post('http://cmsku.herokuapp.com/api/project/like/dipoles', {
-  headers: {
-    'content-type': 'application/json'
-  },
-});
-return res.json();
-}
+// export const postLike = async slug => {
+//   const res = await axios.post(
+//     'http://cmsku.herokuapp.com/api/project/like/dipoles',
+//     {
+//       headers: {
+//         'content-type': 'application/json'
+//       }
+//     }
+//   );
+//   return res.json();
+// };
 
-
-export const getDetailPost = async (slug) => {
+export const getDetailPost = async slug => {
   try {
-    const data = await axios.get(
-      `${process.env.API_URL}/blog?slug=${slug}`
-    );
+    const data = await axios.get(`${process.env.API_URL}/blog?slug=${slug}`);
     return data.data[0];
   } catch (error) {
     return [];
@@ -23,8 +23,8 @@ export const getDetailPost = async (slug) => {
 
 export const getPost = async () => {
   try {
-    const data = await axios.get(`${process.env.API_URL}/blog?_sort=id:desc`)
-    return data.data
+    const data = await axios.get(`${process.env.API_URL}/blog?_sort=id:desc`);
+    return data.data;
   } catch (error) {
     return [];
   }
@@ -32,14 +32,16 @@ export const getPost = async () => {
 
 export const getProject = async () => {
   try {
-    const data = await axios.get(`${process.env.API_URL}/project?_sort=id:desc`)
-    return data.data
+    const data = await axios.get(
+      `${process.env.API_URL}/project?_sort=id:desc`
+    );
+    return data.data;
   } catch (error) {
     return [];
   }
 };
 
-export const getProjectByCategory = async (id) => {
+export const getProjectByCategory = async id => {
   try {
     const data = await axios.get(
       `${process.env.API_URL}/project/categories?category_id=${id}`
