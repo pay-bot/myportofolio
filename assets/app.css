@@ -41,3 +41,9 @@
   }
 }
 
+[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.35rem;
+}
+

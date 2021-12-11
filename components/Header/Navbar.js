@@ -2,23 +2,23 @@ import { useState, useEffect } from 'react';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Emoji from 'a11y-react-emoji';
 import useDarkMode from '../../hooks/useDarkMode';
 import Nav from './Nav';
-import Emoji from 'a11y-react-emoji';
+import { useCookies } from "react-cookie";
+import Link from "next/link";
+
+const languageNames = {
+  id: "ID 🇮🇩",
+  en: "EN 🇬🇧",
+};
 
 export default function Navbar() {
-  const { pathname } = useRouter();
   const [offcanvas, setOffcanvas] = useState(false);
-  useEffect(() => setOffcanvas(false), [pathname]);
+  useEffect(() => setOffcanvas(false), []);
   const { toggleDarkMode, darkMode } = useDarkMode();
-
-  const router = useRouter();
-  const { locale } = router;
-
-  const changeLanguage = e => {
-    const local = e.target.value;
-    router.push(router.pathname, router.asPath, { local });
-  };
+  const { asPath, locale: activeLocale, locales } = useRouter();
+  const [cookie, setCookie] = useCookies(["NEXT_LOCALE"]);
   return (
     <>
       <div className="fixed z-50 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  shadow-md">
@@ -62,18 +62,26 @@ export default function Navbar() {
 
           <Nav dir="horizontal" />
           <div className="md:w-2/12 w-full ml-auto items-center flex z-30">
-            <select
-              onChange={changeLanguage}
-              defaultValue={locale}
-              className="ml-auto mx-4 appearance-none focus:border-none  text-black dark:text-white text-shadow-sm text-lg bg-transparent hover:cursor-pointer"
+          <ul className="flex gap-x-2 mr-auto">
+      {locales.map((locale) => (
+        <li key={locale}>
+          <Link href={asPath} locale={locale}>
+            <a
+            className="dark:text-white text-black"
+              hrefLang={locale}
+              aria-current={locale === activeLocale ? "page" : null}
+              onClick={() => {
+                if (cookie.NEXT_LOCALE !== locale) {
+                  setCookie("NEXT_LOCALE", locale, { path: "/" });
+                }
+              }}
             >
-              <option className="text-black " value="id">
-                ID 🇮🇩
-              </option>
-              <option className="text-black " value="en">
-                EN 🇬🇧
-              </option>
-            </select>
+              {languageNames[locale]}
+            </a>
+          </Link>
+        </li>
+      ))}
+    </ul>
             <button
               className="w-8 h-8 relative z-50 flex rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900 flex  items-center transition-all"
               type="button"
