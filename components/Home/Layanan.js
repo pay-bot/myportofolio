@@ -5,22 +5,26 @@ import LayananCardTitle from './LayananCardTitle';
 import Title from '../Title';
 import About from '../About/About';
 import Index from '../Skills/Index';
+import Description from '../Description';
+
 
 export default function Layanan() {
   const { t } = useTranslation('common');
 
   return (
     <>
-      <div className="w-full items-center flex mx-auto  dark:bg-[#273658]  bg-[#EAECF4]  ">
-        <div className="lg:w-8/12 w-full mx-auto py-5 rounded lg:px-0 md:px-8 px-4 ">
+      <div className="w-full items-center flex mx-auto  dark:bg-[#273658]  bg-[#EAECF4]  py-16">
+        <div className="w-full px-4 mx-auto rounded lg:w-8/12 lg:px-0 md:px-8 ">
           <div className="">
             <About />
             <Index />
             <Title>{t('service.title')}</Title>
+            <Description>{t('service.desc')}</Description>
+            <div className="p-5 bg-white">
             <LayananCardTitle>{t('service.favorite')}</LayananCardTitle>
             <div
               data-aos="fade-up-right"
-              className="w-full mx-auto flex lg:flex-row flex-col"
+              className="flex flex-col w-full mx-auto lg:flex-row"
             >
               <LayananCard
                 image="/images/next.svg"
@@ -36,7 +40,7 @@ export default function Layanan() {
             <LayananCardTitle>{t('service.discipline')}</LayananCardTitle>
             <div
               data-aos="fade-up-left"
-              className="w-full mx-auto flex lg:flex-row flex-col"
+              className="flex flex-col w-full mx-auto lg:flex-row"
             >
               <LayananCard
                 image="responsive.svg"
@@ -48,6 +52,7 @@ export default function Layanan() {
                 item={t('service.clean')}
                 description={t('service.pclean')}
               />
+            </div>
             </div>
           </div>
         </div>

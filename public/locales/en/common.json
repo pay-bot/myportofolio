@@ -13,6 +13,7 @@
   },
   "service": {
     "title": "Service",
+    "desc": "Services I Offer",
     "favorite": "Favorite",
     "next": "NextJS helps me to create applications with good performance",
     "tailwind": "Tailwind CSS helps me to create beautiful and unique interface designs",

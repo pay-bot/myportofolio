@@ -12,6 +12,7 @@
   },
   "service": {
     "title": "Layanan",
+    "desc": "Layanan yang saya tawarkan",
     "favorite": "Kesukaan",
     "next": "NextJS membantu saya menciptakan aplikasi dengan performa yang baik",
     "tailwind": "Tailwind CSS membantu saya menciptakan desain antarmuka yang cantik dan unik",

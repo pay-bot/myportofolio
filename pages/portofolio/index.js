@@ -32,12 +32,12 @@ export default function Index({ initialProject }) {
       </Head>
       <Navbar />
       <motion.div
-        className="lg:w-8/12 w-full  mt-24 mb-10  mx-auto  "
+        className="w-full mx-auto mt-24 mb-10 lg:w-8/12 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="lg:px-0 md:px-8 px-4">
+        <div className="px-4 lg:px-0 md:px-8">
           <Title>PORTOFOLIO</Title>
           <Description>{t.projectDesc}</Description>
         </div>
@@ -46,7 +46,7 @@ export default function Index({ initialProject }) {
           <div
             key={i}
             className={classnames(
-              'my-10 ',
+              'xl:my-32 my-10 ',
               i % 2 === 0 ? 'flex md:flex-row-reverse ' : ' flex flex-row '
             )}
           >
@@ -64,7 +64,7 @@ export default function Index({ initialProject }) {
                 alt=""
                 layout="fill"
                 objectFit="fill"
-                className=" transform transition duration-500 ease-in-out hover:scale-110 rounded shadow-2xl  "
+                className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110"
               />
             </div>
             <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
@@ -109,7 +109,7 @@ export default function Index({ initialProject }) {
                     title={tech.name}
                     data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
                     data-aos-offset={interval++ * 20}
-                    className="w-8 h-8 mx-2 transform transition duration-500 ease-in-out hover:scale-125"
+                    className="w-8 h-8 mx-2 transition duration-500 ease-in-out transform hover:scale-125"
                     alt=""
                   />
                 ))}
@@ -121,13 +121,13 @@ export default function Index({ initialProject }) {
                       <img
                         src="/right-arrow.svg"
                         alt=""
-                        className="w-8 h-5  mx-3 "
+                        className="w-8 h-5 mx-3 "
                       />
                       <p className="">View Project</p>
                       <img
                         src="/left-arrow.svg"
                         alt=""
-                        className="w-8 h-5  mx-3 block"
+                        className="block w-8 h-5 mx-3"
                       />
                     </a>
                   </Link>

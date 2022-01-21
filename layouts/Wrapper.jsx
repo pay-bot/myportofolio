@@ -21,9 +21,13 @@ function Wrapper({ children }) {
         <meta name="description" content={SEO_DATA.description} />
         <meta name="Description" content={SEO_DATA.description} />
       </Head>
-      <main className="overflow-x-hidden w-full flex-grow bg-white  dark:bg-[#1A2744]  mx-auto scrollbar-hide ">
+      <div className="bg-white dark:bg-[#1A2744]">
+
+      <main className="overflow-x-hidden w-full flex-grow bg-white  dark:bg-[#1A2744]  mx-auto scrollbar-hide max-w-screen-2xl">
         {children}
       </main>
+
+      </div>
     </>
   );
 }

@@ -21,10 +21,10 @@ export default function Navbar() {
   const [cookie, setCookie] = useCookies(["NEXT_LOCALE"]);
   return (
     <>
-      <div className="fixed z-50 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  shadow-md">
-        <div className=" lg:w-8/12 w-11/12 flex mx-auto ">
-          <div className="w-2/12  items-center flex md:hidden  ">
-            <div className="relative cursor-pointer h-12 w-8">
+      <div className="z-50 xl:py-8 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  ">
+        <div className="flex w-11/12 mx-auto lg:w-8/12">
+          <div className="flex items-center w-2/12 md:hidden ">
+            <div className="relative w-8 h-12 cursor-pointer">
               <Image
                 src="/menu.svg"
                 alt=""
@@ -44,7 +44,7 @@ export default function Navbar() {
               offcanvas ? 'left-0' : '-left-full'
             )}
           >
-            <div className="relative cursor-pointer h-12 w-8 mt-4 ml-4">
+            <div className="relative w-8 h-12 mt-4 ml-4 cursor-pointer">
               <Image
                 src="/X.svg"
                 alt=""
@@ -61,13 +61,13 @@ export default function Navbar() {
           </div>
 
           <Nav dir="horizontal" />
-          <div className="md:w-2/12 w-full ml-auto items-center flex z-30">
-          <ul className="flex gap-x-2 mr-auto">
+          <div className="z-30 flex items-center w-full ml-auto md:w-2/12">
+          <ul className="flex mr-auto gap-x-2">
       {locales.map((locale) => (
         <li key={locale}>
           <Link href={asPath} locale={locale}>
             <a
-            className="dark:text-white text-black"
+            className="text-black dark:text-white"
               hrefLang={locale}
               aria-current={locale === activeLocale ? "page" : null}
               onClick={() => {
@@ -83,7 +83,7 @@ export default function Navbar() {
       ))}
     </ul>
             <button
-              className="w-8 h-8 relative z-50 flex rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900 flex  items-center transition-all"
+              className="relative z-50 flex items-center w-8 h-8 transition-all rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900"
               type="button"
               onClick={toggleDarkMode}
             >

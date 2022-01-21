@@ -22,7 +22,7 @@ export default function Citation() {
   return (
     <>
       <motion.div
-        className="absolute flex items-center justify-center w-screen h-screen "
+        className="absolute inset-0 flex items-center justify-center"
         variants={{
           initial: {
             opacity: 1,
@@ -48,9 +48,9 @@ export default function Citation() {
             duration: 1.2
           }}
         />
-        <div className="flex flex-col px-4 mx-auto max-w-screen-md">
+        <div className="flex flex-col max-w-screen-md px-4 mx-auto">
           <motion.p
-            className="mt-4 mb-2 uppercase text-xl text-center font-medium leading-none md:text-2xl dark:text-white text-black-900 md:my-0"
+            className="mt-4 mb-2 text-xl font-medium leading-none text-center uppercase md:text-2xl dark:text-white text-black-900 md:my-0"
             variants={textVariants}
             initial="initial"
             animate="visible"
@@ -62,7 +62,7 @@ export default function Citation() {
             {t('citation.p')}
           </motion.p>
           <motion.p
-            className="text-base text-right   dark:text-white text-black-700 mt-3"
+            className="mt-3 text-base text-right dark:text-white text-black-700"
             initial="initial"
             animate="visible"
             variants={textVariants}
