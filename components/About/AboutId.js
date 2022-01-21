@@ -9,7 +9,7 @@ export default function AboutId() {
     },
     {
       img: '/cake.svg',
-      desc: '11 Oktober 1995'
+      desc: ' Oktober 1995'
     },
     {
       img: '/location.svg',
@@ -23,7 +23,7 @@ export default function AboutId() {
     <>
       {id.map((data, i) => (
         <div key={i} className="flex mb-2">
-          <div className="relative w-6 h-6  ">
+          <div className="relative w-6 h-6 ">
             <Image
               src={data.img}
               alt=""

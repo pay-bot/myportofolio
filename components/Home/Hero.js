@@ -49,11 +49,11 @@ export default function Hero() {
     <>
       <Particles
         params={particlesOption}
-        className="absolute w-screen h-full "
-      />
-      <div className="relative flex flex-col w-full px-4 mx-auto mt-24 lg:w-8/12 md:flex-row lg:h-screen lg:px-0 md:px-8 lg:mt-0 ">
+        className="absolute left-0"
+      ></Particles>
+      <div className="relative flex flex-col w-full px-4 mx-auto mt-24 lg:w-8/12 md:flex-row lg:px-0 md:px-8 lg:mt-32 ">
         <motion.div
-          className="flex items-center justify-center w-full  md:w-6/12 md:justify-start"
+          className="flex items-center justify-center w-full md:w-6/12 md:justify-start"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -70,7 +70,7 @@ export default function Hero() {
               </span>
             </p>
 
-            <div className="my-1 text-5xl font-bold text-transparent  bg-clip-text bg-gradient-to-b from-blue-700 via-blue-500 to-blue-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-t dark:from-blue-400 dark:via-blue-600 dark:to-blue-400">
+            <div className="my-1 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-700 via-blue-500 to-blue-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-t dark:from-blue-400 dark:via-blue-600 dark:to-blue-400">
               <Typewriter
                 options={{
                   strings: ['Front End', 'Web Developer'],
@@ -82,8 +82,8 @@ export default function Hero() {
             <div className="flex justify-center md:justify-start" />
           </div>
         </motion.div>
-        <div className="relative flex flex-col items-center w-full h-full mt-10  md:w-6/12 md:flex-row md:justify-center md:items-end lg:mt-0">
-          <div className="mx-auto rounded-full absolute lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] h-[330px] w-[330px] mb-24 px-5 border-4 border-[#008FFF] dark:border-[#45ADFF] ">
+        <div className="relative flex flex-col items-center w-full h-full mt-10 md:w-6/12 md:flex-row md:justify-center md:items-end lg:mt-0">
+          <div className="mx-auto rounded-full absolute xl:h-[50vh] lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] h-[330px] w-[330px]  px-5 border-4 border-[#008FFF] dark:border-[#45ADFF] ">
             <Link href="https://reactjs.org/">
               <a className="absolute z-30 flex items-center w-16 h-16 ml-4 rounded-full animate-wiggle lg:w-20 lg:h-20 nm-inset-white-100 dark:nm-inset-gray-100">
                 <img src="react-2.svg" alt="" className="p-2" />
@@ -105,12 +105,12 @@ export default function Hero() {
               </a>
             </Link>
           </div>
-          <div className=" relative w-3/4 lg:h-[500px] h-[400px] ">
+          <div className="relative w-full  2xl:h-[65vh] xl:h-[50vh]">
             <Image
               src={urlBlurred}
               alt=""
               layout="fill"
-              objectFit="fill"
+              objectFit="cover"
               loading="eager"
               priority
               quality={100}
