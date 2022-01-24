@@ -6,7 +6,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d build",
-    "dev": "next dev && lint",
+    "dev": "next dev -p 4000 && lint ",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -16,6 +16,7 @@
     "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
     "@svgr/webpack": "^6.1.1",
     "@tailwindcss/line-clamp": "^0.3.0",
     "@tsamantanis/react-glassmorphism": "^1.1.2",
@@ -43,6 +44,7 @@
     "react-listbox": "^1.2.13",
     "react-particles-js": "^3.6.0",
     "react-pdf": "^5.5.0",
+    "react-redux": "^7.2.6",
     "sharp": "^0.29.3",
     "sweetalert": "^2.1.2",
     "tailwind-darkmode-toggle": "^1.0.5",

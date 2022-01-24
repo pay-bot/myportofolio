@@ -1,12 +1,14 @@
-import { useState, useEffect } from 'react';
-import classnames from 'classnames';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import Emoji from 'a11y-react-emoji';
-import useDarkMode from '../../hooks/useDarkMode';
-import Nav from './Nav';
+import { useState, useEffect } from "react";
+import classnames from "classnames";
+import { useRouter } from "next/router";
+import Image from "next/image";
+import Emoji from "a11y-react-emoji";
+import useDarkMode from "../../hooks/useDarkMode";
+import Nav from "./Nav";
 import { useCookies } from "react-cookie";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { openModal } from "../../features/modal/modalSlice";
 
 const languageNames = {
   id: "ID 🇮🇩",
@@ -14,6 +16,7 @@ const languageNames = {
 };
 
 export default function Navbar() {
+  const dispatch = useDispatch();
   const [offcanvas, setOffcanvas] = useState(false);
   useEffect(() => setOffcanvas(false), []);
   const { toggleDarkMode, darkMode } = useDarkMode();
@@ -40,8 +43,8 @@ export default function Navbar() {
           </div>
           <div
             className={classnames(
-              '-mt-4 fixed bg-white dark:bg-gray-900 h-screen w-full md:block transition-all z-50 ',
-              offcanvas ? 'left-0' : '-left-full'
+              "-mt-4 fixed bg-white dark:bg-gray-900 h-screen w-full md:block transition-all z-50 ",
+              offcanvas ? "left-0" : "-left-full"
             )}
           >
             <div className="relative w-8 h-12 mt-4 ml-4 cursor-pointer">
@@ -62,26 +65,47 @@ export default function Navbar() {
 
           <Nav dir="horizontal" />
           <div className="z-30 flex items-center w-full ml-auto md:w-2/12">
-          <ul className="flex mr-auto gap-x-2">
-      {locales.map((locale) => (
-        <li key={locale}>
-          <Link href={asPath} locale={locale}>
-            <a
-            className="text-black dark:text-white"
-              hrefLang={locale}
-              aria-current={locale === activeLocale ? "page" : null}
-              onClick={() => {
-                if (cookie.NEXT_LOCALE !== locale) {
-                  setCookie("NEXT_LOCALE", locale, { path: "/" });
-                }
-              }}
-            >
-              {languageNames[locale]}
-            </a>
-          </Link>
+            <ul className="flex mr-auto gap-x-2">
+              {locales.map((locale) => (
+                <li key={locale}>
+                  <Link href={asPath} locale={locale}>
+                    <a
+                      className="text-black dark:text-white"
+                      hrefLang={locale}
+                      aria-current={locale === activeLocale ? "page" : null}
+                      onClick={() => {
+                        if (cookie.NEXT_LOCALE !== locale) {
+                          setCookie("NEXT_LOCALE", locale, { path: "/" });
+                        }
+                      }}
+                    >
+                      {languageNames[locale]}
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* <ul className='header-left'>
+        <li
+          onClick={() =>
+            dispatch(
+              openModal({
+                name: 'Login',
+                childrenProps: { name: 'kareem', email: 'kareem@gmail.com' },
+              })
+            )
+          }
+        >
+          Login
         </li>
-      ))}
-    </ul>
+        <li
+          onClick={() =>
+            dispatch(openModal({ name: 'Register', position: 'bottom' }))
+          }
+        >
+          Register
+        </li>
+      </ul> */}
             <button
               className="relative z-50 flex items-center w-8 h-8 transition-all rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900"
               type="button"

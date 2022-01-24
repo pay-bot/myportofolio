@@ -7,6 +7,7 @@ import '@tsamantanis/react-glassmorphism/dist/index.css';
 import Contact from './Contact/Contact';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer';
+import ModalManger from '../../utils/ModalManger'
 
 export default function Home() {
   const [home, setHome] = useState(false);
@@ -21,6 +22,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.1 }}
             >
+              <ModalManger />
               <Navbar />
             </motion.div>,
             <Hero />,

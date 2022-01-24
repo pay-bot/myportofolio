@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import Wrapper from '../layouts/Wrapper';
 import 'aos/dist/aos.css';
+import { Provider } from 'react-redux';
+import store from '../features/store';
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -20,9 +22,11 @@ const MyApp = ({ Component, pageProps }) => {
   
   return (
     <>
+     <Provider store={store}>
       <Wrapper>
         <Component {...pageProps} />
       </Wrapper>
+     </Provider>
     </>
   );
 };

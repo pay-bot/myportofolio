@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Particles from 'react-particles-js';
 import React from 'react';
 import { buildUrl } from 'cloudinary-build-url';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../features/modal/modalSlice';
 
 export default function Hero() {
   const { t } = useTranslation('common');
@@ -45,13 +47,15 @@ export default function Hero() {
     }
   });
 
+  const dispatch = useDispatch();
+
   return (
     <>
       <Particles
         params={particlesOption}
-        className="absolute left-0"
+        className="absolute left-0 h-full"
       ></Particles>
-      <div className="relative flex flex-col w-full px-4 mx-auto mt-24 lg:w-8/12 md:flex-row lg:px-0 md:px-8 lg:mt-32 ">
+      <div className="relative flex flex-col w-full px-4 mx-auto mt-24 lg:w-10/12 md:flex-row lg:px-0 md:px-8 lg:mt-32 ">
         <motion.div
           className="flex items-center justify-center w-full md:w-6/12 md:justify-start"
           initial={{ opacity: 0 }}
@@ -79,6 +83,12 @@ export default function Hero() {
                 }}
               />
             </div>
+            {/* <button
+          className='btn'
+          onClick={() => dispatch(openModal({ name: 'LoginRegister' }))}
+        >
+          Read full article
+        </button> */}
             <div className="flex justify-center md:justify-start" />
           </div>
         </motion.div>

@@ -47,3 +47,165 @@
   text-underline-offset: 0.35rem;
 }
 
+.header {
+  padding: 0 10px;
+  height: 50px;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  list-style: none;
+}
+
+.header-left li,
+.header-right li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-left li:last-child,
+.header-right li:last-child {
+  margin-right: 0;
+}
+/* form */
+
+.form {
+  width: 90%;
+}
+
+.form_input {
+  width: 70%;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.form_control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.form button {
+  padding: 7px;
+  font-size: 16px;
+}
+
+/* login register  */
+
+.login-register {
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn {
+  cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* article */
+.article {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.article p {
+  margin: 30px 0;
+}
+
+/* modal */
+.modal-backDrop {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.modal-container {
+  position: absolute;
+  z-index: 1500;
+  background-color: white;
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.modal-close {
+  top: 6px;
+  right: 6px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-close-img {
+  display: block;
+  height: 70%;
+  width: 70%;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* custom modal class */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
