@@ -80,7 +80,7 @@ export default function Hero() {
                   strings: ['Front End', 'Web Developer'],
                   autoStart: true,
                   loop: true
-                }}
+              }}
               />
             </div>
             {/* <button
