@@ -16,7 +16,6 @@ const ModalManger = () => {
 
   const closeModalHandler = () => dispatch(closeModal());
 
-  
 
   const componentsLookUp = { Login, Register, LoginRegister, SkillDetail };
   let renderComponent;
@@ -25,7 +24,9 @@ const ModalManger = () => {
     if (SelectedComponent) {
       renderComponent = <SelectedComponent {...childrenProps} />;
     }
-  }
+    
+  } 
+  
 
   useEffect(() => {
     if (isOpen) {
@@ -37,13 +38,19 @@ const ModalManger = () => {
   }, [isOpen]);
 
   return (
-    <Modal
+    <>
+
+    {componentName ? <Modal
       isOpen={isOpen}
       closeModalHandler={closeModalHandler}
       modalChildPosition={modalChildPosition}
     >
       {renderComponent}
-    </Modal>
+    </Modal> : ''}
+    
+    
+    </>
+    
   );
 };
 

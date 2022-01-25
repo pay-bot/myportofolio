@@ -21,7 +21,7 @@ const modalSlice = createSlice({
       state.skill = skills.find((el) => el.id === action.payload.id);
     },
     closeModal: (state, action) => {
-      state.isOpen = false;
+      state.isOpen = !state.isOpen;
       state.componentName = null;
       state.modalChildPosition = "center";
       state.childrenProps = {};
@@ -29,9 +29,10 @@ const modalSlice = createSlice({
     getSkill: (state, action) => {
       state.skill
     },
+   
   },
 });
 
-export const { openModal, closeModal, getSkill } = modalSlice.actions;
+export const { openModal,openModalChild, closeModal, getSkill } = modalSlice.actions;
 
 export default modalSlice.reducer;
