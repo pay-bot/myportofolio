@@ -69,7 +69,11 @@ module.exports = {
       '-10': '-10',
       '-30': '-30'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['CascadiaCode', 'Helvetica', 'Arial', 'sans-serif']
+      }
+    },
     animation: {
       none: 'none',
       spin: 'spin 1s linear infinite',

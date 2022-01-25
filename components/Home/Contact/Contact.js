@@ -28,7 +28,7 @@ export default function Contact() {
               type="button"
               className="bg-[#008FFF] dark:bg-[#45ADFF] px-4 py-2 mr-3 text-lg font-semibold tracking-wider text-white rounded hover:bg-blue-600"
             >
-              <Link href="/project">
+              <Link href="/portofolio">
                 <a>Portofolio</a>
               </Link>
             </button>

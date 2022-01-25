@@ -20,7 +20,7 @@ export default function Layanan() {
             <Index />
             <Title>{t('service.title')}</Title>
             <Description>{t('service.desc')}</Description>
-            <div className="p-5 bg-white">
+            <div className="dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-white dark:text-gray-100 p-5">
             <LayananCardTitle>{t('service.favorite')}</LayananCardTitle>
             <div
               data-aos="fade-up-right"

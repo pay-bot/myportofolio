@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { closeModal } from '../features/modal/modalSlice';
 
@@ -26,6 +26,15 @@ const ModalManger = () => {
       renderComponent = <SelectedComponent {...childrenProps} />;
     }
   }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   return (
     <Modal
