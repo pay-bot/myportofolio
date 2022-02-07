@@ -53,9 +53,11 @@ export default function Hero() {
     <>
       <Particles
         params={particlesOption}
-        className="absolute left-0 h-full"
-      ></Particles>
-      <div className="relative flex flex-col w-full px-4 mx-auto mt-24 lg:w-10/12 md:flex-row lg:px-0 md:px-8 lg:mt-32 ">
+        className=" absolute left-0 top-0 h-screen z-10"
+      >
+      </Particles>
+
+      <div className="left-0 -mt-32 w-screen h-screen justify-center items-center flex ">
         <motion.div
           className="flex items-center justify-center w-full md:w-6/12 md:justify-start"
           initial={{ opacity: 0 }}
@@ -92,7 +94,7 @@ export default function Hero() {
             <div className="flex justify-center md:justify-start" />
           </div>
         </motion.div>
-        <div className="relative flex flex-col items-center w-full h-full mt-10 md:w-6/12 md:flex-row md:justify-center md:items-end lg:mt-0">
+        {/* <div className="relative flex flex-col items-center w-full h-full mt-10 md:w-6/12 md:flex-row md:justify-center md:items-end lg:mt-0">
           <div className="mx-auto rounded-full absolute xl:h-[50vh] lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] h-[330px] w-[330px]  px-5 border-4 border-[#008FFF] dark:border-[#45ADFF] ">
             <Link href="https://reactjs.org/">
               <a className="absolute z-30 flex items-center w-16 h-16 ml-4 rounded-full animate-wiggle lg:w-20 lg:h-20 nm-inset-white-100 dark:nm-inset-gray-100">
@@ -128,7 +130,7 @@ export default function Hero() {
               blurDataURL={urlBlurred}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

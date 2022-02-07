@@ -24,7 +24,7 @@ export default function Navbar() {
   const [cookie, setCookie] = useCookies(["NEXT_LOCALE"]);
   return (
     <>
-      <div className="z-50 xl:py-8 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  ">
+      <div className="z-100 xl:py-8 md:py-1 py-4 w-full bg-white dark:bg-[#1A2744] transform transition duration-500  ">
         <div className="flex w-11/12 mx-auto lg:w-8/12">
           <div className="flex items-center w-2/12 md:hidden ">
             <div className="relative w-8 h-12 cursor-pointer">

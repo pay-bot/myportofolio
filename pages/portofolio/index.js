@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { getProject } from '../../utils/api';
 import Title from '../../components/Title';
+import { useSelector, useDispatch } from "react-redux";
 
 import en from '../../locales/en';
 import id from '../../locales/id';
@@ -14,13 +15,21 @@ import Description from '../../components/Description';
 import SEO_DATA from '../../data/seo';
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer';
+import DirectModal from '../../layouts/modal/DirectModal';
 
 export default function Index({ initialProject }) {
   const router = useRouter();
   const { locale } = router;
   const language = locale;
+  const dataModal = useSelector((state) => state.modal);
+
   const t = locale === 'en' ? en : id;
   let interval = 1;
+
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getModalChild);
+  // }, []);
 
   return (
     <>
@@ -43,8 +52,10 @@ export default function Index({ initialProject }) {
         </div>
 
         {initialProject.map((data, i) => (
+          <>
           <div
             key={i}
+            onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
             className={classnames(
               'xl:my-32 my-10 ',
               i % 2 === 0 ? 'flex md:flex-row-reverse ' : ' flex flex-row '
@@ -135,6 +146,12 @@ export default function Index({ initialProject }) {
               </div>
             </div>
           </div>
+          {dataModal.isOpen === true && dataModal.skill.id === data.id && dataModal.componentName === '' &&(
+              <DirectModal closeModalHandler={closeModalHandler}>
+                {data.href}
+              </DirectModal>
+          )}
+          </>
         ))}
       </motion.div>
       <Footer />
