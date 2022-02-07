@@ -37,7 +37,7 @@ export default function SkillsItem() {
               }
               className=""
               // onClick={() => dispatch(openModal({ name: 'SkillDetail', id: data.id }))}
-              onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
+              // onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
             >
               <div className="transform transition duration-500 ease-in-out hover:scale-110 dark:bg-gradient-to-t dark:from-blue-600 dark:via-gray-700 dark:to-gray-900 border-gray-600 dark:border-gray-600 bg-white p-6 flex flex-col items-center m-2 justify-center">
                 <div className="relative w-24 h-24">
