@@ -17,7 +17,7 @@ export default function Home() {
         () =>
           setHome([
             <motion.div
-              className=""
+              className="z-100"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.1 }}
