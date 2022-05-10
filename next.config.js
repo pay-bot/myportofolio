@@ -2,7 +2,7 @@ const { i18n } = require('./next-i18next.config');
 
 module.exports = {
   i18n,
-  images: {
-    domains: ['res.cloudinary.com']
-  }
+  // images: {
+  //   domains: ['res.cloudinary.com']
+  // }
 };

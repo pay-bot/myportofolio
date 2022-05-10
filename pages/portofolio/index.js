@@ -17,7 +17,14 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer';
 import DirectModal from '../../layouts/modal/DirectModal';
 
-export default function Index({ initialProject }) {
+const initialProject = [
+  {
+    id: 1,
+    img_url: '/portofolio.jpg',
+    href: '/'
+  }]
+
+export default function Index() {
   const router = useRouter();
   const { locale } = router;
   const language = locale;
@@ -53,104 +60,104 @@ export default function Index({ initialProject }) {
 
         {initialProject.map((data, i) => (
           <>
-          <div
-            key={i}
-            onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
-            className={classnames(
-              'xl:my-32 my-10 ',
-              i % 2 === 0 ? 'flex md:flex-row-reverse ' : ' flex flex-row '
-            )}
-          >
             <div
-              data-aos="zoom-in"
+              key={i}
+              onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
               className={classnames(
-                ' overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-11/12 md:relative absolute rounded md:h-[420px] h-[313px]',
-                i % 2 === 0
-                  ? 'md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 '
-                  : 'md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4'
+                'xl:my-32 my-10 ',
+                i % 2 === 0 ? 'flex md:flex-row-reverse ' : ' flex flex-row '
               )}
             >
-              <Image
-                src={data.img_url}
-                alt=""
-                layout="fill"
-                objectFit="fill"
-                className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110"
-              />
-            </div>
-            <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
-              <p
-                data-aos="fade-up"
-                className={classnames(
-                  'capitalize flex mb-5 text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white',
-                  i % 2 === 0 ? '' : 'flex justify-end'
-                )}
-              >
-                {data.title}
-              </p>
               <div
-                data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                data-aos="zoom-in"
                 className={classnames(
-                  'md:py-5 md:px-5 md:mt-14 mt-3 md:shadow-xl shadow-none md:bg-[#EAECF4]  dark:md:bg-[#455781] dark:md:text-white md:text-gray-700 text-black dark:text-white rounded absolute flex',
-                  i % 2 === 0 ? 'md:-mr-20 -mr-0  ' : 'md:-ml-20 -ml-0  '
+                  ' overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-11/12 md:relative absolute rounded md:h-[420px] h-[313px]',
+                  i % 2 === 0
+                    ? 'md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 '
+                    : 'md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4'
                 )}
               >
-                <div
-                  className={classnames(
-                    'select-none flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30',
-                    i % 2 === 0 ? 'text-left ' : 'text-right '
-                  )}
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      language === 'en'
-                        ? data.description
-                        : data.description_idn
-                  }}
+                <img
+                  src={data?.img_url}
+                  alt=""
+                  // layout="fill"
+                  // objectFit="fill"
+                  className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110"
                 />
               </div>
-              <div
-                className={classnames(
-                  '-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative',
-                  i % 2 === 0 ? '-ml-2  ' : ' -right-2  flex-row-reverse  '
-                )}
-              >
-                {data.tech.map(tech => (
-                  <img
-                    src={tech.code}
-                    title={tech.name}
-                    data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
-                    data-aos-offset={interval++ * 20}
-                    className="w-8 h-8 mx-2 transition duration-500 ease-in-out transform hover:scale-125"
-                    alt=""
+              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
+                <p
+                  data-aos="fade-up"
+                  className={classnames(
+                    'capitalize flex mb-5 text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white',
+                    i % 2 === 0 ? '' : 'flex justify-end'
+                  )}
+                >
+                  {data.title}
+                </p>
+                <div
+                  data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                  className={classnames(
+                    'md:py-5 md:px-5 md:mt-14 mt-3 md:shadow-xl shadow-none md:bg-[#EAECF4]  dark:md:bg-[#455781] dark:md:text-white md:text-gray-700 text-black dark:text-white rounded absolute flex',
+                    i % 2 === 0 ? 'md:-mr-20 -mr-0  ' : 'md:-ml-20 -ml-0  '
+                  )}
+                >
+                  <div
+                    className={classnames(
+                      'select-none flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30',
+                      i % 2 === 0 ? 'text-left ' : 'text-right '
+                    )}
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        language === 'en'
+                          ? data.description
+                          : data.description_idn
+                    }}
                   />
-                ))}
-              </div>
-              <div data-aos="fade-up" className="">
-                <div className="transform transition duration-500 ease-in-out hover:scale-110 items-center flex -z-30 md:mt-[310px] mt-12 my-5 justify-center border tracking-widest rounded font-semibold py-1 bg-[#008FFF] dark:bg-[#45ADFF] text-white">
-                  <Link href={data.href}>
-                    <a className="flex -z-30" target="_blank" rel="noreferrer">
-                      <img
-                        src="/right-arrow.svg"
-                        alt=""
-                        className="w-8 h-5 mx-3 "
-                      />
-                      <p className="">View Project</p>
-                      <img
-                        src="/left-arrow.svg"
-                        alt=""
-                        className="block w-8 h-5 mx-3"
-                      />
-                    </a>
-                  </Link>
+                </div>
+                <div
+                  className={classnames(
+                    '-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative',
+                    i % 2 === 0 ? '-ml-2  ' : ' -right-2  flex-row-reverse  '
+                  )}
+                >
+                  {data?.tech?.map(tech => (
+                    <img
+                      src={tech.code}
+                      title={tech.name}
+                      data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                      data-aos-offset={interval++ * 20}
+                      className="w-8 h-8 mx-2 transition duration-500 ease-in-out transform hover:scale-125"
+                      alt=""
+                    />
+                  ))}
+                </div>
+                <div data-aos="fade-up" className="">
+                  <div className="transform transition duration-500 ease-in-out hover:scale-110 items-center flex -z-30 md:mt-[310px] mt-12 my-5 justify-center border tracking-widest rounded font-semibold py-1 bg-[#008FFF] dark:bg-[#45ADFF] text-white">
+                    <Link href={data.href}>
+                      <a className="flex -z-30" target="_blank" rel="noreferrer">
+                        <img
+                          src="/right-arrow.svg"
+                          alt=""
+                          className="w-8 h-5 mx-3 "
+                        />
+                        <p className="">View Project</p>
+                        <img
+                          src="/left-arrow.svg"
+                          alt=""
+                          className="block w-8 h-5 mx-3"
+                        />
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          {dataModal.isOpen === true && dataModal.skill.id === data.id && dataModal.componentName === '' &&(
+            {dataModal.isOpen === true && dataModal.skill.id === data.id && dataModal.componentName === '' && (
               <DirectModal closeModalHandler={closeModalHandler}>
                 {data.href}
               </DirectModal>
-          )}
+            )}
           </>
         ))}
       </motion.div>
@@ -159,8 +166,8 @@ export default function Index({ initialProject }) {
   );
 }
 
-export async function getStaticProps() {
-  const [initialProject] = await Promise.all([getProject()]);
+// export async function getStaticProps() {
+//   const [initialProject] = await Promise.all([getProject()]);
 
-  return { props: { initialProject } };
-}
+//   return { props: { initialProject } };
+// }
