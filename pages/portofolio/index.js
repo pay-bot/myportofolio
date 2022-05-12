@@ -22,8 +22,8 @@ const initialProject = [
     id: 1,
     img_url: '/kns.png',
     href: 'https://www.kns-id.com/',
-    title: 'Kerja Nyata Sosial',
-    title_idn: 'Kerja Nyata Sosial',
+    title: 'Karya Nyata Sosial',
+    title_idn: 'Karya Nyata Sosial',
     description:'Landing Page Aplication, made with Baezeni Headless CMS for Api data and React with tailwind as a Frontend tools',
     description_idn: 'Aplikasi Landing Page, di buat dengan Baezeni Headless CMS untuk data Api, dan React dengan Tailwind sebagai alat Frontend'
   },
@@ -32,9 +32,9 @@ const initialProject = [
     img_url: '/Yap.png',
     href: 'https://yapadmin.vercel.app',
     title: 'Yap Admin',
-    title_idn: 'Kerja Nyata Sosial',
-    description: 'Inspired from Baezeni Headless CMS, I recreate with newest Stack, and add many think depend on customer need. this Fullstack Application with Laravel and React',
-    description_idn: 'Aplikasi Landing Page, di buat dengan Baezeni Headless CMS untuk data Api, dan React dengan Tailwind sebagai alat Frontend'
+    title_idn: 'Karya Nyata Sosial',
+    description: 'Inspired from Baezeni Headless CMS,  recreated with newest Stack, and add many module depend on customer need. this Fullstack Application with Laravel and React',
+    description_idn: 'Terinspirasi dari Baezeni Headless CMS, di buat ulang dengan technologi terbaru, dan menambahkan banyak modul di dasari kebutuhan pelanggan'
   }]
 
 export default function Index() {
@@ -97,7 +97,7 @@ export default function Index() {
                   className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110 h-full object-cover"
                 />
               </div>
-              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5  transform transition duration-1000 ease-in-out select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
+              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5  transform transition duration-1000 ease-in-out select-none md:w-5/12 w-11/12 relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
                 <p
                   data-aos="fade-up"
                   className={classnames(

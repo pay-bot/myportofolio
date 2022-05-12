@@ -13,20 +13,20 @@ const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
-      offset: 100,
-    once: true
+      offset: 50,
+      once: true
 
     });
   }, []);
 
-  
+
   return (
     <>
-     <Provider store={store}>
-      <Wrapper>
-        <Component {...pageProps} />
-      </Wrapper>
-     </Provider>
+      <Provider store={store}>
+        <Wrapper>
+          <Component {...pageProps} />
+        </Wrapper>
+      </Provider>
     </>
   );
 };

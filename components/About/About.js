@@ -13,7 +13,7 @@ export default function About() {
         className="w-full "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 0.5 }}
       >
         <Title>{t('about.title')}</Title>
         <Description>{t('about.desc')}</Description>
