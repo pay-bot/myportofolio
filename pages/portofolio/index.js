@@ -20,8 +20,21 @@ import DirectModal from '../../layouts/modal/DirectModal';
 const initialProject = [
   {
     id: 1,
-    img_url: '/portofolio.jpg',
-    href: '/'
+    img_url: '/kns.png',
+    href: 'https://www.kns-id.com/',
+    title: 'Kerja Nyata Sosial',
+    title_idn: 'Kerja Nyata Sosial',
+    description:'Landing Page Aplication, made with Baezeni Headless CMS for Api data and React with tailwind as a Frontend tools',
+    description_idn: 'Aplikasi Landing Page, di buat dengan Baezeni Headless CMS untuk data Api, dan React dengan Tailwind sebagai alat Frontend'
+  },
+  {
+    id: 1,
+    img_url: '/Yap.png',
+    href: 'https://yapadmin.vercel.app',
+    title: 'Yap Admin',
+    title_idn: 'Kerja Nyata Sosial',
+    description: 'Inspired from Baezeni Headless CMS, I recreate with newest Stack, and add many think depend on customer need. this Fullstack Application with Laravel and React',
+    description_idn: 'Aplikasi Landing Page, di buat dengan Baezeni Headless CMS untuk data Api, dan React dengan Tailwind sebagai alat Frontend'
   }]
 
 export default function Index() {
@@ -62,16 +75,15 @@ export default function Index() {
           <>
             <div
               key={i}
-              onClick={() => dispatch(openModal({ id: data.id, name: "" }))}
               className={classnames(
                 'xl:my-32 my-10 ',
-                i % 2 === 0 ? 'flex md:flex-row-reverse ' : ' flex flex-row '
+                i % 2 === 0 ? 'flex md:flex-row-reverse flex-col  ' : ' flex md:flex-row flex-col'
               )}
             >
               <div
                 data-aos="zoom-in"
                 className={classnames(
-                  ' overflow-hidden md:hover:none hover:md:z-0 md:w-7/12 w-11/12 md:relative absolute rounded md:h-[420px] h-[313px]',
+                  ' overflow-hidden md:w-7/12 w-11/12 md:relative rounded md:h-[420px] h-[313px]',
                   i % 2 === 0
                     ? 'md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 '
                     : 'md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4'
@@ -82,10 +94,10 @@ export default function Index() {
                   alt=""
                   // layout="fill"
                   // objectFit="fill"
-                  className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110"
+                  className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110 h-full object-cover"
                 />
               </div>
-              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5 opacity-0 transform transition duration-1000 ease-in-out hover:opacity-100 select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
+              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5  transform transition duration-1000 ease-in-out select-none md:w-5/12 w-full relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
                 <p
                   data-aos="fade-up"
                   className={classnames(
