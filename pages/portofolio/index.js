@@ -32,9 +32,9 @@ const initialProject = [
     img_url: '/Yap.png',
     href: 'https://yapadmin.vercel.app',
     title: 'Yap Admin',
-    title_idn: 'Karya Nyata Sosial',
-    description: 'Inspired from Baezeni Headless CMS,  recreated with newest Stack, and add many module depend on customer need. this Fullstack Application with Laravel and React',
-    description_idn: 'Terinspirasi dari Baezeni Headless CMS, di buat ulang dengan technologi terbaru, dan menambahkan banyak modul di dasari kebutuhan pelanggan'
+    title_idn: 'Yap Admin',
+    description: 'Inspired from Baezeni Headless CMS,  recreated with Laravel and React , and add many module depend on customer need. ',
+    description_idn: 'Terinspirasi dari Baezeni Headless CMS, di buat ulang dengan Laravel dan React, dan menambahkan banyak modul di dasari kebutuhan pelanggan'
   }]
 
 export default function Index() {
