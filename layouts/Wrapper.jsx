@@ -23,7 +23,7 @@ function Wrapper({ children }) {
       </Head>
       <div className="bg-white dark:bg-[#1A2744]">
 
-      <main className="overflow-x-hidden w-full flex-grow bg-white  dark:bg-[#1A2744]  mx-auto scrollbar-hide max-w-screen-2xl">
+      <main className="overflow-x-hidden flex-grow bg-white  dark:bg-[#1A2744]   scrollbar-hide ">
         {children}
       </main>
 

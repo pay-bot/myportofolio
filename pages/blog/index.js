@@ -26,7 +26,7 @@ export default function Index({ initialPost }) {
       </Head>
       <Navbar />
       <motion.div
-        className="lg:w-8/12 w-full flex lg:flex-row flex-col mx-auto justify-around mt-24 mb-10 lg:px-0 md:px-8 px-4"
+        className="lg:w-8/12 w-full flex lg:flex-row flex-col mx-auto justify-around mt-24 mb-10  px-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
@@ -46,9 +46,8 @@ export default function Index({ initialPost }) {
                 <Description />
                 <div key={data.id} className="mt-5 border-b">
                   <Link
-                    href={`/blog/${
-                      language === 'en' ? data.slug : data.slug_idn
-                    }`}
+                    href={`/blog/${language === 'en' ? data.slug : data.slug_idn
+                      }`}
                   >
                     <a className="">
                       <p className="md:text-3xl text-2xl capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">
@@ -86,9 +85,8 @@ export default function Index({ initialPost }) {
                     }}
                   />
                   <Link
-                    href={`/blog/${
-                      language === 'en' ? data.slug : data.slug_idn
-                    }`}
+                    href={`/blog/${language === 'en' ? data.slug : data.slug_idn
+                      }`}
                   >
                     <a className="">
                       <button
@@ -110,9 +108,8 @@ export default function Index({ initialPost }) {
                   </div>
                   <div className="lg:my-0 my-5">
                     <Link
-                      href={`/blog/${
-                        language === 'en' ? data.slug : data.slug_idn
-                      }`}
+                      href={`/blog/${language === 'en' ? data.slug : data.slug_idn
+                        }`}
                     >
                       <a className="">
                         <p className=" text-base capitalize  hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-white">

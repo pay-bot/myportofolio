@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-@font-face {
-  font-family: "CascadiaCode";
-  src: url("../public/fonts/CascadiaCode.ttf");
-}
+  @font-face {
+    font-family: "CascadiaCode";
+    src: url("../public/fonts/CascadiaCode.ttf");
+  }
 }
 
 #__next {
@@ -23,7 +23,7 @@
 }
 
 .card-zoom {
-  @apply md:overflow-hidden  ;
+  @apply md:overflow-hidden;
 }
 
 .card-zoom-image {
@@ -204,7 +204,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .modal-hide {
@@ -266,6 +265,8 @@
   position: unset !important;
 }
 
-
-
-
+@layer components {
+  .section-base {
+    @apply max-w-[88%] hd:max-w-[90%] xl:max-w-[1200px] hdl:max-w-7xl hd2xl:max-w-[1440px]  mx-auto;
+  }
+}

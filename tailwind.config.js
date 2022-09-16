@@ -89,7 +89,24 @@ module.exports = {
 
         '50%': { transform: 'rotate(3deg)' }
       }
-    }
+    }, screens: {
+      xxs: '320px',
+      xs: '375px',
+      s: '576px',
+      sm: '640px',
+      md: '768px',
+      lg: '992px',
+      mdl: '1024px',
+      mdxl: '1100px',
+      xl: '1280px',
+      xxl: '1320px',
+      hd: '1366px',
+      hdl: '1440px',
+      hdxl: '1536px',
+      hd2xl: '1600px',
+      fhd: '1920px',
+      qhd: '2560px',
+    },
   },
   variants: {
     neumorphismFlat: ['responsive', 'focus', 'active'],

@@ -24,7 +24,7 @@ const initialProject = [
     href: 'https://www.kns-id.com/',
     title: 'Karya Nyata Sosial',
     title_idn: 'Karya Nyata Sosial',
-    description:'Landing Page Aplication, made with Baezeni Headless CMS for Api data and React with tailwind as a Frontend tools',
+    description: 'Landing Page Aplication, made with Baezeni Headless CMS for Api data and React with tailwind as a Frontend tools',
     description_idn: 'Aplikasi Landing Page, di buat dengan Baezeni Headless CMS untuk data Api, dan React dengan Tailwind sebagai alat Frontend'
   },
   {
@@ -66,7 +66,7 @@ export default function Index() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="px-4 lg:px-0 md:px-8">
+        <div className="px-4 ">
           <Title>PORTOFOLIO</Title>
           <Description>{t.projectDesc}</Description>
         </div>

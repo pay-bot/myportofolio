@@ -27,7 +27,7 @@ export default function Page({ detailPost, initialPost }) {
         </title>
       </Head>
       <Navbar />
-      <div className="w-full px-4 mx-auto mt-24 mb-10 lg:w-8/12 lg:px-0 md:px-8">
+      <div className="w-full px-4 mx-auto mt-24 mb-10 lg:w-8/12 ">
         <div key={detail.id} className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-8/12">
             <div className="md:mt-5">
@@ -90,9 +90,8 @@ export default function Page({ detailPost, initialPost }) {
               {initialPost.map((data, i) => (
                 <Link
                   key={i}
-                  href={`/blog/${
-                    language === "en" ? data.slug : data.slug_idn
-                  }`}
+                  href={`/blog/${language === "en" ? data.slug : data.slug_idn
+                    }`}
                 >
                   <a className="">
                     <p className="text-base text-gray-700 capitalize hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">
