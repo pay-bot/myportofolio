@@ -57,7 +57,7 @@ export default function Hero() {
       >
       </Particles>
 
-      <div className=" -mt-32 h-screen  items-center flex mx-auto ">
+      <div className="  h-screen min-h-[600px] items-center flex mx-auto ">
         <motion.div
           className=" mx-auto"
           initial={{ opacity: 0 }}

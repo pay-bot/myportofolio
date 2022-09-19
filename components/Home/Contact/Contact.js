@@ -18,7 +18,7 @@ export default function Contact() {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
         id="hire"
-        className=" section-base flex lg:flex-row flex-col my-10  px-4"
+        className=" section-base flex lg:flex-row flex-col my-10 "
       >
         <div className="lg:w-6/12 w-full mr-5 ">
           <Title>{t('hire.title')}</Title>

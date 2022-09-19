@@ -61,12 +61,12 @@ export default function Index() {
       </Head>
       <Navbar />
       <motion.div
-        className="w-full mx-auto mt-24 mb-10 lg:w-8/12 "
+        className="section-base mt-32 mb-10 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="px-4 ">
+        <div className="">
           <Title>PORTOFOLIO</Title>
           <Description>{t.projectDesc}</Description>
         </div>
