@@ -64,8 +64,8 @@ export default function Navbar() {
           </div>
 
           <Nav dir="horizontal" />
-          <div className="z-30 flex items-center w-full ml-auto md:w-2/12">
-            <ul className="flex mr-auto gap-x-2">
+          <div className="z-30 flex items-center justify-end w-full space-x-4 ml-auto md:w-3/12">
+            <ul className="flex  gap-x-2">
               {locales.map((locale) => (
                 <li key={locale}>
                   <Link href={asPath} locale={locale}>
@@ -85,27 +85,7 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            {/* <ul className='header-left'>
-        <li
-          onClick={() =>
-            dispatch(
-              openModal({
-                name: 'Login',
-                childrenProps: { name: 'kareem', email: 'kareem@gmail.com' },
-              })
-            )
-          }
-        >
-          Login
-        </li>
-        <li
-          onClick={() =>
-            dispatch(openModal({ name: 'Register', position: 'bottom' }))
-          }
-        >
-          Register
-        </li>
-      </ul> */}
+    
             <button
               className="relative z-50 flex items-center w-8 h-8 transition-all rounded-full dark:nm-convex-yellow-100 nm-convex-gray-900"
               type="button"

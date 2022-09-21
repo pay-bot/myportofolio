@@ -267,6 +267,6 @@
 
 @layer components {
   .section-base {
-    @apply max-w-[88%] hd:max-w-[90%] xl:max-w-[1140px]  mx-auto;
+     @apply max-w-[88%] xl:max-w-[1140px]   mx-auto;
   }
 }
