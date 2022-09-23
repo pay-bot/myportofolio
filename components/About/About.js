@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <motion.div
-        className="sec "
+        className="section-base "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

@@ -61,7 +61,7 @@ export default function Index() {
       </Head>
       <Navbar />
       <motion.div
-        className="section-base mt-32 mb-10 "
+        className="section-base mt-32 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -70,54 +70,33 @@ export default function Index() {
           <Title>PORTOFOLIO</Title>
           <Description>{t.projectDesc}</Description>
         </div>
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
 
-        {initialProject.map((data, i) => (
-          <>
-            <div
-              key={i}
-              className={classnames(
-                'xl:my-32 my-10 ',
-                i % 2 === 0 ? 'flex md:flex-row-reverse flex-col  ' : ' flex md:flex-row flex-col'
-              )}
-            >
+          {initialProject.map((data, i) => (
+            <>
               <div
-                data-aos="zoom-in"
+                key={i}
                 className={classnames(
-                  ' overflow-hidden md:w-7/12 w-11/12 md:relative rounded md:h-[420px] h-[313px]',
-                  i % 2 === 0
-                    ? 'md:mr-8 lg:mr-0 md:-ml-8 lg:ml-0 ml-4 '
-                    : 'md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4'
+                  'w-full border p-3 rounded'
                 )}
               >
-                <img
-                  src={data?.img_url}
-                  alt=""
-                  // layout="fill"
-                  // objectFit="fill"
-                  className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110 h-full object-cover"
-                />
-              </div>
-              <div className="lg:mx-1 md:mx-8 mx-4 md:px-0 px-3  md:opacity-100 md:mt-5  transform transition duration-1000 ease-in-out select-none md:w-5/12 w-11/12 relative md:py-0 pt-2  dark:md:bg-transparent  dark:bg-[#455781] dark:bg-opacity-90 bg-[#EAECF4] bg-opacity-90 md:bg-opacity-0 rounded ">
-                <p
-                  data-aos="fade-up"
-                  className={classnames(
-                    'capitalize flex mb-5 text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white',
-                    i % 2 === 0 ? '' : 'flex justify-end'
-                  )}
-                >
-                  {data.title}
-                </p>
                 <div
-                  data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                  data-aos="zoom-in"
                   className={classnames(
-                    'md:py-5 md:px-5 md:mt-14 mt-3 md:shadow-xl shadow-none md:bg-[#EAECF4]  dark:md:bg-[#455781] dark:md:text-white md:text-gray-700 text-black dark:text-white rounded absolute flex',
-                    i % 2 === 0 ? 'md:-mr-20 -mr-0  ' : 'md:-ml-20 -ml-0  '
+                    ' overflow-hidden  rounded md:h-[420px] h-[313px]md:ml-8 lg:mr-0 md:-mr-8 lg:ml-0 ml-4'
                   )}
                 >
+                  <p
+                    data-aos="fade-up"
+                    className={classnames(
+                      'capitalize flex mb-5 text-xl font-semibold dark:md:text-white md:text-gray-700 text-black dark:text-white '
+                    )}
+                  >
+                    {data.title}
+                  </p>
                   <div
                     className={classnames(
-                      'select-none flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30',
-                      i % 2 === 0 ? 'text-left ' : 'text-right '
+                      'select-none flex text-md dark:md:text-white md:text-gray-700 text-black dark:text-white md:mr-0 mr-3 z-30 '
                     )}
                     dangerouslySetInnerHTML={{
                       __html:
@@ -126,52 +105,60 @@ export default function Index() {
                           : data.description_idn
                     }}
                   />
+                  <img
+                    src={data?.img_url}
+                    alt=""
+                    className="transition duration-500 ease-in-out transform rounded shadow-2xl hover:scale-110 h-full object-cover"
+                  />
                 </div>
-                <div
-                  className={classnames(
-                    '-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative',
-                    i % 2 === 0 ? '-ml-2  ' : ' -right-2  flex-row-reverse  '
-                  )}
-                >
-                  {data?.tech?.map(tech => (
-                    <img
-                      src={tech.code}
-                      title={tech.name}
-                      data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
-                      data-aos-offset={interval++ * 20}
-                      className="w-8 h-8 mx-2 transition duration-500 ease-in-out transform hover:scale-125"
-                      alt=""
-                    />
-                  ))}
-                </div>
-                <div data-aos="fade-up" className="">
-                  <div className="transform transition duration-500 ease-in-out hover:scale-110 items-center flex -z-30 md:mt-[310px] mt-12 my-5 justify-center border tracking-widest rounded font-semibold py-1 bg-[#008FFF] dark:bg-[#45ADFF] text-white">
-                    <Link href={data.href}>
-                      <a className="flex -z-30" target="_blank" rel="noreferrer">
-                        <img
-                          src="/right-arrow.svg"
-                          alt=""
-                          className="w-8 h-5 mx-3 "
-                        />
-                        <p className="">View Project</p>
-                        <img
-                          src="/left-arrow.svg"
-                          alt=""
-                          className="block w-8 h-5 mx-3"
-                        />
-                      </a>
-                    </Link>
+                <div className="">
+                  <div
+                    data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                    className=""
+                  >
+                  
+                  </div>
+                  <div
+                    className={classnames(
+                      '-bottom-8 md:mt-0 mt-36 md:bottom-20 flex justify-start md:absolute relative'
+                    )}
+                  >
+                    {data?.tech?.map(tech => (
+                      <img
+                        src={tech.code}
+                        title={tech.name}
+                        data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                        data-aos-offset={interval++ * 20}
+                        className="w-8 h-8 mx-2 transition duration-500 ease-in-out transform hover:scale-125"
+                        alt=""
+                      />
+                    ))}
+                  </div>
+                  <div data-aos="fade-up" className="">
+                    <div className="transform transition duration-500 ease-in-out hover:scale-110 items-center flex -z-30  justify-center border tracking-widest rounded font-semibold py-1 bg-[#008FFF] dark:bg-[#45ADFF] text-white">
+                      <Link href={data.href}>
+                        <a className="flex -z-30" target="_blank" rel="noreferrer">
+                          <img
+                            src="/right-arrow.svg"
+                            alt=""
+                            className="w-8 h-5 mx-3 "
+                          />
+                          <p className="">View Project</p>
+                          <img
+                            src="/left-arrow.svg"
+                            alt=""
+                            className="block w-8 h-5 mx-3"
+                          />
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            {dataModal.isOpen === true && dataModal.skill.id === data.id && dataModal.componentName === '' && (
-              <DirectModal closeModalHandler={closeModalHandler}>
-                {data.href}
-              </DirectModal>
-            )}
-          </>
-        ))}
+
+            </>
+          ))}
+        </div>
       </motion.div>
       <Footer />
     </>

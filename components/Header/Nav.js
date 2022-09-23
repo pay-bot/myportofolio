@@ -13,9 +13,10 @@ export default function Nav({ dir }) {
   return (
     <ul className={classnames('capitalize', pickedDir)}>
       <Navitems href="/">HOME</Navitems>
-      <Navitems href="/experience">EXPEREINCE</Navitems>
-      <Navitems href="/portofolio">PORTOFOLIO</Navitems>
       <Navitems href="/blog">BLOG</Navitems>
+      <Navitems href="/portofolio">PORTOFOLIO</Navitems>
+      <Navitems href="/experience">EXPEREINCE</Navitems>
+      <Navitems href="/about">ABOUT</Navitems>
     </ul>
   );
 }
